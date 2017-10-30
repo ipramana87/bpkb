@@ -1,0 +1,22 @@
+- Transaksi Reguler
+-- Kirim BPKB ke Pusat (Kirimkepusat)
+-- Terima BPKB dari Cabang (Terimadaricabang)
+-- Mutasi Internal Pusat (Mutasipusat)
+-- Kirim BPKB ke Kreditur (Kirimkekreditur)
+-- Terima BPKB dari Kreditur (Terimadarikreditur)
+-- Kirim BPKB ke Cabang (Kirimkecabang)
+-- Terima BPKB dari Pusat (Terimadaripusat)
+- Transaksi Pinjaman 
+-- Pengajuan Peminjaman ke Pusat (Pengajuankepusat)
+-- Terima Peminjaman dari Kreditur (Terimapinjamankreditur)
+-- Kirim Pinjaman ke Cabang (Kirimpinjamancabang)
+-- Terima Pinjaman dari Pusat (Terimapinjamanpusat)
+-- Kirim Pengembalian ke Pusat (Kirimkembalikepusat) *
+-- Terima Pengembalian dari Cabang (Terimakembalidaricabang)
+-- Kirim Pengembalian ke Kreditur (Kirimkembalikekreditur) *
+- Report
+-- Cek Status BPKB (Cekstatusbpkb)
+-- Laporan History BPKB (Laporanhistorybpkb)
+-- Daftar BPKB di Pusat (Daftarbpkbpusat)
+-- Daftar BPKB di Cabang (Daftarbpkbcabang)
+-- Daftar BPKB di Kreditur (Daftarbpkbkreditur)
