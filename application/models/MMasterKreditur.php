@@ -26,7 +26,6 @@ class MMasterKreditur extends CI_Model
 		$xSQL = ("
 			SELECT fs_kode_kreditur, fs_nama_kreditur, fs_aktif
 			FROM tm_kreditur
-			
 		");
 
 		if (!empty($sCari)) {
@@ -44,7 +43,6 @@ class MMasterKreditur extends CI_Model
 		$xSQL = ("
 			SELECT fs_kode_kreditur, fs_nama_kreditur, fs_aktif
 			FROM tm_kreditur 
-
 		");
 
 		if (!empty($sCari)) {
