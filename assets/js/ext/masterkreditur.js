@@ -21,9 +21,9 @@ Ext.onReady(function() {
 	Ext.define('DataGridFasilitas', {
 		extend: 'Ext.data.Model',
 		fields: [
-			{name: 'fd_tgl_fasilitas', type: 'string'},
+			{name: 'fd_tanggal_berlaku', type: 'string'},
 			{name: 'fs_nama_fasilitas', type: 'string'},
-			{name: 'fs_plafon', type: 'string'},
+			{name: 'fn_plafon', type: 'string'},
 		]
 	});
 
@@ -60,7 +60,7 @@ Ext.onReady(function() {
 		}		
 	});
 
-	var grupMasterFasilitas = Ext.create('Ext.data.Store', {
+	var grupFasilitas = Ext.create('Ext.data.Store', {
 		autoLoad: true,
 		model: 'DataGridFasilitas',
 		pageSize: 25,
@@ -75,10 +75,11 @@ Ext.onReady(function() {
 			},
 			type: 'ajax',
 			url: 'masterkreditur/gridfasilitas'
-		},listeners: {
+		},
+		listeners: {
 			beforeload: function(store) {
 				Ext.apply(store.getProxy().extraParams, {
-					'fs_cari': Ext.getCmp('txtCari').getValue()
+					'fs_kode_kreditur': Ext.getCmp('txtKodeKreditur').getValue()
 				});
 			}
 		}		
@@ -195,7 +196,7 @@ Ext.onReady(function() {
 		fieldStyle: 'text-transform: uppercase;',
 		id: 'txtPlafon',
 		name: 'txtPlafon',
-		xtype: 'textfield',
+		xtype: 'numberfield',
 		minValue: 0,
 		maxLength: 35,
 		enforceMaxLength: true,
@@ -229,30 +230,30 @@ Ext.onReady(function() {
 	};
 
 	// GRID Mater Fasilitas
-	var gridMasterFasilitas = Ext.create('Ext.grid.Panel', {
+	var gridFasilitas = Ext.create('Ext.grid.Panel', {
 		defaultType: 'textfield',
 		height: 500,
 		sortableColumns: false,
-		store: grupMasterFasilitas,
+		store: grupFasilitas,
 		columns: [{
 			xtype: 'rownumberer',
 			width: 45
 		},{
 			text: 'Tanggal ',
-			dataIndex: 'fd_tgl_fasilitas',
+			dataIndex: 'fd_tanggal_berlaku',
 			menuDisabled: true,
-			width: 80,
-			renderer: Ext.util.Format.dateRenderer('d-m-Y')
+			flex: 1,
+			hidden: true
 		},{
 			text: 'Nama Fasilitas',
 			dataIndex: 'fs_nama_fasilitas',
 			menuDisabled: true,
-			width: 80
+			flex: 3
 		},{
 			text: 'Plafon',
-			dataIndex: 'fs_plafon',
+			dataIndex: 'fn_plafon',
 			menuDisabled: true,
-			width: 270
+			flex: 1
 		}],
 		tbar: [{
 			flex: 1,
@@ -290,12 +291,12 @@ Ext.onReady(function() {
 				iconCls: 'icon-add',
 				text: 'Add',
 				handler: function() {
-					var total = grupMasterFasilitas.getCount();
+					var total = grupFasilitas.getCount();
 
 					var data = Ext.create('DataGridFasilitas', {
-						fd_tgl_fasilitas: Ext.getCmp('cboTglKreditur').getValue(),
+						fd_tanggal_berlaku: Ext.Date.format(Ext.getCmp('cboTglKreditur').getValue(), 'Y-m-d'),
 						fs_nama_fasilitas: Ext.getCmp('txtNamaFasilitas').getValue(),
-						fs_plafon: Ext.getCmp('txtPlafon').getValue()
+						fn_plafon: Ext.getCmp('txtPlafon').getValue()
 					});
 
 					var tanggal = Ext.getCmp('cboTglKreditur').getValue();
@@ -334,14 +335,14 @@ Ext.onReady(function() {
 						return;
 					}
 
-					grupMasterFasilitas.insert(total, data);
+					grupFasilitas.insert(total, data);
 
 					Ext.getCmp('cboTglKreditur').setValue('');
 					Ext.getCmp('txtNamaFasilitas').setValue('');
 					Ext.getCmp('txtPlafon').setValue('');
 
-					total = grupMasterFasilitas.getCount() - 1;
-					gridMasterFasilitas.getSelectionModel().select(total);
+					total = grupFasilitas.getCount() - 1;
+					gridFasilitas.getSelectionModel().select(total);
 				}
 			},{
 				iconCls: 'icon-delete',
@@ -349,11 +350,11 @@ Ext.onReady(function() {
 				text: 'Delete',
 				handler: function() {
 
-					var sm = gridMasterFasilitas.getSelectionModel();
-					grupMasterFasilitas.remove(sm.getSelection());
-					gridMasterFasilitas.getView().refresh();
+					var sm = gridFasilitas.getSelectionModel();
+					grupFasilitas.remove(sm.getSelection());
+					gridFasilitas.getView().refresh();
 
-					if (grupMasterFasilitas.getCount() > 0) {
+					if (grupFasilitas.getCount() > 0) {
 						sm.select(0);
 					}
 				},
@@ -364,11 +365,11 @@ Ext.onReady(function() {
 			displayInfo: true,
 			pageSize: 25,
 			plugins: Ext.create('Ext.ux.ProgressBarPager', {}),
-			store: grupMasterFasilitas
+			store: grupFasilitas
 		}),
 		listeners: {
 			selectionchange: function(view, records) {
-				gridMasterFasilitas.down('#removeData').setDisabled(!records.length);
+				gridFasilitas.down('#removeData').setDisabled(!records.length);
 			}
 		},
 		viewConfig: {
@@ -389,18 +390,18 @@ Ext.onReady(function() {
 			xtype: 'rownumberer',
 			width: 25
 		},{
-			flex: 0.5,
+		
 			text: 'Kode Kreditur',
 			dataIndex: 'fs_kode_kreditur',
 			menuDisabled: true,
-			width: 100
+			flex: 1
 		},{
-			flex: 0.5,
 			text: 'Nama Kreditur',
 			dataIndex: 'fs_nama_kreditur',
 			menuDisabled: true,
-			width: 100
+			flex: 3
 		},{
+			
 			text: 'Combo Aktif',
 			dataIndex: 'fs_aktif',
 			menuDisabled: true,
@@ -416,8 +417,8 @@ Ext.onReady(function() {
 					var str = grid.getStore().getAt(rowIndex).get('fs_kode_kreditur');
 					if (str) {
 						Ext.MessageBox.show({
-							title:'Delete record',
-							msg: 'Would you like to delete?',
+							title:'Menghapus Data',
+							msg: 'Apakah Anda ingin menghapus?',
 							buttons: Ext.Msg.YESNO,
 							icon: Ext.Msg.QUESTION,
 							fn: function(btn) {
@@ -497,6 +498,13 @@ Ext.onReady(function() {
 				Ext.getCmp('txtKodeKreditur').setValue(record.get('fs_kode_kreditur'));
 				Ext.getCmp('txtNamaKreditur').setValue(record.get('fs_nama_kreditur'));
 				Ext.getCmp('cboAktif').setValue(record.get('fs_aktif'));
+
+				// RELOAD DETAIL FASILITAS
+				grupFasilitas.load();
+
+				// CHANGE TAB
+				var tabPanel = Ext.ComponentQuery.query('tabpanel')[0];
+				tabPanel.setActiveTab('tab2');
 			}
 		},
 		viewConfig: {
@@ -506,8 +514,9 @@ Ext.onReady(function() {
 			markDirty: false,
 			stripeRows: true
 		}
-	});	
-		var grupSelect = Ext.create('Ext.data.Store', {
+	});
+
+	var grupSelect = Ext.create('Ext.data.Store', {
 		autoLoad: true,
 		fields: [
 			'fs_kode_kreditur','fs_kode_kreditur'
@@ -585,6 +594,17 @@ Ext.onReady(function() {
 	}
 		
 	function fnSave() {
+		var xtanggal = '';
+		var xfasilitas = '';
+		var xplafon = '';
+
+		var store = gridFasilitas.getStore();
+		store.each(function(record, idx) {
+			xtanggal = xtanggal +'|'+ Ext.Date.format(record.get('fd_tanggal_berlaku'), 'Y-m-d');
+			xfasilitas = xfasilitas +'|'+ record.get('fs_nama_fasilitas');
+			xplafon = xplafon +'|'+ record.get('fn_plafon');
+		});
+
 		Ext.Ajax.on('beforerequest', fnMaskShow);
 		Ext.Ajax.on('requestcomplete', fnMaskHide);
 		Ext.Ajax.on('requestexception', fnMaskHide);
@@ -595,7 +615,10 @@ Ext.onReady(function() {
 			params: {
 				'fs_kode_kreditur': Ext.getCmp('txtKodeKreditur').getValue(),
 				'fs_nama_kreditur': Ext.getCmp('txtNamaKreditur').getValue(),
-				'fs_aktif': Ext.getCmp('cboAktif').getValue()
+				'fs_aktif': Ext.getCmp('cboAktif').getValue(),
+				'fd_tanggal_berlaku': xtanggal,
+				'fs_nama_fasilitas': xfasilitas,
+				'fn_plafon': xplafon
 			},
 			success: function(response) {
 				var xtext = Ext.decode(response.responseText);
@@ -606,10 +629,12 @@ Ext.onReady(function() {
 					msg: xtext.hasil,
 					title: 'BPKB'
 				});
-				// REFRESH AFTER SAVE
-				grupDataKreditur.load();
 
 				fnReset();
+
+				// REFRESH AFTER SAVE
+				grupDataKreditur.load();
+				grupFasilitas.load();
 			},
 			failure: function(response) {
 				var xtext = Ext.decode(response.responseText);
@@ -732,7 +757,7 @@ Ext.onReady(function() {
 								style: 'padding: 5px;',
 								xtype: 'fieldset',
 								items: [
-								gridMasterFasilitas
+								gridFasilitas
 								]
 					
 							}]

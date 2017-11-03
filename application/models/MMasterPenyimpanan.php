@@ -61,4 +61,34 @@ class MMasterPenyimpanan extends CI_Model
 		$sSQL = $this->db->query($xSQL);
 		return $sSQL;
 	}
+	
+	public function listLokerAll($nCabang, $nBrangkas)
+	{
+		$xSQL = ("
+			SELECT fs_nama_loker
+			FROM tm_detailpenyimpanan_bpkb 
+			WHERE fs_kode_cabang = '".trim($nCabang)."'
+			AND fs_kode_brangkas = '".trim($nBrangkas)."'
+		");
+
+		$sSQL = $this->db->query($xSQL);
+		return $sSQL;
+	}
+
+	public function listLoker($nCabang, $nBrangkas, $nStart, $nLimit)
+	{
+		$xSQL = ("
+			SELECT fs_nama_loker
+			FROM tm_detailpenyimpanan_bpkb
+			WHERE fs_kode_cabang = '".trim($nCabang)."'
+			AND fs_kode_brangkas = '".trim($nBrangkas)."'
+		");
+
+		$xSQL = $xSQL.("
+			ORDER BY fd_tanggal_buat DESC LIMIT ".$nStart.",".$nLimit."
+		");
+
+		$sSQL = $this->db->query($xSQL);
+		return $sSQL;
+	}
 }

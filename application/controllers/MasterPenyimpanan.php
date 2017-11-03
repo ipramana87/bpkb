@@ -13,7 +13,7 @@ class MasterPenyimpanan extends CI_Controller {
 	public function index() {
 		$this->load->view('vmasterpenyimpanan');
 	}
-	public function grid() {
+	public function gridpenyimpanan() {
 		$sCari = trim($this->input->post('fs_cari'));
 		$nStart = trim($this->input->post('start'));
 		$nLimit = trim($this->input->post('limit'));
@@ -38,6 +38,32 @@ class MasterPenyimpanan extends CI_Controller {
 		}
 		echo '({"total":"'.$xTotal.'","hasil":'.json_encode($xArr).'})';
 	}
+
+	public function gridloker() {
+		$nStart = trim($this->input->post('start'));
+		$nLimit = trim($this->input->post('limit'));
+
+		$nCabang = $this->input->post('fs_kode_cabang');
+		$nBrangkas = $this->input->post('fs_kode_brangkas');
+
+		$this->db->trans_start();
+		$this->load->model('MMasterPenyimpanan');
+		$sSQL = $this->MMasterPenyimpanan->listLokerAll($nCabang, $nBrangkas);
+		$xTotal = $sSQL->num_rows();
+		$sSQL = $this->MMasterPenyimpanan->listLoker($nCabang, $nBrangkas, $nStart, $nLimit);
+		$this->db->trans_complete();
+
+		$xArr = array();
+		if ($sSQL->num_rows() > 0) {
+			foreach ($sSQL->result() as $xRow) {
+				$xArr[] = array(
+					'fs_nama_loker' => trim($xRow->fs_nama_loker)
+				);
+			}
+		}
+		echo '({"total":"'.$xTotal.'","hasil":'.json_encode($xArr).'})';
+	}
+
 
 	public function gridcabang() {
 		$sCari = trim($this->input->post('fs_cari'));
@@ -98,6 +124,28 @@ class MasterPenyimpanan extends CI_Controller {
 		$cabang = $this->input->post('fs_kode_cabang');
 		$kode = $this->input->post('fs_kode_brangkas');
 		$nama = $this->input->post('fs_nama_brangkas');
+
+		// detail fasilitas
+		$loker = explode('|', $this->input->post('fs_nama_loker'));
+
+		// hapus detail fasilitas
+		$where = "fs_kode_cabang = '".trim($cabang)."'";
+		$this->db->where($where);
+		$this->db->delete('tm_detailpenyimpanan_bpkb');
+
+		// simpan detail fasilitas
+		$jml = count($loker) - 1;
+		if ($jml > 0) {
+			for($i=1; $i<=$jml; $i++) {
+				$data = array(
+					'fs_kode_cabang' => trim($cabang),
+					'fs_kode_brangkas' => trim($kode),
+					'fs_nama_loker' => trim($loker[$i])
+
+				);
+				$this->db->insert('tm_detailpenyimpanan_bpkb', $data);
+			}
+		}
 
 		$this->load->model('MMasterPenyimpanan');
 		$ssql = $this->MMasterPenyimpanan->checkPenyimpanan($kode);

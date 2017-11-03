@@ -28,9 +28,9 @@ class MasterKreditur extends CI_Controller {
 
 		$this->db->trans_start();
 		$this->load->model('MMasterKreditur');
-		$sSQL = $this->MMasterKreditur->listkrediturAll($sCari);
+		$sSQL = $this->MMasterKreditur->listKrediturAll($sCari);
 		$xTotal = $sSQL->num_rows();
-		$sSQL = $this->MMasterKreditur->listkreditur($sCari, $nStart, $nLimit);
+		$sSQL = $this->MMasterKreditur->listKreditur($sCari, $nStart, $nLimit);
 		$this->db->trans_complete();		
 
 		$xArr = array();
@@ -41,6 +41,32 @@ class MasterKreditur extends CI_Controller {
 					'fs_nama_kreditur' => trim($xRow->fs_nama_kreditur),
 					'fs_aktif' => trim($xRow->fs_aktif),
 
+				);
+			}
+		}
+		echo '({"total":"'.$xTotal.'","hasil":'.json_encode($xArr).'})';
+	}
+
+	public function gridfasilitas() {
+		$nStart = $this->input->post('start');
+		$nLimit = $this->input->post('limit');
+
+		$nKreditur = $this->input->post('fs_kode_kreditur');
+
+		$this->db->trans_start();
+		$this->load->model('MMasterKreditur');
+		$sSQL = $this->MMasterKreditur->listFasilitasAll($nKreditur);
+		$xTotal = $sSQL->num_rows();
+		$sSQL = $this->MMasterKreditur->listFasilitas($nKreditur, $nStart, $nLimit);
+		$this->db->trans_complete();
+
+		$xArr = array();
+		if ($sSQL->num_rows() > 0) {
+			foreach ($sSQL->result() as $xRow) {
+				$xArr[] = array(
+					'fd_tanggal_berlaku' => trim($xRow->fd_tanggal_berlaku),
+					'fs_nama_fasilitas' => trim($xRow->fs_nama_fasilitas),
+					'fn_plafon' => trim($xRow->fn_plafon)
 				);
 			}
 		}
@@ -77,13 +103,39 @@ class MasterKreditur extends CI_Controller {
 
 	public function save() {
 		$user = $this->encryption->decrypt($this->session->userdata('username'));
+
 		$kode = $this->input->post('fs_kode_kreditur');
 		$nama = $this->input->post('fs_nama_kreditur');
 		$aktif = $this->input->post('fs_aktif');
 
+		// detail fasilitas
+		$tanggal = explode('|', $this->input->post('fd_tanggal_berlaku'));
+		$fasilitas = explode('|', $this->input->post('fs_nama_fasilitas'));
+		$plafon = explode('|', $this->input->post('fn_plafon'));
+
+		// hapus detail fasilitas
+		$where = "fs_kode_kreditur = '".trim($kode)."'";
+		$this->db->where($where);
+		$this->db->delete('tm_detailkreditur');
+
+		// simpan detail fasilitas
+		$jml = count($tanggal) - 1;
+		if ($jml > 0) {
+			for($i=1; $i<=$jml; $i++) {
+				$data = array(
+					'fs_kode_kreditur' => trim($kode),
+					'fd_tanggal_berlaku' => trim($tanggal[$i]),
+					'fs_nama_fasilitas' => trim($fasilitas[$i]),
+					'fn_plafon' => trim($plafon[$i]),
+					'fs_user_buat' => trim($user),
+					'fd_tanggal_buat' => date('Y-m-d H:i:s')
+				);
+				$this->db->insert('tm_detailkreditur', $data);
+			}
+		}
 
 		$this->load->model('MMasterKreditur');
-		$ssql = $this->MMasterKreditur->checkkreditur($kode);
+		$ssql = $this->MMasterKreditur->checkKreditur($kode);
 		$update = false;
 
 		if ($ssql->num_rows() > 0) {
@@ -117,7 +169,7 @@ class MasterKreditur extends CI_Controller {
 			);
 
 			$data = array_merge($dt, $dt2);
-			$where = "fs_kode_kreditur = '".trim($cabang)."' AND fs_kode_kreditur = '".trim($kode)."'";
+			$where = "fs_kode_kreditur = '".trim($kode)."'";
 			$this->db->where($where);
 			$this->db->update('tm_kreditur', $data);
 

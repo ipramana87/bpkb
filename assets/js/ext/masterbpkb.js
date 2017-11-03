@@ -312,8 +312,8 @@ Ext.onReady(function() {
 					var str = grid.getStore().getAt(rowIndex).get('fs_kode_pemeriksa');
 					if (str) {
 						Ext.MessageBox.show({
-							title:'Delete record',
-							msg: 'Would you like to delete?',
+							title:'Menghapus Data',
+							msg: 'Apakah Anda ingin menghapus?',
 							buttons: Ext.Msg.YESNO,
 							icon: Ext.Msg.QUESTION,
 							fn: function(btn) {
