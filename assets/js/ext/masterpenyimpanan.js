@@ -203,7 +203,7 @@ Ext.onReady(function() {
 		}
 	});
 
-		// GRID MASTER PENYIMPANAN
+	// GRID MASTER PENYIMPANAN
 	var gridLoker = Ext.create('Ext.grid.Panel', {
 		defaultType: 'textfield',
 		height: 500,
@@ -508,7 +508,6 @@ Ext.onReady(function() {
 		}
 	};
 
-
 	var txtKodeBrangkas = {
 		afterLabelTextTpl: required,
 		allowBlank: false,
@@ -573,7 +572,7 @@ Ext.onReady(function() {
 
 	// FUNCTIONS
 	function fnReset() {
-		// COMPONENT FORM Master Penyimpanan BPKB
+		// COMPONENT FORM MASTER PENYIMPANAN BPKB
 		Ext.getCmp('cboCabang').setValue('');
 		Ext.getCmp('txtKodeBrangkas').setValue('');
 		Ext.getCmp('txtNamaBrangkas').setValue('')

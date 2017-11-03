@@ -25,7 +25,6 @@ Ext.onReady(function() {
 			{name: 'fs_no_polisi', type: 'string'},
 			{name: 'fs_no_BPKP', type: 'string'},
 			{name: 'fs_nama_BPKB', type: 'string'}
-
 		]
 	});
 
@@ -190,6 +189,7 @@ Ext.onReady(function() {
 			stripeRows: true
 		}
 	});	
+
 	// COMPONENT FORM DATA KONSUMEN & KENDARAAN
 	var txtNama = {
 		afterLabelTextTpl: required,
@@ -483,7 +483,6 @@ Ext.onReady(function() {
 	};
 
 	// COMPONENT FORM DATA AP
-
 	var txtKreditur = {
 		afterLabelTextTpl: required,
 		allowBlank: false,
