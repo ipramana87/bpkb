@@ -60,10 +60,32 @@ class Cetakqrcode extends CI_Controller {
 
 	public function cekprint() {
 		$check = $this->input->post('fs_add');
+
+		if (!empty($check)) {
+
+		}
 	}
 
 	public function print() {
-		$this->load->view('print/vqrcode');
+		$this->load->library('Pdf');
+
+		$data['result'] = '';
+		$html = $this->load->view('print/vqrcode', $data, true);
+		$pdf = new Pdf('L', 'mm', 'A4', true, 'UTF-8', false);
+		$pdf->SetTitle('CETAK QR CODE');
+		$pdf->SetPrintHeader(false);
+		$pdf->SetMargins(10, 10, 10, true);
+		$pdf->SetPrintFooter(false);
+		$pdf->SetAutoPageBreak(True, PDF_MARGIN_FOOTER);
+		$pdf->SetAuthor('BPKB');
+		$pdf->SetDisplayMode('real', 'default');
+		$pdf->SetFont('', '', 7, '', false);
+		$pdf->AddPage('L', 'A4');
+		$pdf->writeHTML($html, true, false, true, false, '');
+		$pdf->lastPage();
+		$pdf->Output('cetak-qrcode.pdf', 'I');
+		
+		//$this->load->view('print/vqrcode');
 	}
 
 }
