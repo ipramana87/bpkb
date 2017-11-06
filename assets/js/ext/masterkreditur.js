@@ -102,7 +102,7 @@ Ext.onReady(function() {
 		}
 	});
 
-	// COMPONENT FORM MASTER KREDITUR
+	// COMPONENT FORM MASTER KREDITUR DAN FASILITAS
 	var txtKodeKreditur = {
 		afterLabelTextTpl: required,
 		allowBlank: false,
@@ -229,7 +229,7 @@ Ext.onReady(function() {
 		handler: fnReset
 	};
 
-	// GRID Mater Fasilitas
+	// GRID MASTER FASILITAS
 	var gridFasilitas = Ext.create('Ext.grid.Panel', {
 		defaultType: 'textfield',
 		height: 500,
@@ -243,7 +243,7 @@ Ext.onReady(function() {
 			dataIndex: 'fd_tanggal_berlaku',
 			menuDisabled: true,
 			flex: 1,
-			hidden: true
+			renderer: Ext.util.Format.dateRenderer('d-m-Y'),
 		},{
 			text: 'Nama Fasilitas',
 			dataIndex: 'fs_nama_fasilitas',
@@ -600,7 +600,7 @@ Ext.onReady(function() {
 
 		var store = gridFasilitas.getStore();
 		store.each(function(record, idx) {
-			xtanggal = xtanggal +'|'+ Ext.Date.format(record.get('fd_tanggal_berlaku'), 'Y-m-d');
+			xtanggal = xtanggal +'|'+ record.get('fd_tanggal_berlaku');
 			xfasilitas = xfasilitas +'|'+ record.get('fs_nama_fasilitas');
 			xplafon = xplafon +'|'+ record.get('fn_plafon');
 		});

@@ -33,7 +33,13 @@ class Cetakqrcode extends CI_Controller {
 					'fs_no_bpkb' => trim($xRow->fs_no_bpkb),
 					'fs_nama_bpkb' => trim($xRow->fs_nama_bpkb),
 					'fd_tanggal_bpkb' => trim($xRow->fd_tanggal_bpkb),
-					'fs_jenis_kendaraan' => trim($xRow->fs_jenis_kendaraan)
+					'fs_jenis_kendaraan' => trim($xRow->fs_jenis_kendaraan),
+					'fn_tahun_kendaraan' => trim($xRow->fn_tahun_kendaraan),
+					'fs_warna_kendaraan' => trim($xRow->fs_warna_kendaraan),
+					'fs_no_mesin' => trim($xRow->fs_no_mesin),
+					'fs_no_rangka' => trim($xRow->fs_no_rangka)	
+					
+					
 				);
 			}
 		}
@@ -58,6 +64,31 @@ class Cetakqrcode extends CI_Controller {
 		echo json_encode($hasil);
 	}
 
+	public function createqrcode() {
+		$this->load->helper('qr');
+		// CALL BACK
+		createQRCode();
+	}
+
+	public function deleteqrcode() {
+		foreach (glob("temp/*.qr") as $file) {
+			unlink($file);
+		}
+		unlink("./temp/download.zip");
+	}
+
+	public function createzip() {
+		$zip = new ZipArchive;
+		$zip->open($download, ZipArchive::CREATE);
+
+		foreach (glob("temp/*.qr") as $file) {
+			$zip->addFile($file);
+		}
+
+		$zip->close();
+	}
+	
+
 	public function cekprint() {
 		$check = $this->input->post('fs_add');
 
@@ -65,10 +96,8 @@ class Cetakqrcode extends CI_Controller {
 
 		}
 	}
-
+  
 	public function print() {
-		$this->load->library('Pdf');
-
 		$data['result'] = '';
 		$html = $this->load->view('print/vqrcode', $data, true);
 		$pdf = new Pdf('L', 'mm', 'A4', true, 'UTF-8', false);
@@ -84,8 +113,6 @@ class Cetakqrcode extends CI_Controller {
 		$pdf->writeHTML($html, true, false, true, false, '');
 		$pdf->lastPage();
 		$pdf->Output('cetak-qrcode.pdf', 'I');
-		
-		//$this->load->view('print/vqrcode');
 	}
 
 }

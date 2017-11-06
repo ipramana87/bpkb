@@ -171,7 +171,6 @@ Ext.onReady(function() {
 		}
 	});
 
-
 	// COMPONENT FORM MASTER BPKB
 	var cboCabang = {
 		afterLabelTextTpl: required,
@@ -533,83 +532,82 @@ Ext.onReady(function() {
 							flex: 1,
 							layout: 'anchor',
 							xtype: 'container',
+							items: [
+							]
+					},{
+							flex: 2,
+							layout: 'anchor',
+							xtype: 'container',
+							items: [{
+								anchor: '98%',
+								style: 'padding: 5px;',
+								title: 'Master Pemeriksa BPKB',
+								xtype: 'fieldset',
+								items: [
+										cboCabang,
+										txtKdCabang,
+										txtKodePemeriksa,
+										txtNamaPemeriksa
+									]
+								}]
+							},{
+								flex: 1,
+								layout: 'anchor',
+								xtype: 'container',
+								items: []
+
+								}]
+					},{
+						anchor: '100%',
+						layout: 'hbox',
+						xtype: 'container',
+							items: [{
+							flex: 1,
+							layout: 'anchor',
+							xtype: 'container',
 							items: []
 					},{
-						flex: 2,
+						flex: 0.5,
 						layout: 'anchor',
 						xtype: 'container',
-						items: [{
-							anchor: '98%',
-							style: 'padding: 5px;',
-							title: 'Master Pemeriksa BPKB',
-							xtype: 'fieldset',
-							items: [
-								cboCabang,
-								txtKdCabang,
-								txtKodePemeriksa,
-								txtNamaPemeriksa
+						items: [
+							btnSave
 							]
-						}]
+					},{
+						flex: 0.5,
+						layout: 'anchor',
+						xtype: 'container',
+						items: [
+							btnReset
+						]
 					},{
 						flex: 1,
 						layout: 'anchor',
 						xtype: 'container',
 						items: []
-
 						}]
 					},{
-						anchor: '100%',
-						layout: 'hbox',
+						flex: 1,
+						layout: 'anchor',
 						xtype: 'container',
 						items: [{
-							flex: 1,
-							layout: 'anchor',
-							xtype: 'container',
-							items: []
 
+						style: 'padding: 5px;',
+						title: 'Cart Pemeriksa',
+						xtype: 'fieldset',
+						items: [
+							gridDataMasterBPKB
+						]
 					},{
-							flex: 0.5,
-							layout: 'anchor',
-							xtype: 'container',
-							items: [
-								btnSave
-							]
-					},{
-							flex: 0.5,
-							layout: 'anchor',
-							xtype: 'container',
-							items: [
-								btnReset
-							]
-					},{
-							flex: 1,
-							layout: 'anchor',
-							xtype: 'container',
-							items: []
-							
-						}]
-					},{
-							flex: 1,
-							layout: 'anchor',
-							xtype: 'container',
-							items: [{
-
-							style: 'padding: 5px;',
-							title: 'Cart Pemeriksa',
-							xtype: 'fieldset',
-							items: [
-								gridDataMasterBPKB
-							]
-						},{
-							flex: 1,
-							layout: 'anchor',
-							xtype: 'container',
-							items: []
-						}]
+						flex: 1,
+						layout: 'anchor',
+						xtype: 'container',
+						items: []
 					}]
 				}]
 			}]
-		});
+		}]
+	});
 
 	var vMask = new Ext.LoadMask({
 		msg: 'Please wait...',
