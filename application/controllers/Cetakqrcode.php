@@ -91,23 +91,13 @@ class Cetakqrcode extends CI_Controller {
 
 	public function cekprint() {
 		$check = $this->input->post('fs_add');
+
+		if (!empty($check)) {
+
+		}
 	}
-	/*
+  
 	public function print() {
-		$kdcabang = '';
-		$nobpkb = explode('|', $this->input->post('fs_no_bpkb'));
-		$total = count($nobpkb) - 1;
-
-		$this->deletebpkb();
-		$this->createbpkb();
-
-		$db1 = dbase_open('./temp/DTAPK.qr', 2);
-
-		$this->load->view('print/vqrcode');
-	}*/
-
-	public function print() {
-		$this->load->library('Pdf');
 		$data['result'] = '';
 		$html = $this->load->view('print/vqrcode', $data, true);
 		$pdf = new Pdf('L', 'mm', 'A4', true, 'UTF-8', false);

@@ -82,6 +82,9 @@ Ext.onReady(function() {
 		}
 	});
 
+	// POPUP CETAK QRCODE
+	var winPopUp = {};
+
 	// COMPONENT FORM BPKB
 	var txtNoBPKB = {
 		anchor: '100%',
@@ -284,7 +287,7 @@ Ext.onReady(function() {
 	});
 
 	function fnReset() {
-
+		grupBPKB.load();
 	}
 
 	function fnCekPrint() {
@@ -346,7 +349,6 @@ Ext.onReady(function() {
 				}
 			});
 		}
-	}
 
 	function fnPrint() {
 		var xnobpkb = '';
@@ -479,7 +481,7 @@ Ext.onReady(function() {
 						layout: 'hbox',
 						xtype: 'container',
 						items: [{
-							flex: 2.2,
+							flex: 2.4,
 							layout: 'anchor',
 							xtype: 'container',
 							items: [{
@@ -504,7 +506,7 @@ Ext.onReady(function() {
 							xtype: 'container',
 							items: [{
 								anchor: '100%',
-								style: 'padding: 5px;',
+								style: 'padding: 7px;',
 								title: 'QR Code',
 								xtype: 'fieldset',
 								items: [
