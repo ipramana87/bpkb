@@ -33,7 +33,13 @@ class Cetakqrcode extends CI_Controller {
 					'fs_no_bpkb' => trim($xRow->fs_no_bpkb),
 					'fs_nama_bpkb' => trim($xRow->fs_nama_bpkb),
 					'fd_tanggal_bpkb' => trim($xRow->fd_tanggal_bpkb),
-					'fs_jenis_kendaraan' => trim($xRow->fs_jenis_kendaraan)
+					'fs_jenis_kendaraan' => trim($xRow->fs_jenis_kendaraan),
+					'fn_tahun_kendaraan' => trim($xRow->fn_tahun_kendaraan),
+					'fs_warna_kendaraan' => trim($xRow->fs_warna_kendaraan),
+					'fs_no_mesin' => trim($xRow->fs_no_mesin),
+					'fs_no_rangka' => trim($xRow->fs_no_rangka)	
+					
+					
 				);
 			}
 		}
@@ -58,12 +64,65 @@ class Cetakqrcode extends CI_Controller {
 		echo json_encode($hasil);
 	}
 
+	public function createqrcode() {
+		$this->load->helper('qr');
+		// CALL BACK
+		createQRCode();
+	}
+
+	public function deleteqrcode() {
+		foreach (glob("temp/*.qr") as $file) {
+			unlink($file);
+		}
+		unlink("./temp/download.zip");
+	}
+
+	public function createzip() {
+		$zip = new ZipArchive;
+		$zip->open($download, ZipArchive::CREATE);
+
+		foreach (glob("temp/*.qr") as $file) {
+			$zip->addFile($file);
+		}
+
+		$zip->close();
+	}
+	
+
 	public function cekprint() {
 		$check = $this->input->post('fs_add');
 	}
+	/*
+	public function print() {
+		$kdcabang = '';
+		$nobpkb = explode('|', $this->input->post('fs_no_bpkb'));
+		$total = count($nobpkb) - 1;
+
+		$this->deletebpkb();
+		$this->createbpkb();
+
+		$db1 = dbase_open('./temp/DTAPK.qr', 2);
+
+		$this->load->view('print/vqrcode');
+	}*/
 
 	public function print() {
-		$this->load->view('print/vqrcode');
+		$this->load->library('Pdf');
+		$data['result'] = '';
+		$html = $this->load->view('print/vqrcode', $data, true);
+		$pdf = new Pdf('L', 'mm', 'A4', true, 'UTF-8', false);
+		$pdf->SetTitle('CETAK QR CODE');
+		$pdf->SetPrintHeader(false);
+		$pdf->SetMargins(10, 10, 10, true);
+		$pdf->SetPrintFooter(false);
+		$pdf->SetAutoPageBreak(True, PDF_MARGIN_FOOTER);
+		$pdf->SetAuthor('BPKB');
+		$pdf->SetDisplayMode('real', 'default');
+		$pdf->SetFont('', '', 7, '', false);
+		$pdf->AddPage('L', 'A4');
+		$pdf->writeHTML($html, true, false, true, false, '');
+		$pdf->lastPage();
+		$pdf->Output('cetak-qrcode.pdf', 'I');
 	}
 
 }
