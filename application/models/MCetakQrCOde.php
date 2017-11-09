@@ -56,10 +56,12 @@ class MCetakQrCode extends CI_Model
 
 	public function getBPKB($nStart, $nLimit, $nKode)
 	{
+		$nIds = join("','",$nKode);
+
 		$xSQL = ("
 			SELECT fs_no_bpkb
 			FROM tx_bpkb
-			WHERE IN fs_no_bpkb = '".trim($nKode)."'
+			WHERE fs_no_bpkb IN ('".trim($nIds)."')
 		");
 
 		$xSQL = $xSQL.("
@@ -70,16 +72,5 @@ class MCetakQrCode extends CI_Model
 		return $sSQL;
 	}
 
-	public function singleBPKB($nKode)
-	{
-		$xSQL = ("
-			SELECT fs_no_bpkb
-			FROM tx_bpkb
-			WHERE fs_no_bpkb = '".trim($nKode)."'
-		");
-
-		$sSQL = $this->db->query($xSQL);
-		return $sSQL;
-	}
 }
 

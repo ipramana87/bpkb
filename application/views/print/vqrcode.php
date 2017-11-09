@@ -1,70 +1,87 @@
 <table border="0" align="center" width="100%">
 	<tbody>
+		<?php if ($result9->num_rows() > 0) : ?>
 		<tr>
-			<?php if (!empty($result9)) : ?>
-				<?php foreach ($result9->result() as $value) : 
-					$filename = str_replace(' ', '-', $value->fs_no_bpkb);
-				?>
-				<td align="center">
-					<img src="<?php echo base_url('/uploads/qrcode/'.trim($filename).'.png'); ?>" width="75px" height="75px" />
-				</td>
-				<?php endforeach; ?>
-			<?php endif; ?>
+			<?php foreach ($result9->result() as $value) : 
+				$filename = str_replace(' ', '-', $value->fs_no_bpkb);
+			?>
+			<td align="center">
+				<img src="<?php echo base_url('/uploads/qrcode/'.trim($filename).'.png'); ?>" width="75px" height="75px" />
+				<br>
+				<?php echo $value->fs_no_bpkb; ?>
+			</td>
+			<?php endforeach; ?>
 		</tr>
+		<?php endif; ?>
+
+		<?php if ($result18->num_rows() > 0) : ?>
 		<tr>
-			<?php if (!empty($result18)) : ?>
-				<?php foreach ($result18->result() as $value) : 
-					$filename = str_replace(' ', '-', $value->fs_no_bpkb);
-				?>
-				<td align="center">
-					<img src="<?php echo base_url('/uploads/qrcode/'.$filename.'.png'); ?>" width="75px" height="75px" />
-				</td>
-				<?php endforeach; ?>
-			<?php endif; ?>
+			<?php foreach ($result18->result() as $value) : 
+				$filename = str_replace(' ', '-', $value->fs_no_bpkb);
+			?>
+			<td align="center">
+				<img src="<?php echo base_url('/uploads/qrcode/'.$filename.'.png'); ?>" width="75px" height="75px" />
+				<br>
+				<?php echo $value->fs_no_bpkb; ?>
+			</td>
+			<?php endforeach; ?>
 		</tr>
+		<?php endif; ?>
+
+		<?php if ($result27->num_rows() > 0) : ?>
 		<tr>
-			<?php if (!empty($result27)) : ?>
-				<?php foreach ($result27->result() as $value) : 
-					$filename = str_replace(' ', '-', $value->fs_no_bpkb);
-				?>
-				<td align="center">
-					<img src="<?php echo base_url('/uploads/qrcode/'.trim($filename).'.png'); ?>" width="75px" height="75px" />
-				</td>
-				<?php endforeach; ?>
-			<?php endif; ?>
+			<?php foreach ($result27->result() as $value) : 
+				$filename = str_replace(' ', '-', $value->fs_no_bpkb);
+			?>
+			<td align="center">
+				<img src="<?php echo base_url('/uploads/qrcode/'.trim($filename).'.png'); ?>" width="75px" height="75px" />
+				<br>
+				<?php echo $value->fs_no_bpkb; ?>
+			</td>
+			<?php endforeach; ?>
 		</tr>
+		<?php endif; ?>
+
+		<?php if ($result36->num_rows() > 0) : ?>
 		<tr>
-			<?php if (!empty($result36)) : ?>
-				<?php foreach ($result36->result() as $value) : 
-					$filename = str_replace(' ', '-', $value->fs_no_bpkb);
-				?>
-				<td align="center">
-					<img src="<?php echo base_url('/uploads/qrcode/'.trim($filename).'.png'); ?>" width="75px" height="75px" />
-				</td>
-				<?php endforeach; ?>
-			<?php endif; ?>
+			<?php foreach ($result36->result() as $value) : 
+				$filename = str_replace(' ', '-', $value->fs_no_bpkb);
+			?>
+			<td align="center">
+				<img src="<?php echo base_url('/uploads/qrcode/'.trim($filename).'.png'); ?>" width="75px" height="75px" />
+				<br>
+				<?php echo $value->fs_no_bpkb; ?>
+			</td>
+			<?php endforeach; ?>
 		</tr>
+		<?php endif; ?>
+
+		<?php if ($result45->num_rows() > 0) : ?>
 		<tr>
-			<?php if (!empty($result45)) : ?>
-				<?php foreach ($result45->result() as $value) : 
-					$filename = str_replace(' ', '-', $value->fs_no_bpkb);
-				?>
-				<td align="center">
-					<img src="<?php echo base_url('/uploads/qrcode/'.trim($filename).'.png'); ?>" width="75px" height="75px" />
-				</td>
-				<?php endforeach; ?>
-			<?php endif; ?>
+			<?php foreach ($result45->result() as $value) : 
+				$filename = str_replace(' ', '-', $value->fs_no_bpkb);
+			?>
+			<td align="center">
+				<img src="<?php echo base_url('/uploads/qrcode/'.trim($filename).'.png'); ?>" width="75px" height="75px" />
+				<br>
+				<?php echo $value->fs_no_bpkb; ?>
+			</td>
+			<?php endforeach; ?>
 		</tr>
+		<?php endif; ?>
+
+		<?php if ($result54->num_rows() > 0) : ?>
 		<tr>
-			<?php if (!empty($result54)) : ?>
-				<?php foreach ($result54->result() as $value) : 
-					$filename = str_replace(' ', '-', $value->fs_no_bpkb);
-				?>
-				<td align="center">
-					<img src="<?php echo base_url('/uploads/qrcode/'.trim($filename).'.png'); ?>" width="75px" height="75px" />
-				</td>
-				<?php endforeach; ?>
-			<?php endif; ?>
+			<?php foreach ($result54->result() as $value) : 
+				$filename = str_replace(' ', '-', $value->fs_no_bpkb);
+			?>
+			<td align="center">
+				<img src="<?php echo base_url('/uploads/qrcode/'.trim($filename).'.png'); ?>" width="75px" height="75px" />
+				<br>
+				<?php echo $value->fs_no_bpkb; ?>
+			</td>
+			<?php endforeach; ?>
 		</tr>
+		<?php endif; ?>
 	</tbody>
 </table>

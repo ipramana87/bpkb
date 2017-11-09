@@ -351,6 +351,7 @@ Ext.onReady(function() {
 			});
 		}
 	}
+
 	function fnPrint() {
 		var xnobpkb = '';
 		var cek = '';
@@ -369,11 +370,12 @@ Ext.onReady(function() {
 
 		Ext.Ajax.request({
 			method: 'POST',
-			url: 'cetakqrcode/print',
+			url: 'cetakqrcode/printqrcode',
 			params: {
 				'fs_no_bpkb': xnobpkb
 			},
 			success: function(response) {
+				var xtext = Ext.decode(response.responseText);
 				var popUp = Ext.create('Ext.window.Window', {
 					modal: true,
 					width: 950,
@@ -389,9 +391,9 @@ Ext.onReady(function() {
 						}
 					}]
 				});
-				
-				popUp.add({html: '<iframe width="950" height="600" src="cetakqrcode/print/"></iframe>'});
-				popUp.show();	
+
+				popUp.add({html: '<iframe width="950" height="600" src="temp/qrcode/'+ xtext.src +'"></iframe>'});
+				popUp.show();
 			},
 			failure: function(response) {
 				var xtext = Ext.decode(response.responseText);
@@ -451,7 +453,7 @@ Ext.onReady(function() {
 					iconCls: 'icon-reset',
 					text: 'Reset',
 					scale: 'medium',
-					handler: ''
+					handler: fnReset
 				}]
 			},{
 				id: 'tab2',

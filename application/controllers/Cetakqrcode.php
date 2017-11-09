@@ -64,71 +64,33 @@ class Cetakqrcode extends CI_Controller {
 		);
 		echo json_encode($hasil);
 	}
-	
-
-	public function cekprint() {
-
-	}
   
-	public function print() {
+	public function printqrcode() {
 		$this->load->library('Pdf');
 		$this->load->model('MCetakQrCode');
 
 		$nobpkb = explode('|', trim($this->input->post('fs_no_bpkb')));
 		$jml = count($nobpkb) - 1;
-		$data = '';
 
 		if ($jml > 0) {
 			$data['result9']  = $this->MCetakQrCode->getBPKB(0, 9, $nobpkb);
-			for ($i=1; $i<=$jml; $i++) {
-				
-				
-				//$sSQL = $this->MCetakQrCode->singleBPKB($nobpkb[$i]);
-				foreach ($sSQL->result() as $val) {
+			$data['result18']  = $this->MCetakQrCode->getBPKB(9, 18, $nobpkb);
+			$data['result27']  = $this->MCetakQrCode->getBPKB(18, 27, $nobpkb);
+			$data['result36']  = $this->MCetakQrCode->getBPKB(27, 36, $nobpkb);
+			$data['result45']  = $this->MCetakQrCode->getBPKB(36, 45, $nobpkb);
+			$data['result54']  = $this->MCetakQrCode->getBPKB(45, 54, $nobpkb);
+		} else {
+			$data = '';
+		}
 
-					/*
-					if (count($val) > 9) {
-						$data['result9']  = $this->MCetakQrCode->getBPKB(0, 9, $nobpkb[$i]);
-					}
-					else if (count($val) > 18) {
-						$data['result9']  = $this->MCetakQrCode->getBPKB(0, 9, $nobpkb[$i]);
-						$data['result18'] = $this->MCetakQrCode->getBPKB(9, 18, $nobpkb[$i]);
-					}
-					else if (count($val) > 27) {
-						$data['result9']  = $this->MCetakQrCode->getBPKB(0, 9, $nobpkb[$i]);
-						$data['result18'] = $this->MCetakQrCode->getBPKB(9, 18, $nobpkb[$i]);
-						$data['result27'] = $this->MCetakQrCode->getBPKB(18, 27, $nobpkb[$i]);
-					}
-					else if (count($val) > 36) {
-						$data['result9']  = $this->MCetakQrCode->getBPKB(0, 9, $nobpkb[$i]);
-						$data['result18'] = $this->MCetakQrCode->getBPKB(9, 18, $nobpkb[$i]);
-						$data['result27'] = $this->MCetakQrCode->getBPKB(18, 27, $nobpkb[$i]);
-						$data['result36'] = $this->MCetakQrCode->getBPKB(27, 36, $nobpkb[$i]);
-					}
-					else if (count($val) > 45) {
-						$data['result9']  = $this->MCetakQrCode->getBPKB(0, 9, $nobpkb[$i]);
-						$data['result18'] = $this->MCetakQrCode->getBPKB(9, 18, $nobpkb[$i]);
-						$data['result27'] = $this->MCetakQrCode->getBPKB(18, 27, $nobpkb[$i]);
-						$data['result36'] = $this->MCetakQrCode->getBPKB(27, 36, $nobpkb[$i]);
-						$data['result45'] = $this->MCetakQrCode->getBPKB(36, 45, $nobpkb[$i]);
-					}
-					else if (count($val) > 54) {
-						$data['result9']  = $this->MCetakQrCode->getBPKB(0, 9, $nobpkb[$i]);
-						$data['result18'] = $this->MCetakQrCode->getBPKB(9, 18, $nobpkb[$i]);
-						$data['result27'] = $this->MCetakQrCode->getBPKB(18, 27, $nobpkb[$i]);
-						$data['result36'] = $this->MCetakQrCode->getBPKB(27, 36, $nobpkb[$i]);
-						$data['result45'] = $this->MCetakQrCode->getBPKB(36, 45, $nobpkb[$i]);
-						$data['result54'] = $this->MCetakQrCode->getBPKB(45, 54, $nobpkb[$i]);
-					} else {
-						$data = '';
-					}
-					*/
-					$data['result9']  = $cek9;
-				}
+		// DELETE FILE IN TEMP FOLDER
+		$files = glob('D:\XAMPP\htdocs\bpkb\temp\qrcode\/*');
+		foreach($files as $file){ // iterate files
+			if(is_file($file)) {
+				unlink($file); // delete file
 			}
 		}
 
-		/*
 		$html = $this->load->view('print/vqrcode', $data, true);
 		$pdf = new Pdf('L', 'mm', 'A4', true, 'UTF-8', false);
 		$pdf->SetTitle('CETAK QR CODE');
@@ -142,8 +104,12 @@ class Cetakqrcode extends CI_Controller {
 		$pdf->AddPage('L', 'A4');
 		$pdf->writeHTML($html, true, false, true, false, '');
 		$pdf->lastPage();
-		$pdf->Output('cetak-qrcode.pdf', 'I');
-		*/
-		$this->load->view('print/vqrcode', $data);
+		$filename = uniqid(). '.pdf';
+		$pdf->Output('D:\XAMPP\htdocs\bpkb\temp\qrcode\/'.trim($filename), 'F');
+
+		$hasil = array(
+			'src' => $filename
+		);
+		echo json_encode($hasil);
 	}
 }
