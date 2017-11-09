@@ -371,7 +371,6 @@ Ext.onReady(function() {
 			method: 'POST',
 			url: 'cetakqrcode/print',
 			params: {
-				'fb_cek': xcek,
 				'fs_no_bpkb': xnobpkb
 			},
 			success: function(response) {
@@ -390,11 +389,9 @@ Ext.onReady(function() {
 						}
 					}]
 				});
-					popUp.add({html: '<iframe width="950" height="600" src="cetakqrcode/print/"'+ xnobpkb +'/' + xcek +'></iframe>'});
-					popUp.show();
-						fnReset();
-
 				
+				popUp.add({html: '<iframe width="950" height="600" src="cetakqrcode/print/"></iframe>'});
+				popUp.show();	
 			},
 			failure: function(response) {
 				var xtext = Ext.decode(response.responseText);
@@ -402,7 +399,7 @@ Ext.onReady(function() {
 					buttons: Ext.MessageBox.OK,
 					closable: false,
 					icon: Ext.MessageBox.INFO,
-					msg: 'Transfer Failed, Connection Failed!!',
+					msg: 'Connection Failed!!',
 					title: 'BPKB'
 				});
 				fnMaskHide();
@@ -449,7 +446,7 @@ Ext.onReady(function() {
 					name: 'btnPrint',
 					text: 'Print QR Code',
 					scale: 'medium',
-					handler: fnCekPrint
+					handler: fnPrint
 				},{
 					iconCls: 'icon-reset',
 					text: 'Reset',

@@ -54,15 +54,28 @@ class MCetakQrCode extends CI_Model
 	}
 
 
-	public function getBPKB($nStart, $nLimit)
+	public function getBPKB($nStart, $nLimit, $nKode)
 	{
 		$xSQL = ("
 			SELECT fs_no_bpkb
 			FROM tx_bpkb
+			WHERE IN fs_no_bpkb = '".trim($nKode)."'
 		");
 
 		$xSQL = $xSQL.("
 			ORDER BY fd_tanggal_buat DESC LIMIT ".$nStart.",".$nLimit."
+		");
+
+		$sSQL = $this->db->query($xSQL);
+		return $sSQL;
+	}
+
+	public function singleBPKB($nKode)
+	{
+		$xSQL = ("
+			SELECT fs_no_bpkb
+			FROM tx_bpkb
+			WHERE fs_no_bpkb = '".trim($nKode)."'
 		");
 
 		$sSQL = $this->db->query($xSQL);
