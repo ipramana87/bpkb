@@ -307,7 +307,7 @@ Ext.onReady(function() {
 		Ext.Ajax.on('requestexception', fnMaskHide);
 		Ext.Ajax.request({
 				method: 'POST',
-				url: 'cetakqrcode/ceksave',
+				url: 'cetakqrcode/cekprint',
 				params: {
 					'is_nobpkb': xnobpkb,
 				},
@@ -322,7 +322,7 @@ Ext.onReady(function() {
 							title: 'BPKB',
 							fn: function(btn) {
 								if (btn == 'yes') {
-									fnSave();
+									fnPrint();
 								}
 							}
 						});
@@ -332,7 +332,8 @@ Ext.onReady(function() {
 							closable: false,
 							icon: Ext.MessageBox.INFO,
 							msg: xtext.hasil,
-							title: 'BPKB'
+							title: 'BPKB',
+		
 						});
 					}
 				},
@@ -342,17 +343,18 @@ Ext.onReady(function() {
 						buttons: Ext.MessageBox.OK,
 						closable: false,
 						icon: Ext.MessageBox.INFO,
-						msg: 'Export Failed, Connection Failed!!',
+						msg: 'Connection Failed!!',
 						title: 'BPKB'
 					});
 					fnMaskHide();
 				}
 			});
 		}
-
+	}
 	function fnPrint() {
 		var xnobpkb = '';
 		var cek = '';
+
 		var store = gridBPKB.getStore();
 		store.each(function(record, idx) {
 			xcek = record.get('fb_cek');
@@ -367,37 +369,32 @@ Ext.onReady(function() {
 
 		Ext.Ajax.request({
 			method: 'POST',
-			url: 'cetakqrcode/save',
+			url: 'cetakqrcode/print',
 			params: {
+				'fb_cek': xcek,
 				'fs_no_bpkb': xnobpkb
 			},
 			success: function(response) {
-				var xtext = Ext.decode(response.responseText);
-				if (xtext.sukses === true) {
-					var winInfo = Ext.create('Ext.window.Window', {
-						closable: false,
-						draggable: false,
-						layout: 'fit',
-						title: 'IDS',
-						width: 300,
-						items: [],
-						buttons: [{
-							href: xtext.url,
-							hrefTarget: '_blank',
-							text: 'Download',
-							xtype: 'button'
-						},{
-							text: 'Exit',
-							handler: function() {
-								vMask.hide();
-								winInfo.hide();
-							}
-						}]
-					}).show();
+				var popUp = Ext.create('Ext.window.Window', {
+					modal: true,
+					width: 950,
+					height: 600,
+					closable: false,
+					layout:'anchor',
+					title: 'QrCode',
+					buttons: [{
+						text: 'Close',
+						handler: function() {
+							vMask.hide();
+							popUp.hide();
+						}
+					}]
+				});
+					popUp.add({html: '<iframe width="950" height="600" src="cetakqrcode/print/"'+ xnobpkb +'/' + xcek +'></iframe>'});
+					popUp.show();
+						fnReset();
 
-					// RELOAD AFTER EXPORT
-					grupBPKB.load();
-				}
+				
 			},
 			failure: function(response) {
 				var xtext = Ext.decode(response.responseText);
@@ -452,7 +449,7 @@ Ext.onReady(function() {
 					name: 'btnPrint',
 					text: 'Print QR Code',
 					scale: 'medium',
-					handler: fnPrint
+					handler: fnCekPrint
 				},{
 					iconCls: 'icon-reset',
 					text: 'Reset',

@@ -48,4 +48,42 @@ class MSearch extends CI_Model {
 		return $sSQL;
 	}
 
+		public function listUserAll($sCari) 
+	{
+		$xSQL = ("
+			SELECT fs_username, fs_level_user, fd_tanggal_buat
+			FROM tm_user
+		");
+
+		if (!empty($sCari)) {
+			$xSQL = $xSQL.("
+				WHERE fs_username LIKE '%".trim($sCari)."%'
+			");
+		}
+
+		$sSQL = $this->db->query($xSQL);
+		return $sSQL;
+	}
+
+	public function listUser($sCari, $nStart, $nLimit)
+	{
+		$xSQL = ("
+			SELECT fs_username, fs_level_user, fd_tanggal_buat
+			FROM tm_user
+		");
+
+		if (!empty($sCari)) {
+			$xSQL = $xSQL.("
+				WHERE fs_username LIKE '%".trim($sCari)."%'
+			");
+		}
+
+		$xSQL = $xSQL.("
+			ORDER BY fd_tanggal_buat DESC LIMIT ".$nStart.",".$nLimit."
+		");
+
+		$sSQL = $this->db->query($xSQL);
+		return $sSQL;
+	}
+
 }

@@ -52,10 +52,13 @@ class Cetakqrcode extends CI_Controller {
 
 		$this->load->library('ciqrcode');
 		$filename = str_replace(' ', '-', $bpkb);
-
-		$params['data'] = trim($bpkb);
-		$params['savename'] = FCPATH . "uploads/qrcode/".trim($filename).'.png';
-		$file = $this->ciqrcode->generate($params);
+		$path = FCPATH . "uploads/qrcode/".trim($filename).'.png';
+		
+		if (!file_exists($path)) {
+			$params['data'] = trim($bpkb);
+			$params['savename'] = FCPATH . "uploads/qrcode/".trim($filename).'.png';
+			$file = $this->ciqrcode->generate($params);
+		}
 
 		$pathfile = base_url('/uploads/qrcode/'. $filename . '.png');
 		$hasil = array(
@@ -63,42 +66,68 @@ class Cetakqrcode extends CI_Controller {
 		);
 		echo json_encode($hasil);
 	}
-
-	public function createqrcode() {
-		$this->load->helper('qr');
-		// CALL BACK
-		createQRCode();
-	}
-
-	public function deleteqrcode() {
-		foreach (glob("temp/*.qr") as $file) {
-			unlink($file);
-		}
-		unlink("./temp/download.zip");
-	}
-
-	public function createzip() {
-		$zip = new ZipArchive;
-		$zip->open($download, ZipArchive::CREATE);
-
-		foreach (glob("temp/*.qr") as $file) {
-			$zip->addFile($file);
-		}
-
-		$zip->close();
-	}
 	
 
 	public function cekprint() {
-		$check = $this->input->post('fs_add');
+		$check = $this->input->post('xcek');
+		$is_nobpkb = trim($this->input->post('is_nobpkb'));
+		if ($this->session->userdata('') != '00') {
+			if ($is_nobpkb > 0) 
+			{
+				$hasil = array(
+					'sukses' => true,
+					'hasil'	 => 'Mencetak '.$is_nobpkb. ' BPKB?',
+				);
+				echo json_encode($hasil);
+			}
+			else if ($check > 0) 
+			{
+				$hasil = array(
+					'sukses' => True,
+					'hasil' => 'Mencetak '.$check. ' BPKB?',
+				);
+				echo json_encode($hasil);
+			}
 
-		if (!empty($check)) {
-
+		} else {
+			$hasil = array(
+					'sukses' => false,
+					'hasil' => 'Please, Check No. BPKB'
+				);
+			echo json_encode($hasil);
 		}
 	}
   
 	public function print() {
-		$data['result'] = '';
+		$this->load->library('Pdf');
+		$this->load->model('MCetakQrCode');
+		$nobpkb = explode('|', trim($this->input->post('fs_no_bpkb')));
+		$cek = explode('|', trim($this->input->post('fb_cek')));
+		$jml = count($nobpkb) - 1;
+
+		if ($jml > 0) {
+
+			for ($i=1; $i<=$jml; $i++) {
+				$this->load->model('MCetakQrCode');
+				if ($data > 8){
+					$data ='result9';
+				}
+				if ($data > 17){
+					$data ='result18';
+				}
+			}
+		}else{
+
+
+		}
+		
+		$data['result9']  = $this->MCetakQrCode->getBPKB(0, 9);
+		$data['result18'] = $this->MCetakQrCode->getBPKB(9, 18);
+		$data['result27'] = $this->MCetakQrCode->getBPKB(18, 27);
+		$data['result36'] = $this->MCetakQrCode->getBPKB(27, 36);
+		$data['result45'] = $this->MCetakQrCode->getBPKB(36, 45);
+		$data['result54'] = $this->MCetakQrCode->getBPKB(45, 54);
+
 		$html = $this->load->view('print/vqrcode', $data, true);
 		$pdf = new Pdf('L', 'mm', 'A4', true, 'UTF-8', false);
 		$pdf->SetTitle('CETAK QR CODE');
@@ -114,5 +143,4 @@ class Cetakqrcode extends CI_Controller {
 		$pdf->lastPage();
 		$pdf->Output('cetak-qrcode.pdf', 'I');
 	}
-
 }

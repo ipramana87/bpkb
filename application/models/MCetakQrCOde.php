@@ -53,4 +53,20 @@ class MCetakQrCode extends CI_Model
 		return $sSQL;
 	}
 
+
+	public function getBPKB($nStart, $nLimit)
+	{
+		$xSQL = ("
+			SELECT fs_no_bpkb
+			FROM tx_bpkb
+		");
+
+		$xSQL = $xSQL.("
+			ORDER BY fd_tanggal_buat DESC LIMIT ".$nStart.",".$nLimit."
+		");
+
+		$sSQL = $this->db->query($xSQL);
+		return $sSQL;
+	}
 }
+
