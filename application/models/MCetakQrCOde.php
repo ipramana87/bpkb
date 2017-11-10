@@ -16,12 +16,13 @@ class MCetakQrCode extends CI_Model
 				fs_kode_lokasi, fs_kode_cabang, fs_kode_kendaraan, fs_jenis_kendaraan,
 				fn_tahun_kendaraan, fs_warna_kendaraan, fs_silinder_kendaraan,
 				fs_no_polisi, fs_no_rangka,fs_no_mesin, fs_no_bpkb, fs_nama_bpkb, fd_tanggal_bpkb
-			FROM tx_bpkb
+			FROM tx_bpkb 
+			WHERE fs_flag_qrcode = '0'
 		");
 
 		if (!empty($sCari)) {
 			$xSQL = $xSQL.("
-				WHERE fs_no_bpkb LIKE '%".trim($sCari)."%'
+				AND fs_no_bpkb LIKE '%".trim($sCari)."%'
 			");
 		}
 
@@ -37,11 +38,12 @@ class MCetakQrCode extends CI_Model
 				fn_tahun_kendaraan, fs_warna_kendaraan, fs_silinder_kendaraan,
 				fs_no_polisi, fs_no_rangka,fs_no_mesin, fs_no_bpkb, fs_nama_bpkb, fd_tanggal_bpkb
 			FROM tx_bpkb
+			WHERE fs_flag_qrcode = '0'
 		");
 
 		if (!empty($sCari)) {
 			$xSQL = $xSQL.("
-				WHERE fs_no_bpkb LIKE '%".trim($sCari)."%'
+				AND fs_no_bpkb LIKE '%".trim($sCari)."%'
 			");
 		}
 
@@ -53,10 +55,23 @@ class MCetakQrCode extends CI_Model
 		return $sSQL;
 	}
 
+	public function getBPKBAll($nKode)
+	{
+		$nIds = join("','", $nKode);
 
+		$xSQL = ("
+			SELECT fs_no_bpkb
+			FROM tx_bpkb
+			WHERE fs_no_bpkb IN ('".trim($nIds)."')
+		");
+
+		$sSQL = $this->db->query($xSQL);
+		return $sSQL;
+	}
+	
 	public function getBPKB($nStart, $nLimit, $nKode)
 	{
-		$nIds = join("','",$nKode);
+		$nIds = join("','", $nKode);
 
 		$xSQL = ("
 			SELECT fs_no_bpkb

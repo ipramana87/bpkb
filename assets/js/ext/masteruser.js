@@ -476,7 +476,7 @@ Ext.onReady(function() {
 				type: 'json'
 			},
 			type: 'ajax',
-			url: 'masteruser/ambilnodes'
+			url: 'masteruser/ambil_nodes'
 		},
 		rootProperty: {
 			expanded: true

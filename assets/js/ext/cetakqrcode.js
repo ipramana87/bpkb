@@ -286,30 +286,27 @@ Ext.onReady(function() {
 		}
 	});
 
-	function fnReset() {
-		grupBPKB.load();
-	}
-
+	
 	function fnCekPrint() {
-		if (this.up('form').getForm().isValid()) {
-			var xnobpkb = 0;
-			var store = gridBPKB.getStore();
-			store.each(function(record, idx) {
-				xcek = record.get('fb_cek');
+		var xnobpkb = 0;
+		var cek = '';
 
-				if (xcek === true) {
-					xnobpkb = xnobpkb + 1;
-				}
-			});
+		var store = gridBPKB.getStore();
+		store.each(function(record, idx) {
+			xcek = record.get('fb_cek');
+			if (xcek === true) {
+				xnobpkb = xnobpkb +'|'+ record.get('fs_no_bpkb');
+			}
+		});
 
 		Ext.Ajax.on('beforerequest', fnMaskShow);
 		Ext.Ajax.on('requestcomplete', fnMaskHide);
 		Ext.Ajax.on('requestexception', fnMaskHide);
 		Ext.Ajax.request({
 				method: 'POST',
-				url: 'cetakqrcode/cekprint',
+				url: 'cetakqrcode/cekprintqrcode',
 				params: {
-					'is_nobpkb': xnobpkb,
+					'fs_no_bpkb': xnobpkb,
 				},
 				success: function(response) {
 					var xtext = Ext.decode(response.responseText);
@@ -349,7 +346,6 @@ Ext.onReady(function() {
 					fnMaskHide();
 				}
 			});
-		}
 	}
 
 	function fnPrint() {
@@ -392,6 +388,9 @@ Ext.onReady(function() {
 					}]
 				});
 
+				// LOAD DATA
+				grupBPKB.load();
+				// POPUP SHOW
 				popUp.add({html: '<iframe width="950" height="600" src="temp/qrcode/'+ xtext.src +'"></iframe>'});
 				popUp.show();
 			},
@@ -408,7 +407,11 @@ Ext.onReady(function() {
 			}
 		});
 	}
-	
+
+	function fnReset() {
+		grupBPKB.load();
+	}
+
 	var frmCetakQrCode = Ext.create('Ext.form.Panel', {
 		border: false,
 		frame: true,
@@ -448,7 +451,7 @@ Ext.onReady(function() {
 					name: 'btnPrint',
 					text: 'Print QR Code',
 					scale: 'medium',
-					handler: fnPrint
+					handler: fnCekPrint
 				},{
 					iconCls: 'icon-reset',
 					text: 'Reset',
