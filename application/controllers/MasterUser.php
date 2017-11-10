@@ -144,7 +144,6 @@ class MasterUser extends CI_Controller {
 		echo '({"total":"'.$xTotal.'","hasil":'.json_encode($xArr).'})';
 	}
 
-
 	// FUNCTION FORM SETUP USER
 	public function ceksaveuser() {
 		$this->load->library('form_validation');
@@ -370,11 +369,11 @@ class MasterUser extends CI_Controller {
 		}	
 	}
 
-	public function ambilnodes() {
+	public function ambil_nodes() {
 		$level = $this->input->post('fs_level');
 		$this->load->model('MMasterUser');
 		$ssql = $this->MMasterUser->loadMenu($level);
-
+		
 		$arr0 = array();
 		$arr1 = array();
 		$arr2 = array();

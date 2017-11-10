@@ -64,8 +64,29 @@ class Cetakqrcode extends CI_Controller {
 		);
 		echo json_encode($hasil);
 	}
+
+	public function cekprintqrcode() {
+		$nobpkb = explode('|', trim($this->input->post('fs_no_bpkb')));
+		$jml = count($nobpkb) - 1;
+		
+		if ($jml > 0) {
+			$hasil = array(
+				'sukses' => true,
+				'hasil' => 'Apakah Anda yakin akan cetak '.trim($jml).' QR Code?'
+			);
+			echo json_encode($hasil);	
+		} else {
+			$hasil = array(
+				'sukses' => false,
+				'hasil' => 'No. BPKB belum dipilih...'
+			);
+			echo json_encode($hasil);
+		}
+	}
   
 	public function printqrcode() {
+		$user = $this->encryption->decrypt($this->session->userdata('username'));
+
 		$this->load->library('Pdf');
 		$this->load->model('MCetakQrCode');
 
@@ -91,6 +112,7 @@ class Cetakqrcode extends CI_Controller {
 			}
 		}
 
+		// PRINT OUT FILE PDF
 		$html = $this->load->view('print/vqrcode', $data, true);
 		$pdf = new Pdf('L', 'mm', 'A4', true, 'UTF-8', false);
 		$pdf->SetTitle('CETAK QR CODE');
@@ -106,6 +128,19 @@ class Cetakqrcode extends CI_Controller {
 		$pdf->lastPage();
 		$filename = uniqid(). '.pdf';
 		$pdf->Output('D:\XAMPP\htdocs\bpkb\temp\qrcode\/'.trim($filename), 'F');
+
+		// UPDATE tx_bpkb
+		$sSQL = $this->MCetakQrCode->getBPKBAll($nobpkb);
+		foreach ($sSQL->result() as $key) {
+			$data = array(
+				'fs_flag_qrcode' => '1',
+				'fs_user_edit' => trim($user),
+				'fd_tanggal_edit' => date('Y-m-d H:i:s')
+			);
+			$where = "fs_no_bpkb = '".trim($key->fs_no_bpkb)."'";
+			$this->db->where($where);
+			$this->db->update('tx_bpkb', $data);
+		}
 
 		$hasil = array(
 			'src' => $filename
