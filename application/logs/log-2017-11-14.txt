@@ -1,0 +1,319 @@
+ERROR - 2017-11-14 02:56:54 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-14 02:56:59 --> Severity: error --> Exception: D:\xampp\htdocs\bpkb\application\models/MTerimaDariDealer.php exists, but doesn't declare class MTerimaDariDealer D:\xampp\htdocs\bpkb\system\core\Loader.php 336
+ERROR - 2017-11-14 02:58:16 --> Severity: error --> Exception: D:\xampp\htdocs\bpkb\application\models/MTerimaDariDealer.php exists, but doesn't declare class MTerimaDariDealer D:\xampp\htdocs\bpkb\system\core\Loader.php 336
+ERROR - 2017-11-14 02:58:21 --> Severity: error --> Exception: D:\xampp\htdocs\bpkb\application\models/MTerimaDariDealer.php exists, but doesn't declare class MTerimaDariDealer D:\xampp\htdocs\bpkb\system\core\Loader.php 336
+ERROR - 2017-11-14 02:58:21 --> Severity: error --> Exception: D:\xampp\htdocs\bpkb\application\models/MTerimaDariDealer.php exists, but doesn't declare class MTerimaDariDealer D:\xampp\htdocs\bpkb\system\core\Loader.php 336
+ERROR - 2017-11-14 02:58:21 --> Severity: error --> Exception: D:\xampp\htdocs\bpkb\application\models/MTerimaDariDealer.php exists, but doesn't declare class MTerimaDariDealer D:\xampp\htdocs\bpkb\system\core\Loader.php 336
+ERROR - 2017-11-14 03:00:21 --> Severity: error --> Exception: D:\xampp\htdocs\bpkb\application\models/MTerimaDariDealer.php exists, but doesn't declare class MTerimaDariDealer D:\xampp\htdocs\bpkb\system\core\Loader.php 336
+ERROR - 2017-11-14 03:12:47 --> Severity: error --> Exception: D:\xampp\htdocs\bpkb\application\models/MTerimaDariDealer.php exists, but doesn't declare class MTerimaDariDealer D:\xampp\htdocs\bpkb\system\core\Loader.php 336
+ERROR - 2017-11-14 03:12:49 --> Severity: error --> Exception: D:\xampp\htdocs\bpkb\application\models/MTerimaDariDealer.php exists, but doesn't declare class MTerimaDariDealer D:\xampp\htdocs\bpkb\system\core\Loader.php 336
+ERROR - 2017-11-14 03:12:49 --> Severity: error --> Exception: D:\xampp\htdocs\bpkb\application\models/MTerimaDariDealer.php exists, but doesn't declare class MTerimaDariDealer D:\xampp\htdocs\bpkb\system\core\Loader.php 336
+ERROR - 2017-11-14 03:12:57 --> Severity: error --> Exception: D:\xampp\htdocs\bpkb\application\models/MTerimaDariDealer.php exists, but doesn't declare class MTerimaDariDealer D:\xampp\htdocs\bpkb\system\core\Loader.php 336
+ERROR - 2017-11-14 03:15:37 --> Severity: error --> Exception: D:\xampp\htdocs\bpkb\application\models/MTerimaDariDealer.php exists, but doesn't declare class MTerimaDariDealer D:\xampp\htdocs\bpkb\system\core\Loader.php 336
+ERROR - 2017-11-14 03:15:39 --> Severity: error --> Exception: D:\xampp\htdocs\bpkb\application\models/MTerimaDariDealer.php exists, but doesn't declare class MTerimaDariDealer D:\xampp\htdocs\bpkb\system\core\Loader.php 336
+ERROR - 2017-11-14 03:15:39 --> Severity: error --> Exception: D:\xampp\htdocs\bpkb\application\models/MTerimaDariDealer.php exists, but doesn't declare class MTerimaDariDealer D:\xampp\htdocs\bpkb\system\core\Loader.php 336
+ERROR - 2017-11-14 04:01:29 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-14 04:43:02 --> Severity: Notice --> Undefined property: Terimadaridealer::$MSearch D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 61
+ERROR - 2017-11-14 04:43:02 --> Severity: error --> Exception: Call to a member function ambilPlatAll() on null D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 61
+ERROR - 2017-11-14 04:44:15 --> Severity: Notice --> Undefined property: Terimadaridealer::$MSearch D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 61
+ERROR - 2017-11-14 04:44:15 --> Severity: error --> Exception: Call to a member function ambilPlatAll() on null D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 61
+ERROR - 2017-11-14 04:47:19 --> Severity: Notice --> Undefined property: Terimadaridealer::$MSearch D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 61
+ERROR - 2017-11-14 04:47:19 --> Severity: error --> Exception: Call to a member function ambilPlatAll() on null D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 61
+ERROR - 2017-11-14 04:48:27 --> Severity: Notice --> Undefined property: Terimadaridealer::$MSearch D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 61
+ERROR - 2017-11-14 04:48:27 --> Severity: error --> Exception: Call to a member function ambilPlatAll() on null D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 61
+ERROR - 2017-11-14 04:48:27 --> Severity: Notice --> Undefined property: Terimadaridealer::$MSearch D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 61
+ERROR - 2017-11-14 04:48:27 --> Severity: error --> Exception: Call to a member function ambilPlatAll() on null D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 61
+ERROR - 2017-11-14 04:48:40 --> Severity: Notice --> Undefined property: Terimadaridealer::$MSearch D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 61
+ERROR - 2017-11-14 04:48:40 --> Severity: error --> Exception: Call to a member function ambilPlatAll() on null D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 61
+ERROR - 2017-11-14 04:48:50 --> Severity: Notice --> Undefined property: Terimadaridealer::$MSearch D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 61
+ERROR - 2017-11-14 04:48:50 --> Severity: error --> Exception: Call to a member function ambilPlatAll() on null D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 61
+ERROR - 2017-11-14 04:50:16 --> Severity: Notice --> Use of undefined constant NOLOCK2 - assumed 'NOLOCK2' D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 65
+ERROR - 2017-11-14 04:50:16 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'NOLOCK2' at line 1 - Invalid query: NOLOCK2
+ERROR - 2017-11-14 04:50:29 --> Severity: Notice --> Use of undefined constant NOLOCK2 - assumed 'NOLOCK2' D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 65
+ERROR - 2017-11-14 04:50:29 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'NOLOCK2' at line 1 - Invalid query: NOLOCK2
+ERROR - 2017-11-14 04:52:46 --> Severity: Notice --> Undefined variable: sCari D:\xampp\htdocs\bpkb\application\models\MSearch.php 112
+ERROR - 2017-11-14 04:52:46 --> Severity: Notice --> Use of undefined constant NOLOCK2 - assumed 'NOLOCK2' D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 65
+ERROR - 2017-11-14 04:52:46 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'NOLOCK2' at line 1 - Invalid query: NOLOCK2
+ERROR - 2017-11-14 04:54:46 --> Severity: Notice --> Use of undefined constant NOLOCK2 - assumed 'NOLOCK2' D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 65
+ERROR - 2017-11-14 04:54:46 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'NOLOCK2' at line 1 - Invalid query: NOLOCK2
+ERROR - 2017-11-14 04:55:23 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'NOLOCK2' at line 1 - Invalid query: NOLOCK2
+ERROR - 2017-11-14 04:55:50 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-14 04:55:57 --> Severity: Notice --> Use of undefined constant NOLOCK2 - assumed 'NOLOCK2' D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 65
+ERROR - 2017-11-14 04:55:57 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'NOLOCK2' at line 1 - Invalid query: NOLOCK2
+ERROR - 2017-11-14 04:56:32 --> Severity: Notice --> Use of undefined constant NOLOCK2 - assumed 'NOLOCK2' D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 65
+ERROR - 2017-11-14 04:56:32 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'NOLOCK2' at line 1 - Invalid query: NOLOCK2
+ERROR - 2017-11-14 04:57:04 --> Severity: error --> Exception: Too few arguments to function CI_DB_driver::query(), 0 passed in D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php on line 65 and at least 1 expected D:\xampp\htdocs\bpkb\system\database\DB_driver.php 608
+ERROR - 2017-11-14 04:57:09 --> Severity: error --> Exception: Too few arguments to function CI_DB_driver::query(), 0 passed in D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php on line 65 and at least 1 expected D:\xampp\htdocs\bpkb\system\database\DB_driver.php 608
+ERROR - 2017-11-14 04:57:32 --> Severity: Notice --> Undefined variable: sCari D:\xampp\htdocs\bpkb\application\models\MSearch.php 112
+ERROR - 2017-11-14 04:57:32 --> Severity: Notice --> Use of undefined constant NOLOCK2 - assumed 'NOLOCK2' D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 65
+ERROR - 2017-11-14 04:57:32 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'NOLOCK2' at line 1 - Invalid query: NOLOCK2
+ERROR - 2017-11-14 04:58:37 --> Severity: Notice --> Undefined variable: scari D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 61
+ERROR - 2017-11-14 04:58:37 --> Severity: Notice --> Undefined variable: scari D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 64
+ERROR - 2017-11-14 04:58:37 --> Severity: Notice --> Undefined variable: sCari D:\xampp\htdocs\bpkb\application\models\MSearch.php 112
+ERROR - 2017-11-14 04:58:37 --> Severity: Notice --> Use of undefined constant NOLOCK2 - assumed 'NOLOCK2' D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 65
+ERROR - 2017-11-14 04:58:37 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'NOLOCK2' at line 1 - Invalid query: NOLOCK2
+ERROR - 2017-11-14 04:59:07 --> Severity: Notice --> Undefined variable: scari D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 64
+ERROR - 2017-11-14 04:59:07 --> Severity: Notice --> Undefined variable: sCari D:\xampp\htdocs\bpkb\application\models\MSearch.php 112
+ERROR - 2017-11-14 04:59:07 --> Severity: Notice --> Use of undefined constant NOLOCK2 - assumed 'NOLOCK2' D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 65
+ERROR - 2017-11-14 04:59:07 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'NOLOCK2' at line 1 - Invalid query: NOLOCK2
+ERROR - 2017-11-14 04:59:41 --> Severity: Notice --> Undefined variable: sCari D:\xampp\htdocs\bpkb\application\models\MSearch.php 112
+ERROR - 2017-11-14 04:59:41 --> Severity: Notice --> Use of undefined constant NOLOCK2 - assumed 'NOLOCK2' D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 65
+ERROR - 2017-11-14 04:59:41 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'NOLOCK2' at line 1 - Invalid query: NOLOCK2
+ERROR - 2017-11-14 05:00:29 --> Severity: Notice --> Use of undefined constant NOLOCK2 - assumed 'NOLOCK2' D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 65
+ERROR - 2017-11-14 05:00:29 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'NOLOCK2' at line 1 - Invalid query: NOLOCK2
+ERROR - 2017-11-14 05:00:57 --> Severity: Notice --> Undefined variable: scari D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 64
+ERROR - 2017-11-14 05:00:57 --> Severity: Notice --> Use of undefined constant NOLOCK2 - assumed 'NOLOCK2' D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 65
+ERROR - 2017-11-14 05:00:57 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'NOLOCK2' at line 1 - Invalid query: NOLOCK2
+ERROR - 2017-11-14 05:01:01 --> Severity: Notice --> Undefined variable: scari D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 64
+ERROR - 2017-11-14 05:01:01 --> Severity: Notice --> Use of undefined constant NOLOCK2 - assumed 'NOLOCK2' D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 65
+ERROR - 2017-11-14 05:01:01 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'NOLOCK2' at line 1 - Invalid query: NOLOCK2
+ERROR - 2017-11-14 05:31:07 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-14 07:05:48 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-14 07:06:49 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-14 07:08:24 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-14 07:12:33 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-14 07:15:13 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-14 07:15:59 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-14 07:17:55 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-14 07:19:01 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-14 07:19:21 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-14 07:19:53 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-14 07:20:18 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-14 07:20:55 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-14 07:21:16 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-14 07:21:51 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-14 07:23:54 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-14 07:24:24 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-14 07:26:02 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-14 07:27:42 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-14 07:27:45 --> 404 Page Not Found: Approvebpkb/index
+ERROR - 2017-11-14 07:27:49 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-14 07:30:46 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-14 07:30:49 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-14 07:31:16 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-14 07:32:30 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-14 07:32:33 --> 404 Page Not Found: Approvebpkb/index
+ERROR - 2017-11-14 07:32:37 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-14 07:34:51 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-14 07:35:03 --> 404 Page Not Found: Approvebpkb/index
+ERROR - 2017-11-14 07:36:38 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-14 07:36:51 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-14 07:37:35 --> 404 Page Not Found: Rechekbpkb/index
+ERROR - 2017-11-14 07:42:40 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-14 07:42:42 --> 404 Page Not Found: Rechekbpkb/index
+ERROR - 2017-11-14 07:43:00 --> 404 Page Not Found: Rechekbpkb/index
+ERROR - 2017-11-14 07:44:32 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-14 07:44:35 --> 404 Page Not Found: Rechekbpkb/index
+ERROR - 2017-11-14 07:45:14 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-14 07:45:15 --> 404 Page Not Found: Rechekbpkb/index
+ERROR - 2017-11-14 07:46:28 --> 404 Page Not Found: Rechekbpkb/index
+ERROR - 2017-11-14 07:46:31 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-14 07:46:32 --> 404 Page Not Found: Rechekbpkb/index
+ERROR - 2017-11-14 07:46:46 --> 404 Page Not Found: Rechekbpkb/index
+ERROR - 2017-11-14 07:46:52 --> 404 Page Not Found: Rechekbpkb/index
+ERROR - 2017-11-14 07:49:34 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-14 07:49:35 --> 404 Page Not Found: Rechekbpkb/index
+ERROR - 2017-11-14 07:49:43 --> 404 Page Not Found: Rechekbpkb/index
+ERROR - 2017-11-14 07:55:20 --> 404 Page Not Found: Rechekbpkb/index
+ERROR - 2017-11-14 07:57:03 --> 404 Page Not Found: Rechekbpkb/index
+ERROR - 2017-11-14 07:57:06 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-14 07:57:08 --> 404 Page Not Found: Assets/js
+ERROR - 2017-11-14 07:57:09 --> 404 Page Not Found: Assets/js
+ERROR - 2017-11-14 07:58:24 --> 404 Page Not Found: Assets/js
+ERROR - 2017-11-14 07:58:25 --> 404 Page Not Found: Assets/js
+ERROR - 2017-11-14 07:58:32 --> 404 Page Not Found: Assets/js
+ERROR - 2017-11-14 07:58:33 --> 404 Page Not Found: Assets/js
+ERROR - 2017-11-14 08:25:01 --> Severity: error --> Exception: syntax error, unexpected '}', expecting end of file D:\xampp\htdocs\bpkb\application\controllers\Recheckbpkb.php 50
+ERROR - 2017-11-14 08:25:30 --> Severity: error --> Exception: syntax error, unexpected '}', expecting end of file D:\xampp\htdocs\bpkb\application\controllers\Recheckbpkb.php 50
+ERROR - 2017-11-14 08:25:52 --> Severity: error --> Exception: syntax error, unexpected '}', expecting end of file D:\xampp\htdocs\bpkb\application\controllers\Recheckbpkb.php 50
+ERROR - 2017-11-14 08:27:05 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-14 08:27:06 --> Severity: error --> Exception: syntax error, unexpected '}', expecting end of file D:\xampp\htdocs\bpkb\application\controllers\Recheckbpkb.php 50
+ERROR - 2017-11-14 08:27:41 --> Severity: error --> Exception: syntax error, unexpected '}', expecting end of file D:\xampp\htdocs\bpkb\application\controllers\Recheckbpkb.php 50
+ERROR - 2017-11-14 08:29:07 --> Severity: error --> Exception: syntax error, unexpected '}', expecting end of file D:\xampp\htdocs\bpkb\application\controllers\Recheckbpkb.php 50
+ERROR - 2017-11-14 08:29:29 --> Severity: error --> Exception: Unable to locate the model you have specified: MReCheckBPKB D:\xampp\htdocs\bpkb\system\core\Loader.php 344
+ERROR - 2017-11-14 08:29:32 --> Severity: error --> Exception: Unable to locate the model you have specified: MReCheckBPKB D:\xampp\htdocs\bpkb\system\core\Loader.php 344
+ERROR - 2017-11-14 08:29:39 --> Severity: error --> Exception: Unable to locate the model you have specified: MReCheckBPKB D:\xampp\htdocs\bpkb\system\core\Loader.php 344
+ERROR - 2017-11-14 08:30:54 --> Severity: error --> Exception: Unable to locate the model you have specified: MReCheckBPKB D:\xampp\htdocs\bpkb\system\core\Loader.php 344
+ERROR - 2017-11-14 08:30:55 --> Severity: error --> Exception: Unable to locate the model you have specified: MReCheckBPKB D:\xampp\htdocs\bpkb\system\core\Loader.php 344
+ERROR - 2017-11-14 08:30:56 --> Severity: error --> Exception: Unable to locate the model you have specified: MReCheckBPKB D:\xampp\htdocs\bpkb\system\core\Loader.php 344
+ERROR - 2017-11-14 08:31:27 --> Severity: error --> Exception: D:\xampp\htdocs\bpkb\application\models/MReChekBPKB.php exists, but doesn't declare class MReChekBPKB D:\xampp\htdocs\bpkb\system\core\Loader.php 336
+ERROR - 2017-11-14 08:31:35 --> Severity: error --> Exception: D:\xampp\htdocs\bpkb\application\models/MReChekBPKB.php exists, but doesn't declare class MReChekBPKB D:\xampp\htdocs\bpkb\system\core\Loader.php 336
+ERROR - 2017-11-14 08:32:24 --> Severity: error --> Exception: D:\xampp\htdocs\bpkb\application\models/MReChekBPKB.php exists, but doesn't declare class MReChekBPKB D:\xampp\htdocs\bpkb\system\core\Loader.php 336
+ERROR - 2017-11-14 08:33:08 --> Query error: Unknown column 'fs_no_pjj' in 'field list' - Invalid query: 
+			SELECT fs_transaksi, fs_no_pjj, fs_nama_pemilik, fs_status,
+				fs_kode_lokasi, fs_kode_cabang, fs_kode_kendaraan, fs_jenis_kendaraan,
+				fn_tahun_kendaraan, fs_warna_kendaraan, fs_silinder_kendaraan,
+				fs_no_polisi, fs_no_rangka,fs_no_mesin, fs_no_bpkb, fs_nama_bpkb, fd_tanggal_bpkb
+			FROM tx_bpkb 
+		
+ERROR - 2017-11-14 08:33:13 --> Query error: Unknown column 'fs_no_pjj' in 'field list' - Invalid query: 
+			SELECT fs_transaksi, fs_no_pjj, fs_nama_pemilik, fs_status,
+				fs_kode_lokasi, fs_kode_cabang, fs_kode_kendaraan, fs_jenis_kendaraan,
+				fn_tahun_kendaraan, fs_warna_kendaraan, fs_silinder_kendaraan,
+				fs_no_polisi, fs_no_rangka,fs_no_mesin, fs_no_bpkb, fs_nama_bpkb, fd_tanggal_bpkb
+			FROM tx_bpkb 
+		
+ERROR - 2017-11-14 08:34:48 --> Query error: Unknown column 'fs_no_pjj' in 'field list' - Invalid query: 
+			SELECT fs_transaksi, fs_no_pjj, fs_nama_pemilik, fs_status,
+				fs_kode_lokasi, fs_kode_cabang, fs_kode_kendaraan, fs_jenis_kendaraan,
+				fn_tahun_kendaraan, fs_warna_kendaraan, fs_silinder_kendaraan,
+				fs_no_polisi, fs_no_rangka,fs_no_mesin, fs_no_bpkb, fs_nama_bpkb, fd_tanggal_bpkb
+			FROM tx_bpkb 
+		
+ERROR - 2017-11-14 08:34:53 --> Query error: Unknown column 'fs_no_pjj' in 'field list' - Invalid query: 
+			SELECT fs_transaksi, fs_no_pjj, fs_nama_pemilik, fs_status,
+				fs_kode_lokasi, fs_kode_cabang, fs_kode_kendaraan, fs_jenis_kendaraan,
+				fn_tahun_kendaraan, fs_warna_kendaraan, fs_silinder_kendaraan,
+				fs_no_polisi, fs_no_rangka,fs_no_mesin, fs_no_bpkb, fs_nama_bpkb, fd_tanggal_bpkb
+			FROM tx_bpkb 
+		
+ERROR - 2017-11-14 08:35:54 --> Query error: Unknown column 'fs_no_pjj' in 'field list' - Invalid query: 
+			SELECT fs_transaksi, fs_no_pjj, fs_nama_pemilik, fs_status,
+				fs_kode_lokasi, fs_kode_cabang, fs_kode_kendaraan, fs_jenis_kendaraan,
+				fn_tahun_kendaraan, fs_warna_kendaraan, fs_silinder_kendaraan,
+				fs_no_polisi, fs_no_rangka,fs_no_mesin, fs_no_bpkb, fs_nama_bpkb, fd_tanggal_bpkb
+			FROM tx_bpkb 
+		
+ERROR - 2017-11-14 08:38:52 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-14 08:42:32 --> Query error: Unknown column 'fs_no_pjj' in 'field list' - Invalid query: 
+			SELECT fs_transaksi, fs_no_pjj, fs_nama_pemilik, fs_status,
+				fs_kode_lokasi, fs_kode_cabang, fs_kode_kendaraan, fs_jenis_kendaraan,
+				fn_tahun_kendaraan, fs_warna_kendaraan, fs_silinder_kendaraan,
+				fs_no_polisi, fs_no_rangka,fs_no_mesin, fs_no_bpkb, fs_nama_bpkb, fd_tanggal_bpkb
+			FROM tx_bpkb 
+			WHERE fs_flag_qrcode = '0'
+		
+ERROR - 2017-11-14 10:02:50 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-14 10:03:16 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-14 10:10:07 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-14 10:50:24 --> 404 Page Not Found: Mastercabang/index
+ERROR - 2017-11-14 11:04:46 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-14 11:08:21 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-14 11:09:42 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-14 11:10:51 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-14 11:56:27 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND fs_no_bpkb LIKE '%d%'' at line 7 - Invalid query: 
+			SELECT fs_transaksi, fn_no_pjj, fs_nama_pemilik, fs_status,
+				fs_kode_lokasi, fs_kode_cabang, fs_kode_kendaraan, fs_jenis_kendaraan,
+				fn_tahun_kendaraan, fs_warna_kendaraan, fs_silinder_kendaraan,
+				fs_no_polisi, fs_no_rangka, fs_no_mesin, fs_no_bpkb, fs_nama_bpkb, fd_tanggal_bpkb
+			FROM tx_bpkb 
+		
+				AND fs_no_bpkb LIKE '%d%'
+			
+ERROR - 2017-11-14 11:56:28 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND fs_no_bpkb LIKE '%d%'' at line 7 - Invalid query: 
+			SELECT fs_transaksi, fn_no_pjj, fs_nama_pemilik, fs_status,
+				fs_kode_lokasi, fs_kode_cabang, fs_kode_kendaraan, fs_jenis_kendaraan,
+				fn_tahun_kendaraan, fs_warna_kendaraan, fs_silinder_kendaraan,
+				fs_no_polisi, fs_no_rangka, fs_no_mesin, fs_no_bpkb, fs_nama_bpkb, fd_tanggal_bpkb
+			FROM tx_bpkb 
+		
+				AND fs_no_bpkb LIKE '%d%'
+			
+ERROR - 2017-11-14 12:03:01 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-14 12:11:20 --> Query error: Table 'bpkb.tm_bpkb' doesn't exist - Invalid query: DELETE FROM `tm_bpkb`
+WHERE `fs_no_bpkb` = 'D 8202659 M'
+ERROR - 2017-11-14 12:11:27 --> Query error: Table 'bpkb.tm_bpkb' doesn't exist - Invalid query: DELETE FROM `tm_bpkb`
+WHERE `fs_no_bpkb` = 'D 8202659 M'
+ERROR - 2017-11-14 12:11:30 --> Query error: Table 'bpkb.tm_bpkb' doesn't exist - Invalid query: DELETE FROM `tm_bpkb`
+WHERE `fs_no_bpkb` = 'D 8202659 M'
+ERROR - 2017-11-14 12:11:34 --> Query error: Table 'bpkb.tm_bpkb' doesn't exist - Invalid query: DELETE FROM `tm_bpkb`
+WHERE `fs_no_bpkb` = 'D 8202659 M'
+ERROR - 2017-11-14 12:11:47 --> Query error: Table 'bpkb.tm_bpkb' doesn't exist - Invalid query: DELETE FROM `tm_bpkb`
+WHERE `fs_no_bpkb` = 'D 8202659 M'
+ERROR - 2017-11-14 12:18:53 --> Severity: Notice --> Undefined property: stdClass::$fs_no_faktur D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 44
+ERROR - 2017-11-14 12:18:53 --> Severity: Notice --> Undefined property: stdClass::$fs_no_faktur D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 44
+ERROR - 2017-11-14 12:18:53 --> Severity: Notice --> Undefined property: stdClass::$fs_no_faktur D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 44
+ERROR - 2017-11-14 12:18:53 --> Severity: Notice --> Undefined property: stdClass::$fs_no_faktur D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 44
+ERROR - 2017-11-14 12:18:53 --> Severity: Notice --> Undefined property: stdClass::$fs_no_faktur D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 44
+ERROR - 2017-11-14 12:18:53 --> Severity: Notice --> Undefined property: stdClass::$fs_no_faktur D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 44
+ERROR - 2017-11-14 12:18:53 --> Severity: Notice --> Undefined property: stdClass::$fs_no_faktur D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 44
+ERROR - 2017-11-14 12:18:53 --> Severity: Notice --> Undefined property: stdClass::$fs_no_faktur D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 44
+ERROR - 2017-11-14 12:18:53 --> Severity: Notice --> Undefined property: stdClass::$fs_no_faktur D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 44
+ERROR - 2017-11-14 12:18:53 --> Severity: Notice --> Undefined property: stdClass::$fs_no_faktur D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 44
+ERROR - 2017-11-14 12:18:53 --> Severity: Notice --> Undefined property: stdClass::$fs_no_faktur D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 44
+ERROR - 2017-11-14 12:18:53 --> Severity: Notice --> Undefined property: stdClass::$fs_no_faktur D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 44
+ERROR - 2017-11-14 12:18:53 --> Severity: Notice --> Undefined property: stdClass::$fs_no_faktur D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 44
+ERROR - 2017-11-14 12:19:56 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND fs_no_bpkb LIKE '%sss%'' at line 7 - Invalid query: 
+			SELECT fs_transaksi, fn_no_pjj, fs_nama_pemilik, fs_status,
+				fs_kode_lokasi, fs_kode_cabang, fs_kode_kendaraan, fs_jenis_kendaraan,
+				fn_tahun_kendaraan, fs_warna_kendaraan, fs_silinder_kendaraan,
+				fs_no_polisi, fs_no_rangka, fs_no_mesin, fs_no_bpkb, fs_nama_bpkb, fs_no_faktur, fd_tanggal_bpkb
+			FROM tx_bpkb 
+		
+				AND fs_no_bpkb LIKE '%sss%'
+			
+ERROR - 2017-11-14 12:19:56 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND fs_no_bpkb LIKE '%sss%'' at line 7 - Invalid query: 
+			SELECT fs_transaksi, fn_no_pjj, fs_nama_pemilik, fs_status,
+				fs_kode_lokasi, fs_kode_cabang, fs_kode_kendaraan, fs_jenis_kendaraan,
+				fn_tahun_kendaraan, fs_warna_kendaraan, fs_silinder_kendaraan,
+				fs_no_polisi, fs_no_rangka, fs_no_mesin, fs_no_bpkb, fs_nama_bpkb, fs_no_faktur, fd_tanggal_bpkb
+			FROM tx_bpkb 
+		
+				AND fs_no_bpkb LIKE '%sss%'
+			
+ERROR - 2017-11-14 12:30:21 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-14 12:31:18 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-14 12:31:43 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-14 12:31:46 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-14 12:32:29 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-14 12:34:36 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-14 12:34:45 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-14 12:35:32 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-14 12:35:39 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-14 12:36:21 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-14 12:41:39 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-14 12:42:30 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-14 12:42:34 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-14 12:47:32 --> Query error: Unknown column 'fs_no_pjj' in 'field list' - Invalid query: 
+			SELECT fs_transaksi, fs_no_pjj, fs_nama_pemilik, fs_status,
+				fs_kode_lokasi, fs_kode_cabang, fs_kode_kendaraan, fs_jenis_kendaraan,
+				fn_tahun_kendaraan, fs_warna_kendaraan, fs_silinder_kendaraan,
+				fs_no_polisi, fs_no_rangka,fs_no_mesin, fs_no_bpkb, fs_nama_bpkb, fd_tanggal_bpkb
+			FROM tx_bpkb 
+			WHERE fs_flag_qrcode = '0'
+		
+ERROR - 2017-11-14 12:49:37 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-14 12:49:40 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-14 12:50:12 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-14 12:50:39 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-14 12:51:26 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-14 12:51:29 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-14 12:52:11 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-14 12:52:22 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-14 12:53:29 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-14 12:53:48 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-14 12:54:33 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-14 12:54:58 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-14 12:59:18 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-14 13:00:42 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-14 13:01:39 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-14 13:02:44 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-14 13:06:29 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-14 13:06:57 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-14 13:09:42 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-14 13:10:15 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-14 13:12:28 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-14 13:13:37 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-14 13:13:55 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-14 13:16:01 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-14 13:16:16 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-14 13:16:41 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-14 13:16:54 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-14 13:17:34 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-14 13:17:51 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-14 13:21:57 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-14 13:22:27 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-14 13:22:31 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-14 13:23:27 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-14 13:23:46 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-14 13:24:16 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-14 13:25:10 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-14 13:25:21 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-14 13:25:50 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-14 13:26:20 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-14 13:26:26 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-14 13:34:05 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-14 13:34:05 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-14 13:34:40 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-14 13:34:40 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-14 13:35:39 --> 404 Page Not Found: Recheckbpkb/griddaftar

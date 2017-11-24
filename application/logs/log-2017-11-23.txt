@@ -1,0 +1,226 @@
+ERROR - 2017-11-23 03:04:28 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-23 03:58:35 --> 404 Page Not Found: Inputsurvey/apkpendukung
+ERROR - 2017-11-23 03:58:36 --> 404 Page Not Found: Inputsurvey/datapendukung
+ERROR - 2017-11-23 03:58:40 --> 404 Page Not Found: Inputsurvey/datapendukung
+ERROR - 2017-11-23 04:00:03 --> 404 Page Not Found: Inputsurvey/apkpendukung
+ERROR - 2017-11-23 04:00:05 --> 404 Page Not Found: Inputsurvey/datapendukung
+ERROR - 2017-11-23 04:00:17 --> 404 Page Not Found: Inputsurvey/datapendukung
+ERROR - 2017-11-23 04:00:45 --> 404 Page Not Found: Inputsurvey/datapendukung
+ERROR - 2017-11-23 04:05:13 --> 404 Page Not Found: Inputsurvey/apkpendukung
+ERROR - 2017-11-23 04:05:14 --> 404 Page Not Found: Inputsurvey/datapendukung
+ERROR - 2017-11-23 04:05:29 --> 404 Page Not Found: Inputsurvey/datapendukung
+ERROR - 2017-11-23 04:08:59 --> 404 Page Not Found: Inputsurvey/apkpendukung
+ERROR - 2017-11-23 04:09:00 --> 404 Page Not Found: Inputsurvey/datapendukung
+ERROR - 2017-11-23 04:10:47 --> 404 Page Not Found: Inputsurvey/datapendukung
+ERROR - 2017-11-23 04:10:54 --> 404 Page Not Found: Inputsurvey/apkpendukung
+ERROR - 2017-11-23 04:10:55 --> 404 Page Not Found: Inputsurvey/datapendukung
+ERROR - 2017-11-23 04:14:58 --> 404 Page Not Found: Inputsurvey/apkpendukung
+ERROR - 2017-11-23 04:14:59 --> 404 Page Not Found: Inputsurvey/datapendukung
+ERROR - 2017-11-23 04:15:45 --> Severity: Notice --> Use of undefined constant NOLOCK - assumed 'NOLOCK' D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 159
+ERROR - 2017-11-23 04:15:45 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'NOLOCK' at line 1 - Invalid query: NOLOCK
+ERROR - 2017-11-23 04:15:50 --> Severity: Notice --> Use of undefined constant NOLOCK - assumed 'NOLOCK' D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 159
+ERROR - 2017-11-23 04:15:50 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'NOLOCK' at line 1 - Invalid query: NOLOCK
+ERROR - 2017-11-23 04:16:18 --> Severity: Notice --> Use of undefined constant NOLOCK - assumed 'NOLOCK' D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 159
+ERROR - 2017-11-23 04:16:18 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'NOLOCK' at line 1 - Invalid query: NOLOCK
+ERROR - 2017-11-23 04:16:20 --> Severity: Notice --> Use of undefined constant NOLOCK - assumed 'NOLOCK' D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 159
+ERROR - 2017-11-23 04:16:20 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'NOLOCK' at line 1 - Invalid query: NOLOCK
+ERROR - 2017-11-23 04:16:20 --> Severity: Notice --> Use of undefined constant NOLOCK - assumed 'NOLOCK' D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 159
+ERROR - 2017-11-23 04:16:20 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'NOLOCK' at line 1 - Invalid query: NOLOCK
+ERROR - 2017-11-23 04:22:24 --> 404 Page Not Found: Typeerimadaridealer/datapendukung
+ERROR - 2017-11-23 04:22:51 --> Severity: error --> Exception: Call to undefined function ascii_to_entities() D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 171
+ERROR - 2017-11-23 04:25:18 --> Severity: error --> Exception: Call to undefined function ascii_to_entities() D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 171
+ERROR - 2017-11-23 04:25:18 --> Severity: error --> Exception: Call to undefined function ascii_to_entities() D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 171
+ERROR - 2017-11-23 04:25:19 --> Severity: error --> Exception: Call to undefined function ascii_to_entities() D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 171
+ERROR - 2017-11-23 04:27:12 --> Severity: error --> Exception: Call to undefined function ascii_to_entities() D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 171
+ERROR - 2017-11-23 04:29:47 --> Severity: error --> Exception: Call to undefined function ascii_to_entities() D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 171
+ERROR - 2017-11-23 04:29:49 --> Severity: error --> Exception: Call to undefined function ascii_to_entities() D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 171
+ERROR - 2017-11-23 04:29:52 --> Severity: error --> Exception: Call to undefined function ascii_to_entities() D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 171
+ERROR - 2017-11-23 04:32:04 --> Severity: Notice --> Undefined property: stdClass::$fs_wajib D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 174
+ERROR - 2017-11-23 04:32:04 --> Severity: Notice --> Undefined property: stdClass::$fs_wajib D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 174
+ERROR - 2017-11-23 04:32:04 --> Severity: Notice --> Undefined property: stdClass::$fs_wajib D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 174
+ERROR - 2017-11-23 04:32:04 --> Severity: Notice --> Undefined property: stdClass::$fs_wajib D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 174
+ERROR - 2017-11-23 04:32:04 --> Severity: Notice --> Undefined property: stdClass::$fs_wajib D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 174
+ERROR - 2017-11-23 04:32:04 --> Severity: Notice --> Undefined property: stdClass::$fs_wajib D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 174
+ERROR - 2017-11-23 04:32:04 --> Severity: Notice --> Undefined property: stdClass::$fs_wajib D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 174
+ERROR - 2017-11-23 04:32:04 --> Severity: Notice --> Undefined property: stdClass::$fs_wajib D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 174
+ERROR - 2017-11-23 04:32:15 --> Severity: Notice --> Undefined property: stdClass::$fs_wajib D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 174
+ERROR - 2017-11-23 04:32:15 --> Severity: Notice --> Undefined property: stdClass::$fs_wajib D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 174
+ERROR - 2017-11-23 04:32:15 --> Severity: Notice --> Undefined property: stdClass::$fs_wajib D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 174
+ERROR - 2017-11-23 04:32:15 --> Severity: Notice --> Undefined property: stdClass::$fs_wajib D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 174
+ERROR - 2017-11-23 04:32:15 --> Severity: Notice --> Undefined property: stdClass::$fs_wajib D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 174
+ERROR - 2017-11-23 04:32:15 --> Severity: Notice --> Undefined property: stdClass::$fs_wajib D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 174
+ERROR - 2017-11-23 04:32:15 --> Severity: Notice --> Undefined property: stdClass::$fs_wajib D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 174
+ERROR - 2017-11-23 04:32:15 --> Severity: Notice --> Undefined property: stdClass::$fs_wajib D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 174
+ERROR - 2017-11-23 04:33:26 --> Severity: Notice --> Undefined property: stdClass::$fs_wajib D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 174
+ERROR - 2017-11-23 04:33:26 --> Severity: Notice --> Undefined property: stdClass::$fs_wajib D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 174
+ERROR - 2017-11-23 04:33:26 --> Severity: Notice --> Undefined property: stdClass::$fs_wajib D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 174
+ERROR - 2017-11-23 04:33:26 --> Severity: Notice --> Undefined property: stdClass::$fs_wajib D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 174
+ERROR - 2017-11-23 04:33:26 --> Severity: Notice --> Undefined property: stdClass::$fs_wajib D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 174
+ERROR - 2017-11-23 04:33:26 --> Severity: Notice --> Undefined property: stdClass::$fs_wajib D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 174
+ERROR - 2017-11-23 04:33:26 --> Severity: Notice --> Undefined property: stdClass::$fs_wajib D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 174
+ERROR - 2017-11-23 04:33:26 --> Severity: Notice --> Undefined property: stdClass::$fs_wajib D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 174
+ERROR - 2017-11-23 05:11:13 --> Severity: Notice --> Undefined variable: noapk D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 209
+ERROR - 2017-11-23 05:13:44 --> Severity: Notice --> Undefined variable: noapk D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 209
+ERROR - 2017-11-23 05:33:48 --> Severity: Notice --> Undefined variable: noapk D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 209
+ERROR - 2017-11-23 07:52:31 --> 404 Page Not Found: Terimadaridealer/gridcscanbpkb
+ERROR - 2017-11-23 07:52:32 --> 404 Page Not Found: Terimadaridealer/griddatascan
+ERROR - 2017-11-23 07:52:59 --> Severity: error --> Exception: Call to undefined method MTerimaDariDealer::dataPendukungAll() D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 161
+ERROR - 2017-11-23 07:53:02 --> Severity: error --> Exception: Call to undefined method MTerimaDariDealer::dataPendukungAll() D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 161
+ERROR - 2017-11-23 07:53:03 --> Severity: error --> Exception: Call to undefined method MTerimaDariDealer::dataPendukungAll() D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 161
+ERROR - 2017-11-23 07:53:56 --> Severity: error --> Exception: Call to undefined method MTerimaDariDealer::dataPendukungAll() D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 161
+ERROR - 2017-11-23 07:53:58 --> Severity: error --> Exception: Call to undefined method MTerimaDariDealer::dataPendukungAll() D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 161
+ERROR - 2017-11-23 07:53:59 --> Severity: error --> Exception: Call to undefined method MTerimaDariDealer::dataPendukungAll() D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 161
+ERROR - 2017-11-23 08:27:32 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-23 08:33:22 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-23 08:33:22 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-23 08:38:28 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-23 08:48:07 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-23 08:48:10 --> 404 Page Not Found: Penyerahankekonsumen/gridpenyerahan
+ERROR - 2017-11-23 08:48:12 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-23 08:48:12 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-23 08:48:15 --> 404 Page Not Found: Terimadarikreditur/gridhistory
+ERROR - 2017-11-23 08:49:05 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-23 08:49:32 --> 404 Page Not Found: Closingbpkb/index
+ERROR - 2017-11-23 08:49:34 --> Query error: Unknown column 'fs_no_pjj' in 'field list' - Invalid query: 
+			SELECT fs_transaksi, fs_no_pjj, fs_nama_pemilik, fs_status,
+				fs_kode_lokasi, fs_kode_cabang, fs_kode_kendaraan, fs_jenis_kendaraan,
+				fn_tahun_kendaraan, fs_warna_kendaraan, fs_silinder_kendaraan,
+				fs_no_polisi, fs_no_rangka,fs_no_mesin, fs_no_bpkb, fs_nama_bpkb, fd_tanggal_bpkb
+			FROM tx_bpkb 
+			WHERE fs_flag_qrcode = '0'
+		
+ERROR - 2017-11-23 08:49:35 --> 404 Page Not Found: Stokopname/index
+ERROR - 2017-11-23 10:19:53 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-23 10:35:16 --> Query error: Unknown column 'fs_no_pjj' in 'field list' - Invalid query: 
+			SELECT fs_kode_cabang, fn_no_apk, fs_no_pjj, fs_nama_konsumen, fd_tgl_apk, fs_nama_dealer, fs_model_kendaraan, fn_tahun_kendaraan, fs_warna_kendaraan, fs_no_rangka, fs_no_mesin
+			FROM tx_apk 
+			
+		
+ERROR - 2017-11-23 10:37:46 --> Query error: Unknown column 'fs_no_pjj' in 'field list' - Invalid query: 
+			SELECT fs_kode_cabang, fn_no_apk, fs_no_pjj, fs_nama_konsumen, fd_tgl_apk, fs_nama_dealer, fs_model_kendaraan, fn_tahun_kendaraan, fs_warna_kendaraan, fs_no_rangka, fs_no_mesin
+			FROM tx_apk 
+			
+		
+ERROR - 2017-11-23 10:37:46 --> Query error: Unknown column 'fs_no_pjj' in 'field list' - Invalid query: 
+			SELECT fs_kode_cabang, fn_no_apk, fs_no_pjj, fs_nama_konsumen, fd_tgl_apk, fs_nama_dealer, fs_model_kendaraan, fn_tahun_kendaraan, fs_warna_kendaraan, fs_no_rangka, fs_no_mesin
+			FROM tx_apk 
+			
+		
+ERROR - 2017-11-23 10:38:03 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-23 10:38:05 --> Query error: Unknown column 'fs_no_pjj' in 'field list' - Invalid query: 
+			SELECT fs_kode_cabang, fn_no_apk, fs_no_pjj, fs_nama_konsumen, fd_tgl_apk, fs_nama_dealer, fs_model_kendaraan, fn_tahun_kendaraan, fs_warna_kendaraan, fs_no_rangka, fs_no_mesin
+			FROM tx_apk 
+			
+		
+ERROR - 2017-11-23 10:38:15 --> Query error: Unknown column 'fs_no_pjj' in 'field list' - Invalid query: 
+			SELECT fs_kode_cabang, fn_no_apk, fs_no_pjj, fs_nama_konsumen, fd_tgl_apk, fs_nama_dealer, fs_model_kendaraan, fn_tahun_kendaraan, fs_warna_kendaraan, fs_no_rangka, fs_no_mesin
+			FROM tx_apk 
+			
+		
+ERROR - 2017-11-23 10:38:23 --> Query error: Unknown column 'fs_no_pjj' in 'field list' - Invalid query: 
+			SELECT fs_kode_cabang, fn_no_apk, fs_no_pjj, fs_nama_konsumen, fd_tgl_apk, fs_nama_dealer, fs_model_kendaraan, fn_tahun_kendaraan, fs_warna_kendaraan, fs_no_rangka, fs_no_mesin
+			FROM tx_apk 
+			
+		
+ERROR - 2017-11-23 10:41:06 --> Query error: Unknown column 'fs_no_pjj' in 'field list' - Invalid query: 
+			SELECT fs_kode_cabang, fn_no_apk, fs_no_pjj, fs_nama_konsumen, fd_tgl_apk, fs_nama_dealer, fs_model_kendaraan, fn_tahun_kendaraan, fs_warna_kendaraan, fs_no_rangka, fs_no_mesin
+			FROM tx_apk 
+			
+		
+ERROR - 2017-11-23 10:43:59 --> Query error: Unknown column 'fs_no_pjj' in 'field list' - Invalid query: 
+			SELECT fs_kode_cabang, fn_no_apk, fs_no_pjj, fs_nama_konsumen, fd_tgl_apk, fs_nama_dealer, fn_tahun_kendaraan, fs_warna_kendaraan, fs_no_rangka, fs_no_mesin
+			FROM tx_apk 
+			
+		
+ERROR - 2017-11-23 10:44:05 --> Query error: Unknown column 'fs_no_pjj' in 'field list' - Invalid query: 
+			SELECT fs_kode_cabang, fn_no_apk, fs_no_pjj, fs_nama_konsumen, fd_tgl_apk, fs_nama_dealer, fn_tahun_kendaraan, fs_warna_kendaraan, fs_no_rangka, fs_no_mesin
+			FROM tx_apk 
+			
+		
+ERROR - 2017-11-23 10:44:05 --> Query error: Unknown column 'fs_no_pjj' in 'field list' - Invalid query: 
+			SELECT fs_kode_cabang, fn_no_apk, fs_no_pjj, fs_nama_konsumen, fd_tgl_apk, fs_nama_dealer, fn_tahun_kendaraan, fs_warna_kendaraan, fs_no_rangka, fs_no_mesin
+			FROM tx_apk 
+			
+		
+ERROR - 2017-11-23 10:44:05 --> Query error: Unknown column 'fs_no_pjj' in 'field list' - Invalid query: 
+			SELECT fs_kode_cabang, fn_no_apk, fs_no_pjj, fs_nama_konsumen, fd_tgl_apk, fs_nama_dealer, fn_tahun_kendaraan, fs_warna_kendaraan, fs_no_rangka, fs_no_mesin
+			FROM tx_apk 
+			
+		
+ERROR - 2017-11-23 10:44:05 --> Query error: Unknown column 'fs_no_pjj' in 'field list' - Invalid query: 
+			SELECT fs_kode_cabang, fn_no_apk, fs_no_pjj, fs_nama_konsumen, fd_tgl_apk, fs_nama_dealer, fn_tahun_kendaraan, fs_warna_kendaraan, fs_no_rangka, fs_no_mesin
+			FROM tx_apk 
+			
+		
+ERROR - 2017-11-23 10:44:06 --> Query error: Unknown column 'fs_no_pjj' in 'field list' - Invalid query: 
+			SELECT fs_kode_cabang, fn_no_apk, fs_no_pjj, fs_nama_konsumen, fd_tgl_apk, fs_nama_dealer, fn_tahun_kendaraan, fs_warna_kendaraan, fs_no_rangka, fs_no_mesin
+			FROM tx_apk 
+			
+		
+ERROR - 2017-11-23 10:46:43 --> Query error: Unknown column 'fs_nama_dealer' in 'field list' - Invalid query: 
+			SELECT fs_kode_cabang, fn_no_apk, fs_nama_konsumen, fd_tgl_apk, fs_nama_dealer, fn_tahun_kendaraan, fs_warna_kendaraan, fs_no_rangka, fs_no_mesin
+			FROM tx_apk 
+			
+		
+ERROR - 2017-11-23 10:46:47 --> Query error: Unknown column 'fs_nama_dealer' in 'field list' - Invalid query: 
+			SELECT fs_kode_cabang, fn_no_apk, fs_nama_konsumen, fd_tgl_apk, fs_nama_dealer, fn_tahun_kendaraan, fs_warna_kendaraan, fs_no_rangka, fs_no_mesin
+			FROM tx_apk 
+			
+		
+ERROR - 2017-11-23 10:47:43 --> Query error: Unknown column 'fd_tanggal_buat' in 'order clause' - Invalid query: 
+			SELECT fs_kode_cabang, fn_no_apk, fs_nama_konsumen, fd_tgl_apk, fn_tahun_kendaraan, fs_warna_kendaraan, fs_no_rangka, fs_no_mesin
+			FROM tx_apk 
+			
+			
+		
+			ORDER BY fd_tanggal_buat DESC LIMIT 0,25
+		
+ERROR - 2017-11-23 10:49:18 --> Query error: Unknown column 'fd_tanggal_buat' in 'order clause' - Invalid query: 
+			SELECT fs_kode_cabang, fn_no_apk, fs_nama_konsumen, fd_tgl_apk, fn_tahun_kendaraan, fs_warna_kendaraan, fs_no_rangka, fs_no_mesin
+			FROM tx_apk 
+			
+			
+		
+			ORDER BY fd_tanggal_buat DESC LIMIT 0,25
+		
+ERROR - 2017-11-23 10:49:29 --> Query error: Unknown column 'fd_tanggal_buat' in 'order clause' - Invalid query: 
+			SELECT fs_kode_cabang, fn_no_apk, fs_nama_konsumen, fd_tgl_apk, fn_tahun_kendaraan, fs_warna_kendaraan, fs_no_rangka, fs_no_mesin
+			FROM tx_apk 
+			
+			
+		
+			ORDER BY fd_tanggal_buat DESC LIMIT 0,25
+		
+ERROR - 2017-11-23 10:50:39 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 41
+ERROR - 2017-11-23 10:50:39 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 41
+ERROR - 2017-11-23 10:50:39 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 41
+ERROR - 2017-11-23 10:50:39 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 41
+ERROR - 2017-11-23 10:50:39 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 41
+ERROR - 2017-11-23 10:50:39 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 41
+ERROR - 2017-11-23 10:50:39 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 41
+ERROR - 2017-11-23 10:50:39 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 41
+ERROR - 2017-11-23 10:50:45 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 41
+ERROR - 2017-11-23 10:50:45 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 41
+ERROR - 2017-11-23 10:50:45 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 41
+ERROR - 2017-11-23 10:50:45 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 41
+ERROR - 2017-11-23 10:50:45 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 41
+ERROR - 2017-11-23 10:50:45 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 41
+ERROR - 2017-11-23 10:50:45 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 41
+ERROR - 2017-11-23 10:50:45 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 41
+ERROR - 2017-11-23 10:51:47 --> Query error: Unknown column 'fs_no_pjj' in 'field list' - Invalid query: 
+			SELECT fs_kode_cabang, fn_no_apk, fs_no_pjj, fs_nama_konsumen, fd_tgl_apk, fs_nama_dealer, fs_model_kendaraan, fn_tahun_kendaraan, fs_warna_kendaraan, fs_no_rangka, fs_no_mesin
+			FROM tx_apk 
+			
+		
+ERROR - 2017-11-23 10:56:33 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-23 10:57:05 --> 404 Page Not Found: Erimadaridealer/uploadfile
+ERROR - 2017-11-23 11:15:17 --> 404 Page Not Found: Erimadaridealer/uploadfile
+ERROR - 2017-11-23 11:18:35 --> 404 Page Not Found: Erimadaridealer/uploadfile
+ERROR - 2017-11-23 11:21:49 --> Severity: Notice --> Undefined variable: noapk D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 202
+ERROR - 2017-11-23 11:21:49 --> Severity: Notice --> Undefined variable: nobatch D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 246
+ERROR - 2017-11-23 11:22:38 --> Severity: Notice --> Undefined variable: noapk D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 202
+ERROR - 2017-11-23 11:22:38 --> Severity: Notice --> Undefined variable: nobatch D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 246
+ERROR - 2017-11-23 11:24:14 --> Severity: Notice --> Undefined variable: nobatch D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 248
+ERROR - 2017-11-23 13:25:52 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-23 13:25:55 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-23 13:26:09 --> Severity: Notice --> Undefined variable: nobatch D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 248

@@ -12,7 +12,7 @@ class MCetakQrCode extends CI_Model
 	public function listBPKBAll($sCari)
 	{
 		$xSQL = ("
-			SELECT fs_transaksi, fn_no_pjj, fs_nama_pemilik, fs_status,
+			SELECT fs_transaksi, fs_no_pjj, fs_nama_pemilik, fs_status,
 				fs_kode_lokasi, fs_kode_cabang, fs_kode_kendaraan, fs_jenis_kendaraan,
 				fn_tahun_kendaraan, fs_warna_kendaraan, fs_silinder_kendaraan,
 				fs_no_polisi, fs_no_rangka,fs_no_mesin, fs_no_bpkb, fs_nama_bpkb, fd_tanggal_bpkb
