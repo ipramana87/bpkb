@@ -31,9 +31,12 @@ class Mainmenu extends CI_Controller {
 		$this->db->trans_start();
 		$this->load->model('MMainMenu');
 <<<<<<< HEAD
+<<<<<<< HEAD
 		$ssql = $this->MMainMenu->loadMenu();
 		//$ssql = $this->MMainMenu->loadMenu2($leveluser);
 =======
+=======
+>>>>>>> 3a1d86e30fe780c579090fb76767e698741a498b
 		$ssql = $this->MMainMenu->loadMenu2($leveluser);
 >>>>>>> 3a1d86e30fe780c579090fb76767e698741a498b
 		$this->db->trans_complete();
