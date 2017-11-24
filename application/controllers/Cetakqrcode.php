@@ -49,13 +49,13 @@ class Cetakqrcode extends CI_Controller {
 		$bpkb = $this->input->post('fs_no_bpkb');
 
 		$this->load->library('ciqrcode');
-		$filename = str_replace(' ', '-', $bpkb);
+		$filename = str_replace(' ', '', $bpkb);
 		$path = FCPATH . "uploads/qrcode/".trim($filename).'.png';
 		
 		if (!file_exists($path)) {
 			$params['data'] = trim($bpkb);
 			$params['savename'] = FCPATH . "uploads/qrcode/".trim($filename).'.png';
-			$file = $this->ciqrcode->generate($params);
+			$this->ciqrcode->generate($params);
 		}
 
 		$pathfile = base_url('/uploads/qrcode/'. $filename . '.png');
@@ -88,18 +88,32 @@ class Cetakqrcode extends CI_Controller {
 		$user = $this->encryption->decrypt($this->session->userdata('username'));
 
 		$this->load->library('Pdf');
+		$this->load->library('ciqrcode');
 		$this->load->model('MCetakQrCode');
 
 		$nobpkb = explode('|', trim($this->input->post('fs_no_bpkb')));
 		$jml = count($nobpkb) - 1;
 
 		if ($jml > 0) {
+			$xSQL = $this->MCetakQrCode->getBPKBAll($nobpkb);
+			foreach ($xSQL->result() as $value) {
+				$filename = str_replace(' ', '', $value->fs_no_bpkb);
+				$path = FCPATH . "uploads/qrcode/".trim($filename).'.png';
+
+				if (!file_exists($path)) {
+					$params['data'] = trim($value->fs_no_bpkb);
+					$params['savename'] = FCPATH . "uploads/qrcode/".trim($filename).'.png';
+					$this->ciqrcode->generate($params);
+				}
+			}
+
 			$data['result9']  = $this->MCetakQrCode->getBPKB(0, 9, $nobpkb);
 			$data['result18']  = $this->MCetakQrCode->getBPKB(9, 18, $nobpkb);
 			$data['result27']  = $this->MCetakQrCode->getBPKB(18, 27, $nobpkb);
 			$data['result36']  = $this->MCetakQrCode->getBPKB(27, 36, $nobpkb);
 			$data['result45']  = $this->MCetakQrCode->getBPKB(36, 45, $nobpkb);
 			$data['result54']  = $this->MCetakQrCode->getBPKB(45, 54, $nobpkb);
+			
 		} else {
 			$data = '';
 		}
