@@ -14,4 +14,16 @@ class Terimadaricabang extends CI_Controller {
 		$this->load->view('vterimabpkbdaricabang');
 	}
 
+	public function gridkirim() {
+
+	}
+
+
+	public function gridterima() {
+
+	}
+
+	public function remove() {
+
+	}
 }

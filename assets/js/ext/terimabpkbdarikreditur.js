@@ -17,20 +17,17 @@ Ext.onReady(function() {
 	Ext.util.Format.decimalSeparator = '.';
 
 	var required = '<span style="color:red;font-weight:bold" data-qtip="Required">*</span>';
-		Ext.define('DataGridBPKB', {
+
+	Ext.define('DataGridTerimaBPKB', {
 		extend: 'Ext.data.Model',
 		fields: [
-			{name: 'fs_nama', type: 'string'},
-			{name: 'fs_no_polisi', type: 'string'},
-			{name: 'fs_no_BPKP', type: 'string'},
-			{name: 'fs_nama_BPKB', type: 'string'}
-
+			{name: 'fs_no_bpkb', type: 'string'},
 		]
 	});
 
-	var grupDataBPKB = Ext.create('Ext.data.Store', {
+	var grupTerima = Ext.create('Ext.data.Store', {
 		autoLoad: true,
-		model: 'DataGridBPKB',
+		model: 'DataGridTerimaBPKB',
 		pageSize: 25,
 		proxy: {
 			actionMethods: {
@@ -42,8 +39,9 @@ Ext.onReady(function() {
 				type: 'json'
 			},
 			type: 'ajax',
-			url: 'terimabpkbdaricabang/grid'
-		},listeners: {
+			url: 'terimadarikreditur/gridkirimbpkb'
+		},
+		listeners: {
 			beforeload: function(store) {
 				Ext.apply(store.getProxy().extraParams, {
 					'fs_cari': Ext.getCmp('txtCari').getValue()
@@ -52,54 +50,299 @@ Ext.onReady(function() {
 		}		
 	});
 
-	var gridBPKB = Ext.create('Ext.grid.Panel', {
+	var winGrid = Ext.create('Ext.grid.Panel', {
+		anchor: '100%',
+		autoDestroy: true,
+		height: 450,
+		width: 500,
+		sortableColumns: false,
+		store: grupTerima,
+		columns: [
+			{xtype: 'rownumberer', width: 45},
+			{text: "No. BPKB", dataIndex: 'fs_no_bpkb', menuDisabled: true, flex: 1},
+		],
+		tbar: [{
+			flex: 1.4,
+			layout: 'anchor',
+			xtype: 'container',
+			items: [{
+				anchor: '98%',
+				emptyText: 'No. BPKB',
+				id: 'txtCari',
+				name: 'txtCari',
+				xtype: 'textfield'
+			}]
+		},{
+			flex: 0.5,
+			layout: 'anchor',
+			xtype: 'container',
+			items: [{
+				anchor: '100%',
+				text: 'Search',
+				xtype: 'button',
+				handler: function() {
+					grupTerima.load();
+				}
+			}]
+		},{
+			flex: 0.5,
+			layout: 'anchor',
+			xtype: 'container',
+			items: []
+		}],
+		bbar: Ext.create('Ext.PagingToolbar', {
+			displayInfo: true,
+			pageSize: 25,
+			plugins: Ext.create('Ext.ux.ProgressBarPager', {}),
+			store: grupTerima,
+			items:[
+				'-', {
+				text: 'Exit',
+				handler: function() {
+					winCari.hide();
+				}
+			}]
+		}),
+		listeners: {
+			itemdblclick: function(grid, record) {
+				Ext.getCmp('txtNoPJJ').setValue(record.get('fn_no_pjj'));
+				Ext.getCmp('txtNamaKonsumen').setValue(record.get('fs_nama_pemilik'));
+				Ext.getCmp('txtJenisKendaraan').setValue(record.get('fs_jenis_kendaraan'));
+				Ext.getCmp('txtTahunKendaraan').setValue(record.get('fn_tahun_kendaraan'));
+				Ext.getCmp('txtWarnaKendaraan').setValue(record.get('fs_warna_kendaraan'));
+				Ext.getCmp('txtNomerMesin').setValue(record.get('fs_no_mesin'));
+				Ext.getCmp('txtNomerRangka').setValue(record.get('fs_no_rangka'));
+				Ext.getCmp('txtNoPolisi').setValue(record.get('fs_no_polisi'));
+				Ext.getCmp('txtNoBPKB').setValue(record.get('fs_no_bpkb'));
+				Ext.getCmp('txtNoFaktur').setValue(record.get('fs_no_faktur'));
+				Ext.getCmp('txtKdTransaksi').setValue(record.get('fs_transaksi'));
+				winCari.hide();
+			}
+		},
+		viewConfig: {
+			getRowClass: function() {
+				return 'rowwrap';
+			},
+			markDirty: false
+		}
+	});
+
+	var winCari = Ext.create('Ext.window.Window', {
+		border: false,
+		closable: false,
+		draggable: true,
+		frame: false,
+		layout: 'fit',
+		plain: true,
+		resizable: false,
+		title: 'Searching...',
+		items: [
+			winGrid
+		],
+		listeners: {
+			beforehide: function() {
+				vMask.hide();
+			},
+			beforeshow: function() {
+				grupTerima.load();
+				vMask.show();
+			}
+		}
+	});
+
+	Ext.define('DataGridhistory', {
+		extend: 'Ext.data.Model',
+		fields: [
+			{name: 'fd_tgl_kirim', type: 'string'},
+			{name: 'fs_penerima', type: 'string'},
+			{name: 'fs_jumlah_bpkb', type: 'string'},
+			{name: 'fs_nama_kreditur', type: 'string'},
+		]
+	});
+
+	var grupHistory = Ext.create('Ext.data.Store', {
+		autoLoad: true,
+		model: 'DataGridhistory',
+		pageSize: 25,
+		proxy: {
+			actionMethods: {
+				read: 'POST'
+			},
+			reader: {
+				rootProperty: 'hasil',
+				totalProperty: 'total',
+				type: 'json'
+			},
+			type: 'ajax',
+			url: 'terimadarikreditur/gridhistory'
+		},
+		listeners: {
+			beforeload: function(store) {
+				Ext.apply(store.getProxy().extraParams, {
+					'fs_cari': Ext.getCmp('txtCari1').getValue()
+				});
+			}
+		}		
+	});
+
+	Ext.define('DataGridkreditur', {
+		extend: 'Ext.data.Model',
+		fields: [
+			{name: 'fs_kode_kreditur', type: 'string'},
+			{name: 'fs_nama_kreditur', type: 'string'},
+		]
+	});
+
+	var grupKreditur = Ext.create('Ext.data.Store', {
+		autoLoad: true,
+		model: 'DataGridkreditur',
+		pageSize: 25,
+		proxy: {
+			actionMethods: {
+				read: 'POST'
+			},
+			reader: {
+				rootProperty: 'hasil',
+				totalProperty: 'total',
+				type: 'json'
+			},
+			type: 'ajax',
+			url: 'terimadarikreditur/gridkreditur'
+		},
+		listeners: {
+			beforeload: function(store) {
+				Ext.apply(store.getProxy().extraParams, {
+					'fs_cari': Ext.getCmp('txtCari2').getValue()
+				});
+			}
+		}		
+	});
+
+	var winGrid1 = Ext.create('Ext.grid.Panel', {
+		anchor: '100%',
+		autoDestroy: true,
+		height: 450,
+		width: 500,
+		sortableColumns: false,
+		store: grupKreditur,
+		columns: [
+			{xtype: 'rownumberer', width: 45},
+			{text: "Kode Kreditur", dataIndex: 'fs_kode_kreditur', menuDisabled: true, flex: 1},
+			{text: "Nama Kreditur", dataIndex: 'fs_nama_kreditur', menuDisabled: true, flex: 1},
+		],
+		tbar: [{
+			flex: 1.4,
+			layout: 'anchor',
+			xtype: 'container',
+			items: [{
+				anchor: '98%',
+				emptyText: 'Kode Kreditur',
+				id: 'txtCari2',
+				name: 'txtCari2',
+				xtype: 'textfield'
+			}]
+		},{
+			flex: 0.5,
+			layout: 'anchor',
+			xtype: 'container',
+			items: [{
+				anchor: '100%',
+				text: 'Search',
+				xtype: 'button',
+				handler: function() {
+					grupKreditur.load();
+				}
+			}]
+		},{
+			flex: 0.5,
+			layout: 'anchor',
+			xtype: 'container',
+			items: []
+		}],
+		bbar: Ext.create('Ext.PagingToolbar', {
+			displayInfo: true,
+			pageSize: 25,
+			plugins: Ext.create('Ext.ux.ProgressBarPager', {}),
+			store: grupKreditur,
+			items:[
+				'-', {
+				text: 'Exit',
+				handler: function() {
+					winCari1.hide();
+				}
+			}]
+		}),
+		listeners: {
+			itemdblclick: function(grid, record) {
+				Ext.getCmp('cboKreditur').setValue(record.get('fs_nama_kreditur'));
+				winCari1.hide();
+			}
+		},
+		viewConfig: {
+			getRowClass: function() {
+				return 'rowwrap';
+			},
+			markDirty: false
+		}
+	});
+
+	var winCari1 = Ext.create('Ext.window.Window', {
+		border: false,
+		closable: false,
+		draggable: true,
+		frame: false,
+		layout: 'fit',
+		plain: true,
+		resizable: false,
+		title: 'Searching...',
+		items: [
+			winGrid1
+		],
+		listeners: {
+			beforehide: function() {
+				vMask.hide();
+			},
+			beforeshow: function() {
+				grupKreditur.load();
+				vMask.show();
+			}
+		}
+	});
+
+	// GRID KIRIM BPKB
+	var gridTerima = Ext.create('Ext.grid.Panel', {
 		defaultType: 'textfield',
 		height: 400,
 		sortableColumns: false,
-		store: '',
+		//store: grupTerima,
 		columns: [{
 			xtype: 'rownumberer',
 			width: 25
 		},{
-			text: 'Nama',
-			dataIndex: 'fs_nama',
-			menuDisabled: true,
-			width: 100
-		},{
-			text: 'No. Polisi',
-			dataIndex: 'fs_no_polisi	',
-			menuDisabled: true,
-			width: 100
-		},{
 			text: 'No. BPKB',
-			dataIndex: 'fs_no_BPKP',
+			dataIndex: 'fs_no_bpkb',
 			menuDisabled: true,
-			width: 100
-		},{
-			text: 'Nama BPKB',
-			dataIndex: 'fs_nama_BPKB',
-			menuDisabled: true,
-			width: 100	
+			flex: 1
 		},{
 			xtype:'actioncolumn',
-			width: 100,
+			width: 50,
 			items: [{
 				iconCls: 'icon-delete',
 				tooltip: 'Delete',
 				handler: function(grid, rowIndex, colIndex, e) {
-					var str = grid.getStore().getAt(rowIndex).get('fs_nama');
+					var str = grid.getStore().getAt(rowIndex).get('fs_no_bpkb');
 					if (str) {
 						Ext.MessageBox.show({
-							title:'Delete record',
-							msg: 'Would you like to delete?',
+							title:'Menghapus Data',
+							msg: 'Apakah Anda ingin menghapus?',
 							buttons: Ext.Msg.YESNO,
 							icon: Ext.Msg.QUESTION,
 							fn: function(btn) {
 								if (btn == "yes") {
 									Ext.Ajax.request({
-										url : 'terimabpkbdarikreditur/remove/',
+										url : 'Kirimkepusat/remove/',
 			            				params : {
-											'fs_nama': str
+											'fs_no_bpkb': str
 										},
 										success: function(response) {
 											var xtext = Ext.decode(response.responseText);
@@ -110,8 +353,8 @@ Ext.onReady(function() {
 												message: xtext.hasil,
 												title: 'BPKB'
 											});
-											fnReset();
-											grupDataBPKB.load();  
+											//fnResetUser();
+											//grupTerima.load();  
 										},
 										failure: function(response) {
 											var xtext = Ext.decode(response.responseText);
@@ -126,7 +369,7 @@ Ext.onReady(function() {
 									});
 								}
 							}
-						})	;
+						});
 					}
 				}
 			}]
@@ -135,17 +378,74 @@ Ext.onReady(function() {
 			displayInfo: true,
 			pageSize: 25,
 			plugins: Ext.create('Ext.ux.ProgressBarPager', {}),
-			store: ''
+			//store: grupTerima	
 		}),
+		listeners: {
+			itemdblclick: function(grid, record) {
+				Ext.getCmp('txtNoPJJ').setValue(record.get('fn_no_pjj'));
+				Ext.getCmp('txtNamaKonsumen').setValue(record.get('fs_nama_pemilik'));
+				Ext.getCmp('txtJenisKendaraan').setValue(record.get('fs_jenis_kendaraan'));
+				Ext.getCmp('txtTahunKendaraan').setValue(record.get('fn_tahun_kendaraan'));
+				Ext.getCmp('txtWarnaKendaraan').setValue(record.get('fs_warna_kendaraan'));
+				Ext.getCmp('txtNomerMesin').setValue(record.get('fs_no_mesin'));
+				Ext.getCmp('txtNomerRangka').setValue(record.get('fs_no_rangka'));
+				Ext.getCmp('txtNoPolisi').setValue(record.get('fs_no_polisi'));
+				Ext.getCmp('txtNoBPKB').setValue(record.get('fs_no_bpkb'));
+				Ext.getCmp('txtNoFaktur').setValue(record.get('fs_no_faktur'));
+		
+				// CHANGE TAB
+				var tabPanel = Ext.ComponentQuery.query('tabpanel')[0];
+				tabPanel.setActiveTab('tab1');
+			}
+		},
+		viewConfig: {
+			getRowClass: function() {
+				return 'rowwrap';
+			},
+			markDirty: false,
+			stripeRows: true
+		}
+	});
+
+	// GRID HISTORY
+	var gridHistroy = Ext.create('Ext.grid.Panel', {
+		defaultType: 'textfield',
+		height: 400,
+		sortableColumns: false,
+		store: grupHistory,
+		columns: [{
+			xtype: 'rownumberer',
+			width: 25
+		},{
+			text: 'Tanggal Kirim',
+			dataIndex: 'fd_tgl_kirim',
+			menuDisabled: true,
+			flex: 1
+		},{
+			text: 'Kreditur',
+			dataIndex: 'fs_nama_kreditur',
+			menuDisabled: true,
+			flex: 1
+		},{
+			text: 'Penerima',
+			dataIndex: 'fs_penerima',
+			menuDisabled: true,
+			flex: 1
+		},{
+			text: 'Jumlah BPKB',
+			dataIndex: 'fs_jumlah_bpkb',
+			menuDisabled: true,
+			flex: 1
+		}],
 		tbar: [{
-			flex: 1.4,
+			flex: 1,
 			layout: 'anchor',
 			xtype: 'container',
 			items: [{
 				anchor: '98%',
-				emptyText: 'Nama Konsumen',
-				id: 'txtCari',
-				name: 'txtCari',
+				emptyText: 'Tanggal Kirim',
+				id: 'txtCari1',
+				name: 'txtCari1',
 				xtype: 'textfield'
 			}]
 		},{
@@ -157,7 +457,7 @@ Ext.onReady(function() {
 				text: 'Search',
 				xtype: 'button',
 				handler: function() {
-				grupDataBPKB.load();
+					grupHistory.load();
 				}
 			}]
 		},{
@@ -166,12 +466,18 @@ Ext.onReady(function() {
 			xtype: 'container',
 			items: []
 		}],
+		bbar: Ext.create('Ext.PagingToolbar', {
+			displayInfo: true,
+			pageSize: 25,
+			plugins: Ext.create('Ext.ux.ProgressBarPager', {}),
+			store: grupHistory
+		}),
 		listeners: {
 			itemdblclick: function(grid, record) {
-				Ext.getCmp('txtNama').setValue(record.get('fs_nama'));
-				Ext.getCmp('txtNoPolisi').setValue(record.get('fs_no_polisi'));
-				Ext.getCmp('txtNoBPKB').setValue(record.get('fs_no_BPKP'));
-				Ext.getCmp('txtNamaBPKB').setValue(record.get('fs_nama_BPKB'));
+
+				// CHANGE TAB
+				var tabPanel = Ext.ComponentQuery.query('tabpanel')[0];
+				tabPanel.setActiveTab('tab2');
 			}
 		},
 		viewConfig: {
@@ -182,444 +488,25 @@ Ext.onReady(function() {
 			stripeRows: true
 		}
 	});
-	// COMPONENT FORM DATA KONSUMEN & KENDARAAN
 
-	var txtNama = {
+	// COMPONENT FORM KIRIM BPKB
+	var cboNoBPKB = {
 		afterLabelTextTpl: required,
 		allowBlank: false,
 		anchor: '100%',
-		fieldLabel: 'Nama',
-		emptyText: '',
-		fieldStyle: 'text-transform: uppercase;',
-		id: 'txtNama',
-		name: 'txtNama',
-		xtype: 'textfield',
-		minValue: 0,
-		maxLength: 5,
-		enforceMaxLength: true,
-		listeners: {
-			change: function(field, newValue) {
-				field.setValue(newValue.toUpperCase());
-			}
-		}
-	};
-
-	var txtNoPolisi = {
-		afterLabelTextTpl: required,
-		allowBlank: false,
-		anchor: '100%',
-		fieldLabel: 'No. Polisi',
-		emptyText: '',
-		fieldStyle: 'text-transform: uppercase;',
-		id: 'txtNoPolisi',
-		name: 'txtNoPolisi',
-		xtype: 'textfield',
-		minValue: 0,
-		maxLength: 5,
-		enforceMaxLength: true,
-		listeners: {
-			change: function(field, newValue) {
-				field.setValue(newValue.toUpperCase());
-			}
-		}
-	};
-
-	var txtNoRangka = {
-		afterLabelTextTpl: required,
-		allowBlank: false,
-		anchor: '100%',
-		fieldLabel: 'No. Rangka',
-		emptyText: '',
-		fieldStyle: 'text-transform: uppercase;',
-		id: 'txtNoRangka',
-		name: 'txtNoRangka',
-		xtype: 'textfield',
-		minValue: 0,
-		maxLength: 5,
-		enforceMaxLength: true,
-		listeners: {
-			change: function(field, newValue) {
-				field.setValue(newValue.toUpperCase());
-			}
-		}
-	};
-
-	var txtNoMesin = {
-		afterLabelTextTpl: required,
-		allowBlank: false,
-		anchor: '100%',
-		fieldLabel: 'No. Mesin',
-		emptyText: '',
-		fieldStyle: 'text-transform: uppercase;',
-		id: 'txtNoMesin',
-		name: 'txtNoMesin',
-		xtype: 'textfield',
-		minValue: 0,
-		maxLength: 5,
-		enforceMaxLength: true,
-		listeners: {
-			change: function(field, newValue) {
-				field.setValue(newValue.toUpperCase());
-			}
-		}
-	};
-
-	var txtNoBPKB = {
-		afterLabelTextTpl: required,
-		allowBlank: false,
-		anchor: '100%',
+		labelAlign: 'top',
 		fieldLabel: 'No. BPKB',
-		emptyText: '',
+		emptyText: 'No. BPKB',
 		fieldStyle: 'text-transform: uppercase;',
-		id: 'txtNoBPKB',
-		name: 'txtNoBPKB',
-		xtype: 'textfield',
-		minValue: 0,
-		maxLength: 5,
-		enforceMaxLength: true,
-		listeners: {
-			change: function(field, newValue) {
-				field.setValue(newValue.toUpperCase());
-			}
-		}
-	};
-
-	var txtNamaBPKB = {
-		afterLabelTextTpl: required,
-		allowBlank: false,
-		anchor: '100%',
-		fieldLabel: 'Nama BPKB',
-		emptyText: '',
-		fieldStyle: 'text-transform: uppercase;',
-		id: 'txtNamaBPKB',
-		name: 'txtNamaBPKB',
-		xtype: 'textfield',
-		minValue: 0,
-		maxLength: 5,
-		enforceMaxLength: true,
-		listeners: {
-			change: function(field, newValue) {
-				field.setValue(newValue.toUpperCase());
-			}
-		}
-	};
-
-	var cboTglBPKB = {
-		afterLabelTextTpl: required,
-		allowBlank: false,
-		anchor: '100%',
-		editable: true,
-		fieldLabel: 'Tanggal.BPKB',
-		format: 'd-m-Y',
-		id: 'cboTglBPKB',
-		name: 'cboTglBPKB',
-		maskRe: /[0-9-]/,
-		minValue: Ext.Date.add(new Date(), Ext.Date.YEAR, -75),
-		xtype: 'datefield',
-		value: new Date()
-	};
-
-	var txtSilinder = {
-		afterLabelTextTpl: required,
-		allowBlank: false,
-		anchor: '100%',
-		fieldLabel: 'Silinder',
-		emptyText: '',
-		fieldStyle: 'text-transform: uppercase;',
-		id: 'txtSilinder',
-		name: 'txtSilinder',
-		xtype: 'textfield',
-		minValue: 0,
-		maxLength: 5,
-		enforceMaxLength: true,
-		listeners: {
-			change: function(field, newValue) {
-				field.setValue(newValue.toUpperCase());
-			}
-		}
-	};
-
-	var txtJenisKendaraan = {
-		afterLabelTextTpl: required,
-		allowBlank: false,
-		anchor: '100%',
-		fieldLabel: 'Jenis Kend.',
-		emptyText: '',
-		fieldStyle: 'text-transform: uppercase;',
-		id: 'txtJenisKendaraan',
-		name: 'txtJenisKendaraan',
-		xtype: 'textfield',
-		minValue: 0,
-		maxLength: 5,
-		enforceMaxLength: true,
-		listeners: {
-			change: function(field, newValue) {
-				field.setValue(newValue.toUpperCase());
-			}
-		}
-	};
-
-	var txtWarna = {
-		afterLabelTextTpl: required,
-		allowBlank: false,
-		anchor: '100%',
-		fieldLabel: 'Warna.',
-		emptyText: '',
-		fieldStyle: 'text-transform: uppercase;',
-		id: 'txtWarna',
-		name: 'txtWarna',
-		xtype: 'textfield',
-		minValue: 0,
-		maxLength: 5,
-		enforceMaxLength: true,
-		listeners: {
-			change: function(field, newValue) {
-				field.setValue(newValue.toUpperCase());
-			}
-		}
-	};
-
-	var txtTahun = {
-		afterLabelTextTpl: required,
-		allowBlank: false,
-		anchor: '100%',
-		fieldLabel: 'Tahun',
-		emptyText: '',
-		fieldStyle: 'text-transform: uppercase;',
-		id: 'txtTahun',
-		name: 'txtTahun',
-		xtype: 'textfield',
-		minValue: 0,
-		maxLength: 5,
-		enforceMaxLength: true,
-		listeners: {
-			change: function(field, newValue) {
-				field.setValue(newValue.toUpperCase());
-			}
-		}
-	};
-
-	var txtStatus3 = {
-		afterLabelTextTpl: required,
-		allowBlank: false,
-		anchor: '100%',
-		fieldLabel: 'Status BPKB',
-		emptyText: '',
-		fieldStyle: 'text-transform: uppercase;',
-		id: 'txtStatus3',
-		name: 'txtStatus3',
-		xtype: 'textfield',
-		minValue: 0,
-		maxLength: 5,
-		enforceMaxLength: true,
-		listeners: {
-			change: function(field, newValue) {
-				field.setValue(newValue.toUpperCase());
-			}
-		}
-	};
-
-	// COMPONENT FORM DATA AR
-	var cboTglCair = {
-		afterLabelTextTpl: required,
-		allowBlank: false,
-		anchor: '100%',
-		editable: true,
-		fieldLabel: 'Tanggal Cair',
-		format: 'd-m-Y',
-		id: 'cboTglCair',
-		name: 'cboTglCair',
-		maskRe: /[0-9-]/,
-		minValue: Ext.Date.add(new Date(), Ext.Date.YEAR, -75),
-		xtype: 'datefield',
-		value: new Date()
-	};
-
-	var txtAngsuran = {
-		afterLabelTextTpl: required,
-		allowBlank: false,
-		anchor: '100%',
-		fieldLabel: 'Angsuran Ke',
-		emptyText: '',
-		fieldStyle: 'text-transform: uppercase;',
-		id: 'txtAngsuran',
-		name: 'txtAngsuran',
-		xtype: 'textfield',
-		minValue: 0,
-		maxLength: 5,
-		enforceMaxLength: true,
-		listeners: {
-			change: function(field, newValue) {
-				field.setValue(newValue.toUpperCase());
-			}
-		}
-	};
-
-	var txtStatus = {
-		afterLabelTextTpl: required,
-		allowBlank: false,
-		anchor: '100%',
-		fieldLabel: 'Status',
-		emptyText: '',
-		fieldStyle: 'text-transform: uppercase;',
-		id: 'txtStatus',
-		name: 'txtStatus',
-		xtype: 'textfield',
-		minValue: 0,
-		maxLength: 5,
-		enforceMaxLength: true,
-		listeners: {
-			change: function(field, newValue) {
-				field.setValue(newValue.toUpperCase());
-			}
-		}
-	};
-
-	// COMPONENT FORM DATA AP
-
-	var txtKreditur = {
-		afterLabelTextTpl: required,
-		allowBlank: false,
-		anchor: '100%',
-		fieldLabel: 'Kreditur',
-		emptyText: '',
-		fieldStyle: 'text-transform: uppercase;',
-		id: 'txtKreditur',
-		name: 'txtKreditur',
-		xtype: 'textfield',
-		minValue: 0,
-		maxLength: 5,
-		enforceMaxLength: true,
-		listeners: {
-			change: function(field, newValue) {
-				field.setValue(newValue.toUpperCase());
-			}
-		}
-	};
-
-	var cboTglCair1 = {
-		afterLabelTextTpl: required,
-		allowBlank: false,
-		anchor: '100%',
-		editable: true,
-		fieldLabel: 'Tanggal Cair',
-		format: 'd-m-Y',
-		id: 'cboTglCair1',
-		name: 'cboTglCair1',
-		maskRe: /[0-9-]/,
-		minValue: Ext.Date.add(new Date(), Ext.Date.YEAR, -75),
-		xtype: 'datefield',
-		value: new Date()
-	};
-
-	var txtNoRPPD = {
-		afterLabelTextTpl: required,
-		allowBlank: false,
-		anchor: '100%',
-		fieldLabel: 'No. RPPD',
-		emptyText: '',
-		fieldStyle: 'text-transform: uppercase;',
-		id: 'txtNoRPPD',
-		name: 'txtNoRPPD',
-		xtype: 'textfield',
-		minValue: 0,
-		maxLength: 5,
-		enforceMaxLength: true,
-		listeners: {
-			change: function(field, newValue) {
-				field.setValue(newValue.toUpperCase());
-			}
-		}
-	};
-
-	var txtStatus1 = {
-		afterLabelTextTpl: required,
-		allowBlank: false,
-		anchor: '100%',
-		fieldLabel: 'Status',
-		emptyText: '',
-		fieldStyle: 'text-transform: uppercase;',
-		id: 'txtStatus1',
-		name: 'txtStatus1',
-		xtype: 'textfield',
-		minValue: 0,
-		maxLength: 5,
-		enforceMaxLength: true,
-		listeners: {
-			change: function(field, newValue) {
-				field.setValue(newValue.toUpperCase());
-			}
-		}
-	};
-
-	var txtNoBatch = {
-		afterLabelTextTpl: required,
-		allowBlank: false,
-		anchor: '100%',
-		fieldLabel: 'No. Batch',
-		emptyText: '',
-		fieldStyle: 'text-transform: uppercase;',
-		id: 'txtNoBatch',
-		name: 'txtNoBatch',
-		xtype: 'textfield',
-		minValue: 0,
-		maxLength: 5,
-		enforceMaxLength: true,
-		listeners: {
-			change: function(field, newValue) {
-				field.setValue(newValue.toUpperCase());
-			}
-		}
-	};
-
-	// COMPONENT FORM INPUT DATA PELENGKAP
-
-	var cboTglBPKBDiterima = {
-		afterLabelTextTpl: required,
-		allowBlank: false,
-		anchor: '100%',
-		editable: true,
-		fieldLabel: 'Tanggal BPKB Diterima',
-		format: 'd-m-Y',
-		id: 'cboTglBPKBDiterima',
-		name: 'cboTglBPKBDiterima',
-		maskRe: /[0-9-]/,
-		minValue: Ext.Date.add(new Date(), Ext.Date.YEAR, -75),
-		xtype: 'datefield',
-		value: new Date()
-	};
-
-	var cboTglInput = {
-		afterLabelTextTpl: required,
-		allowBlank: false,
-		anchor: '100%',
-		editable: true,
-		fieldLabel: 'Tanggal Input',
-		format: 'd-m-Y',
-		id: 'cboTglInput',
-		name: 'cboTglInput',
-		maskRe: /[0-9-]/,
-		minValue: Ext.Date.add(new Date(), Ext.Date.YEAR, -75),
-		xtype: 'datefield',
-		value: new Date()
-	};
-
-	var cboLokasi = {
-		afterLabelTextTpl: required,
-		allowBlank: false,
-		anchor: '100%',
-		fieldLabel: 'Lokasi',
-		emptyText: '',
-		fieldStyle: 'text-transform: uppercase;',
-		id: 'cboLokasi',
-		name: 'cboLokasi',
+		id: 'cboNoBPKB',
+		name: 'cboNoBPKB',
 		xtype: 'textfield',
 		triggers: {
 			reset: {
 				cls: 'x-form-clear-trigger',
 				handler: function(field) {
 					field.setValue('');
-					Ext.getCmp('txtKdCabang').setValue('');
+					Ext.getCmp('txtKdTransaksi').setValue('');
 				}
 			},
 			cari: {
@@ -632,73 +519,226 @@ Ext.onReady(function() {
 		}
 	};
 
-	var txtNoLemari = {
+	var cboKreditur = {
 		afterLabelTextTpl: required,
 		allowBlank: false,
 		anchor: '100%',
-		fieldLabel: 'No. Lemari',
+		fieldLabel: 'Dari Kreditur',
 		emptyText: '',
 		fieldStyle: 'text-transform: uppercase;',
-		id: 'txtNoLemari',
-		name: 'txtNoLemari',
+		id: 'cboKreditur',
+		name: 'cboKreditur',
 		xtype: 'textfield',
-		minValue: 0,
-		maxLength: 5,
-		enforceMaxLength: true,
-		listeners: {
-			change: function(field, newValue) {
-				field.setValue(newValue.toUpperCase());
+		triggers: {
+			reset: {
+				cls: 'x-form-clear-trigger',
+				handler: function(field) {
+					field.setValue('');
+					Ext.getCmp('').setValue('');
+				}
+			},
+			cari: {
+				cls: 'x-form-search-trigger',
+				handler: function() {
+					winCari1.show();
+					winCari1.center();
+				}
 			}
 		}
 	};
 
+	var txtNoBPKB = {
+		anchor: '100%',
+		fieldLabel: 'No. BPKB',
+		fieldStyle: 'background-color: #eee; background-image: none;',
+		readOnly: true,
+		id: 'txtNoBPKB',
+		name: 'txtNoBPKB',
+		xtype: 'textfield'
+	};
+
+	var txtKdTransaksi = {
+		id: 'txtKdTransaksi',
+		name: 'txtKdTransaksi',
+		xtype: 'textfield',
+		hidden: true
+	};
+
+	var txtNoPJJ = {
+		anchor: '100%',
+		fieldLabel: 'No. PJJ',
+		fieldStyle: 'background-color: #eee; background-image: none;',
+		readOnly: true,
+		id: 'txtNoPJJ',
+		name: 'txtNoPJJ',
+		xtype: 'textfield'
+	};
+
+	var txtNamaKonsumen = {
+		anchor: '100%',
+		fieldLabel: 'Nama Konsumen',
+		fieldStyle: 'background-color: #eee; background-image: none;',
+		readOnly: true,
+		id: 'txtNamaKonsumen',
+		name: 'txtNamaKonsumen',
+		xtype: 'textfield'
+	};
+
+	var cboTglBPKB = {
+		anchor: '100%',
+		editable: false,
+		fieldLabel: 'Tanggal BPKB',
+		format: 'd-m-Y',
+		id: 'cboTglBPKB',
+		name: 'cboTglBPKB',
+		maskRe: /[0-9-]/,
+		xtype: 'datefield'
+	};
+
+	var txtJenisKendaraan = {
+		anchor: '100%',
+		fieldLabel: 'Jenis Kendaraan',
+		fieldStyle: 'background-color: #eee; background-image: none;',
+		readOnly: true,
+		id: 'txtJenisKendaraan',
+		name: 'txtJenisKendaraan',
+		xtype: 'textfield'
+	};
+
+	var txtTahunKendaraan = {
+		anchor: '100%',
+		fieldLabel: 'Tahun Kendaraan',
+		fieldStyle: 'background-color: #eee; background-image: none;',
+		readOnly: true,
+		id: 'txtTahunKendaraan',
+		name: 'txtTahunKendaraan',
+		xtype: 'textfield'
+	};
+
+	var txtWarnaKendaraan = {
+		anchor: '100%',
+		fieldLabel: 'Warna Kendaraan',
+		fieldStyle: 'background-color: #eee; background-image: none;',
+		readOnly: true,
+		id: 'txtWarnaKendaraan',
+		name: 'txtWarnaKendaraan',
+		xtype: 'textfield'
+	};
+
+	var txtNomerRangka = {
+		anchor: '100%',
+		fieldLabel: 'Nomer Rangka',
+		fieldStyle: 'background-color: #eee; background-image: none;',
+		readOnly: true,
+		id: 'txtNomerRangka',
+		name: 'txtNomerRangka',
+		xtype: 'textfield'
+	};
+
+	var txtNomerMesin = {
+		anchor: '100%',
+		fieldLabel: 'Nomer Mesin',
+		fieldStyle: 'background-color: #eee; background-image: none;',
+		readOnly: true,
+		id: 'txtNomerMesin',
+		name: 'txtNomerMesin',
+		xtype: 'textfield'
+	};
+
+	var txtNoPolisi = {
+		anchor: '100%',
+		fieldLabel: 'No. Polisi',
+		fieldStyle: 'background-color: #eee; background-image: none;',
+		readOnly: true,
+		id: 'txtNoPolisi',
+		name: 'txtNoPolisi',
+		xtype: 'textfield'
+	};	
+
+	var cboTglTerbit = {
+		anchor: '98%',
+		editable: true,
+		fieldLabel: 'Tgl Terbit BPKB',
+		format: 'd-m-Y',
+		id: 'cboTglTerbit',
+		name: 'cboTglTerbit',
+		maskRe: /[0-9-]/,
+		minValue: Ext.Date.add(new Date(), Ext.Date.YEAR, -75),
+		xtype: 'datefield',
+		value: new Date()
+	}
+
+	var cboTglTerbitSTNK = {
+		anchor: '98%',
+		editable: true,
+		fieldLabel: 'Tgl Terbit STNK',
+		format: 'd-m-Y',
+		id: 'cboTglTerbitSTNK',
+		name: 'cboTglTerbitSTNK',
+		maskRe: /[0-9-]/,
+		minValue: Ext.Date.add(new Date(), Ext.Date.YEAR, -75),
+		xtype: 'datefield',
+		value: new Date()
+	}
+
+	var btnOK = {
+		anchor: '100%',
+		scale: 'medium',
+		xtype: 'button',
+		id: 'btnOK',
+		name: 'btnOK',
+		text: 'Tambah',
+		iconCls: 'icon-save',
+		handler: ''
+	};
+
+	var btnKirim = {
+		anchor: '100%',
+		scale: 'medium',
+		xtype: 'button',
+		id: 'btnKirim',
+		name: 'btnKirim',
+		text: 'Kirim',
+		iconCls: 'icon-save',
+		handler: ''
+	};
+	var txtNoFaktur = {
+		anchor: '100%',
+		fieldLabel: 'No. Faktur',
+		fieldStyle: 'background-color: #eee; background-image: none;',
+		readOnly: true,
+		id: 'txtNoFaktur',
+		name: 'txtNoFaktur',
+		xtype: 'textfield'
+	};
+
+	var txtNoTempatBPKB = {
+		anchor: '100%',
+		fieldLabel: 'Tempat BPKB',
+		fieldStyle: 'background-color: #eee; background-image: none;',
+		readOnly: true,
+		id: 'txtNoTempatBPKB',
+		name: 'txtNoTempatBPKB',
+		xtype: 'textfield'
+	};
+
+	var txtNoLoker = {
+		anchor: '100%',
+		fieldLabel: 'Loker',
+		fieldStyle: 'background-color: #eee; background-image: none;',
+		readOnly: true,
+		id: 'txtNoLoker',
+		name: 'txtNoLoker',
+		xtype: 'textfield'
+	};
+
 	// FUNCTIONS
-	function fnReset() {
-		// COMPONENT FORM DATA KONSUMEN & KENDARAAN
-		Ext.getCmp('txtNama').setValue('');
-		Ext.getCmp('txtNoPolisi').setValue('');
-		Ext.getCmp('txtNoRangka').setValue('');
-		Ext.getCmp('txtNoMesin').setValue('');
-		Ext.getCmp('txtNoBPKB').setValue('');
-		Ext.getCmp('txtNamaBPKB').setValue('');
-		Ext.getCmp('cboTglBPKB').setValue('');
-		Ext.getCmp('txtSilinder').setValue('');
-		Ext.getCmp('txtJenisKendaraan').setValue('');
-		Ext.getCmp('txtWarna').setValue('');
-		Ext.getCmp('txtTahun').setValue('');	
-		// COMPONENT FORM DATA AR
-		Ext.getCmp('cboTglCair').setValue('');
-		Ext.getCmp('txtAngsuran').setValue('');
-		Ext.getCmp('txtStatus').setValue('');
-		// COMPONENT FORM DATA AP
-		Ext.getCmp('txtKreditur').setValue('');
-		Ext.getCmp('cboTglCair1').setValue('');
-		Ext.getCmp('txtNoRPPD').setValue('');
-		Ext.getCmp('txtStatus1').setValue('');
-		Ext.getCmp('txtNoBatch').setValue('');
-		// COMPONENT FORM INPUT DATA PELENGKAP
-		Ext.getCmp('cboTglBPKBDiterima').setValue('');
-		Ext.getCmp('cboTglInput').setValue('');
-		Ext.getCmp('cboLokasi').setValue('');
-		Ext.getCmp('txtNoLemari').setValue('');
-	}
-	function fnCekSave() {
 
-	}
-
-	function fnSave() {
-
-	}
-
-	function fnRemove() {
-
-	}
-			
 	var frmTerimaBPKBDariKreditur = Ext.create('Ext.form.Panel', {
 		border: false,
 		frame: true,
 		region: 'center',
-		title: 'Terima BPKB Dari Cabang',
+		title: 'Terima BPKB Dari Kreditur',
 		width: 930,
 		items: [{
 			activeTab: 0,
@@ -711,38 +751,18 @@ Ext.onReady(function() {
 				bodyStyle: 'background-color: '.concat(gBasePanel),
 				border: false,
 				frame: false,
-				title: 'Daftar Terima BPKB Dari Cabang',
+				title: 'Detail BPKB',
 				xtype: 'form',
 				items: [{
 					fieldDefaults: {
 						labelAlign: 'right',
 						labelSeparator: '',
-						labelWidth: 140,
-						msgTarget: 'side'
-					},	
-					xtype: 'fieldset',
-					title: 'Data BPKB',
-					style: 'padding: 5px;',
-					items: [
-						gridBPKB
-					]
-				}]
-			},{
-				id: 'tab2',
-				bodyStyle: 'background-color: '.concat(gBasePanel),
-				border: false,
-				frame: false,
-				title: 'Form Terima BPKB Dari Cabang',
-				xtype: 'form',
-				items: [{
-					fieldDefaults: {
-						labelAlign: 'right',
-						labelSeparator: '',
-						labelWidth: 140,
+						labelWidth: 100,
 						msgTarget: 'side'
 					},	
 					xtype: 'fieldset',
 					border: false,
+					style: 'padding: 1px;',
 					items: [{
 						anchor: '100%',
 						layout: 'hbox',
@@ -753,22 +773,14 @@ Ext.onReady(function() {
 							xtype: 'container',
 							items: [{
 								anchor: '98%',
-								title: 'Data Konsumen dan Kendaraan',
 								style: 'padding: 5px;',
+								title: '',
 								xtype: 'fieldset',
 								items: [
-									txtNama,
-									txtNoPolisi,
-									txtNoRangka,
-									txtNoMesin,
-									txtNoBPKB,
-									txtNamaBPKB,
-									cboTglBPKB,
-									txtSilinder,
-									txtJenisKendaraan,
-									txtWarna,
-									txtTahun,
-									txtStatus3
+									cboNoBPKB,
+									txtKdTransaksi,
+									gridTerima,
+									btnKirim
 								]
 							}]
 						},{
@@ -776,57 +788,56 @@ Ext.onReady(function() {
 							layout: 'anchor',
 							xtype: 'container',
 							items: [{
-								anchor: '98%',
-								title: 'Data AR',
-								style: 'padding: 5px;',
+								anchor: '100%',
+								style: 'padding: 7px;',
+								title: '',
 								xtype: 'fieldset',
 								items: [
-									cboTglCair,
-									txtAngsuran,
-									txtStatus
-								]
-							},{
-								anchor: '98%',
-								title: 'Data AP',
-								style: 'padding: 5px;',
-								xtype: 'fieldset',
-								items: [
-									txtKreditur,
-									cboTglCair1,
-									txtNoRPPD,
-									txtStatus1,
-									txtNoBatch
-								]
-							},{
-								anchor: '98%',
-								title: 'Input Data Pelengkap',
-								style: 'padding: 5px;',
-								xtype: 'fieldset',
-								items: [
-									cboTglBPKBDiterima,
-									cboTglInput,
-									cboLokasi,
-									txtNoLemari
+									cboKreditur,
+									txtNoPJJ,
+									txtNamaKonsumen,
+									txtJenisKendaraan,
+									txtTahunKendaraan,
+									txtWarnaKendaraan,
+									txtNomerRangka,
+									txtNomerMesin,
+									txtNoPolisi,
+									txtNoBPKB,
+									cboTglTerbit,
+									cboTglTerbitSTNK,
+									txtNoFaktur,
+									txtNoTempatBPKB,
+									txtNoLoker,
+									btnOK
 								]
 							}]
 						}]
 					}]
-				}],
-				buttons: [{
-					iconCls: 'icon-save',
-					id: 'btnSave',
-					name: 'btnSave',
-					text: 'Save',
-					scale: 'medium',
-					handler: fnCekSave
-				},{
-					iconCls: 'icon-reset',
-					text: 'Reset',
-					scale: 'medium',
-					handler: fnReset
 				}]
-			}]		
-		}]	
+			},{
+
+				id: 'tab2',
+				bodyStyle: 'background-color: '.concat(gBasePanel),
+				border: false,
+				frame: false,
+				xtype: 'form',
+				title: 'History',
+				items: [{
+					fieldDefaults: {
+						labelAlign: 'right',
+						labelSeparator: '',
+						labelWidth: 120,
+						msgTarget: 'side'
+					},
+					style: 'padding: 5px;',
+					title: 'History',
+					xtype: 'fieldset',
+					items: [
+						gridHistroy
+					]
+				}]
+			}]
+		}]
 	});
 
 	var vMask = new Ext.LoadMask({

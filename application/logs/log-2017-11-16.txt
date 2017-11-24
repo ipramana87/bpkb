@@ -1,0 +1,114 @@
+ERROR - 2017-11-16 02:43:18 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-16 02:45:24 --> 404 Page Not Found: Masterkreditur/select
+ERROR - 2017-11-16 02:45:32 --> 404 Page Not Found: Masterpeyimpananbpkb/select
+ERROR - 2017-11-16 02:47:34 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-16 02:57:43 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-16 02:58:00 --> 404 Page Not Found: Terimadarikreditur/gridhistory
+ERROR - 2017-11-16 02:58:34 --> 404 Page Not Found: Terimadarikreditur/gridhistory
+ERROR - 2017-11-16 02:59:27 --> 404 Page Not Found: Terimadarikreditur/gridhistory
+ERROR - 2017-11-16 03:00:17 --> Severity: error --> Exception: syntax error, unexpected 'public' (T_PUBLIC), expecting end of file D:\xampp\htdocs\bpkb\application\controllers\Kirimkekreditur.php 54
+ERROR - 2017-11-16 03:12:19 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-16 03:14:56 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-16 03:14:56 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-16 03:20:26 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-16 03:26:19 --> 404 Page Not Found: Terimadarikreditur/gridhistory
+ERROR - 2017-11-16 03:30:44 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-16 03:30:44 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-16 03:59:15 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-16 03:59:15 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-16 03:59:25 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-16 04:00:08 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-16 04:00:18 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-16 04:04:26 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-16 04:05:02 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-16 04:05:12 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-16 04:05:27 --> 404 Page Not Found: Terimadarikreditur/gridhistory
+ERROR - 2017-11-16 04:07:55 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-16 04:07:55 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-16 04:15:39 --> 404 Page Not Found: Penyerahankekonsumen/index
+ERROR - 2017-11-16 04:15:40 --> 404 Page Not Found: Approvebpkb/index
+ERROR - 2017-11-16 04:15:48 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-16 04:16:02 --> Query error: Unknown column 'fs_no_pjj' in 'field list' - Invalid query: 
+			SELECT fs_transaksi, fs_no_pjj, fs_nama_pemilik, fs_status,
+				fs_kode_lokasi, fs_kode_cabang, fs_kode_kendaraan, fs_jenis_kendaraan,
+				fn_tahun_kendaraan, fs_warna_kendaraan, fs_silinder_kendaraan,
+				fs_no_polisi, fs_no_rangka,fs_no_mesin, fs_no_bpkb, fs_nama_bpkb, fd_tanggal_bpkb
+			FROM tx_bpkb 
+			WHERE fs_flag_qrcode = '0'
+		
+ERROR - 2017-11-16 04:16:06 --> Query error: Unknown column 'fs_no_pjj' in 'field list' - Invalid query: 
+			SELECT fs_transaksi, fs_no_pjj, fs_nama_pemilik, fs_status,
+				fs_kode_lokasi, fs_kode_cabang, fs_kode_kendaraan, fs_jenis_kendaraan,
+				fn_tahun_kendaraan, fs_warna_kendaraan, fs_silinder_kendaraan,
+				fs_no_polisi, fs_no_rangka,fs_no_mesin, fs_no_bpkb, fs_nama_bpkb, fd_tanggal_bpkb
+			FROM tx_bpkb 
+			WHERE fs_flag_qrcode = '0'
+		
+ERROR - 2017-11-16 04:33:13 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-16 04:33:35 --> 404 Page Not Found: Terimadarikreditur/gridhistory
+ERROR - 2017-11-16 04:39:05 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-16 04:39:05 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-16 04:40:16 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-16 04:43:57 --> 404 Page Not Found: Terimadarikreditur/gridhistory
+ERROR - 2017-11-16 04:53:27 --> 404 Page Not Found: Masterkreditur/select
+ERROR - 2017-11-16 05:34:06 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-16 07:14:49 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-16 07:14:49 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-16 07:37:34 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-16 07:37:38 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-16 07:41:16 --> 404 Page Not Found: Masterkreditur/select
+ERROR - 2017-11-16 07:55:06 --> 404 Page Not Found: Widget/cboNoPol.js
+ERROR - 2017-11-16 07:56:34 --> 404 Page Not Found: Widget/cboNoPol.js
+ERROR - 2017-11-16 07:56:44 --> 404 Page Not Found: Widget/cboNoPol.js
+ERROR - 2017-11-16 08:03:34 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-16 08:08:39 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-16 08:08:39 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-16 08:15:03 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-16 08:26:19 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-16 08:40:17 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-16 08:40:27 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-16 08:40:27 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-16 08:51:06 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-16 08:51:41 --> 404 Page Not Found: Terimadarikreditur/gridhistory
+ERROR - 2017-11-16 08:56:07 --> 404 Page Not Found: Terimadarikreditur/gridhistory
+ERROR - 2017-11-16 08:56:31 --> 404 Page Not Found: Masterkreditur/select
+ERROR - 2017-11-16 09:00:16 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-16 09:03:11 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-16 09:03:14 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-16 09:03:14 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-16 09:21:56 --> 404 Page Not Found: Terimadarikreditur/gridhistory
+ERROR - 2017-11-16 09:26:35 --> 404 Page Not Found: Penyerahankekonsumen/index
+ERROR - 2017-11-16 09:27:31 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-16 09:27:31 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-16 09:36:39 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-16 09:36:39 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-16 09:40:07 --> 404 Page Not Found: Penyerahankekonsumen/index
+ERROR - 2017-11-16 09:52:53 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-16 09:52:56 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-16 09:52:56 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-16 09:53:00 --> 404 Page Not Found: Terimadarikreditur/gridhistory
+ERROR - 2017-11-16 09:53:09 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-16 10:22:13 --> 404 Page Not Found: Approvebpkb/index
+ERROR - 2017-11-16 10:30:02 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-16 10:30:04 --> 404 Page Not Found: Assets/js
+ERROR - 2017-11-16 10:30:04 --> 404 Page Not Found: Assets/js
+ERROR - 2017-11-16 10:30:26 --> 404 Page Not Found: Assets/js
+ERROR - 2017-11-16 10:30:27 --> 404 Page Not Found: Assets/js
+ERROR - 2017-11-16 10:31:17 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-16 10:48:45 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-16 10:48:45 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-16 10:52:26 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-16 10:52:26 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-16 11:20:42 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-16 11:22:03 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-16 11:40:40 --> Query error: Unknown column 'fs_no_pjj' in 'field list' - Invalid query: 
+			SELECT fs_transaksi, fs_no_pjj, fs_nama_pemilik, fs_status,
+				fs_kode_lokasi, fs_kode_cabang, fs_kode_kendaraan, fs_jenis_kendaraan,
+				fn_tahun_kendaraan, fs_warna_kendaraan, fs_silinder_kendaraan,
+				fs_no_polisi, fs_no_rangka,fs_no_mesin, fs_no_bpkb, fs_nama_bpkb, fd_tanggal_bpkb
+			FROM tx_bpkb 
+			WHERE fs_flag_qrcode = '0'
+		
+ERROR - 2017-11-16 11:53:47 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-16 11:53:56 --> 404 Page Not Found: Terimadarikreditur/gridhistory
+ERROR - 2017-11-16 11:54:01 --> 404 Page Not Found: Assets/css

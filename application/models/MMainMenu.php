@@ -29,7 +29,7 @@ class MMainMenu extends CI_Model
 			INNER JOIN tg_menu b 
 			ON a.fs_kd_child = b.fs_kd_child AND a.fs_kd_parent = b.fs_kd_parent 
 			WHERE a.fs_level = '".trim($sLevel)."'
-			ORDER BY b.id_menu, b.fs_kd_child, b.fs_kd_parent ASC
+			ORDER BY a.fs_kd_parent, a.fs_kd_child
 		");
 		
 		$sSQL = $this->db->query($xSQL);
