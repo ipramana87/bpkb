@@ -105,6 +105,7 @@ Ext.onReady(function() {
 		}),
 		listeners: {
 			itemdblclick: function(grid, record) {
+				Ext.getCmp('cboNoBPKB').setValue(record.get('fs_no_bpkb'));
 				Ext.getCmp('txtNoPJJ').setValue(record.get('fn_no_pjj'));
 				Ext.getCmp('txtNamaKonsumen').setValue(record.get('fs_nama_pemilik'));
 				Ext.getCmp('txtJenisKendaraan').setValue(record.get('fs_jenis_kendaraan'));
@@ -115,6 +116,10 @@ Ext.onReady(function() {
 				Ext.getCmp('txtNoPolisi').setValue(record.get('fs_no_polisi'));
 				Ext.getCmp('txtNoBPKB').setValue(record.get('fs_no_bpkb'));
 				Ext.getCmp('txtNoFaktur').setValue(record.get('fs_no_faktur'));
+				Ext.getCmp('txtNoTempatBPKB').setValue(record.get('fs_tempat_bpkb'));
+				Ext.getCmp('txtNoLoker').setValue(record.get('fs_nama_loker'));
+				Ext.getCmp('cboTglTerbit').setValue(record.get('fd_tanggal_terbit'));
+				Ext.getCmp('cboTglTerbitSTNK').setValue(record.get('fd_terbit_stnk'));
 				winCari.hide();
 			}
 		},
@@ -189,7 +194,7 @@ Ext.onReady(function() {
 		defaultType: 'textfield',
 		height: 400,
 		sortableColumns: false,
-		//store: grupKirim,
+		store: grupKirim,
 		columns: [{
 			xtype: 'rownumberer',
 			width: 25
@@ -229,7 +234,7 @@ Ext.onReady(function() {
 												title: 'BPKB'
 											});
 											//fnResetUser();
-											//grupKirim.load();  
+											grupKirim.load();  
 										},
 										failure: function(response) {
 											var xtext = Ext.decode(response.responseText);
@@ -253,10 +258,11 @@ Ext.onReady(function() {
 			displayInfo: true,
 			pageSize: 25,
 			plugins: Ext.create('Ext.ux.ProgressBarPager', {}),
-			//store: grupKirim	
+			store: grupKirim	
 		}),
 		listeners: {
 			itemdblclick: function(grid, record) {
+				Ext.getCmp('cboNoBPKB').setValue(record.get('fs_no_bpkb'));
 				Ext.getCmp('txtNoPJJ').setValue(record.get('fn_no_pjj'));
 				Ext.getCmp('txtNamaKonsumen').setValue(record.get('fs_nama_pemilik'));
 				Ext.getCmp('txtJenisKendaraan').setValue(record.get('fs_jenis_kendaraan'));
@@ -266,7 +272,11 @@ Ext.onReady(function() {
 				Ext.getCmp('txtNomerRangka').setValue(record.get('fs_no_rangka'));
 				Ext.getCmp('txtNoPolisi').setValue(record.get('fs_no_polisi'));
 				Ext.getCmp('txtNoBPKB').setValue(record.get('fs_no_bpkb'));
+				Ext.getCmp('cboTglTerbit').setValue(record.get('fd_tanggal_terbit'));
+				Ext.getCmp('cboTglTerbitSTNK').setValue(record.get('fd_terbit_stnk'));
 				Ext.getCmp('txtNoFaktur').setValue(record.get('fs_no_faktur'));
+				Ext.getCmp('txtNoTempatBPKB').setValue(record.get('fs_tempat_bpkb'));
+				Ext.getCmp('txtNoLoker').setValue(record.get('fs_nama_loker'));
 		
 				// CHANGE TAB
 				var tabPanel = Ext.ComponentQuery.query('tabpanel')[0];
@@ -381,7 +391,7 @@ Ext.onReady(function() {
 				cls: 'x-form-clear-trigger',
 				handler: function(field) {
 					field.setValue('');
-					Ext.getCmp('').setValue('');
+					//Ext.getCmp('').setValue('');
 				}
 			},
 			cari: {
@@ -530,7 +540,7 @@ Ext.onReady(function() {
 		name: 'btnOK',
 		text: 'Tambah',
 		iconCls: 'icon-save',
-		handler: ''
+		handler:fnCekSave
 	};
 
 	var btnKirim = {
@@ -572,6 +582,127 @@ Ext.onReady(function() {
 		name: 'txtNoLoker',
 		xtype: 'textfield'
 	};
+
+	function fnCekSave() {
+		if (this.up('form').getForm().isValid()) {
+			Ext.Ajax.on('beforerequest', fnMaskShow);
+			Ext.Ajax.on('requestcomplete', fnMaskHide);
+			Ext.Ajax.on('requestexception', fnMaskHide);
+
+			Ext.Ajax.request({
+				method: 'POST',
+				url: 'Kirimkepusat/ceksave',
+				params: {
+					'fn_no_pjj': Ext.getCmp('txtNoPJJ').getValue()
+				},
+				success: function(response) {
+					var xtext = Ext.decode(response.responseText);
+					if (xtext.sukses === false) {
+						Ext.MessageBox.show({
+							buttons: Ext.MessageBox.OK,
+							closable: false,
+							icon: Ext.MessageBox.INFO,
+							msg: xtext.hasil,
+							title: 'BPKB'
+						});
+					} else {
+						Ext.MessageBox.show({
+							buttons: Ext.MessageBox.YESNO,
+							closable: false,
+							icon: Ext.MessageBox.QUESTION,
+							msg: xtext.hasil,
+							title: 'BPKB',
+							fn: function(btn) {
+								if (btn == 'yes') {
+									fnSave();
+								}
+							}
+						});
+					}
+				},
+				failure: function(response) {
+					var xtext = Ext.decode(response.responseText);
+					Ext.MessageBox.show({
+						buttons: Ext.MessageBox.OK,
+						closable: false,
+						icon: Ext.MessageBox.INFO,
+						msg: 'Simpan Gagal, Koneksi Gagal',
+						title: 'BPKB'
+					});
+					fnMaskHide();
+				}
+			});
+		}
+	}
+
+	function fnSave() {
+	/*
+		var xtanggal = '';
+		var xfasilitas = '';
+		var xplafon = '';
+
+		var store = gridFasilitas.getStore();
+		store.each(function(record, idx) {
+			xtanggal = xtanggal +'|'+ record.get('fd_tanggal_berlaku');
+			xfasilitas = xfasilitas +'|'+ record.get('fs_nama_fasilitas');
+			xplafon = xplafon +'|'+ record.get('fn_plafon');
+		});
+	*/
+		Ext.Ajax.on('beforerequest', fnMaskShow);
+		Ext.Ajax.on('requestcomplete', fnMaskHide);
+		Ext.Ajax.on('requestexception', fnMaskHide);
+
+		Ext.Ajax.request({
+			method: 'POST',
+			url: 'Kirimkepusat/save',
+			params: {
+				'fn_no_apk': Ext.getCmp('txtNoAPK').getValue(),
+				'fn_no_pjj': Ext.getCmp('txtNoPJJ').getValue(),
+				'fs_nama_konsumen': Ext.getCmp('txtNama').getValue(),
+				'fs_model_kendaraan': Ext.getCmp('txtJenisKendaraan').getValue(),
+				'fn_tahun_kendaraan': Ext.getCmp('txtTahunKendaraan').getValue(),
+				'fs_warna_kendaraan': Ext.getCmp('txtWarnaKendaraan').getValue(),
+				'fs_no_mesin': Ext.getCmp('txtNomerMesin').getValue(),
+				'fs_no_rangka': Ext.getCmp('txtNomerRangka').getValue(),
+				'fs_no_bpkb': Ext.getCmp('txtNoBPKB').getValue(),
+				'fd_tanggal_terbit': Ext.getCmp('cboTglTerbit').getValue(),
+				'fd_terima_bpkb': Ext.getCmp('cboTglTerima').getValue(),
+				'fd_terbit_stnk': Ext.getCmp('cboTglTerbitSTNK').getValue(),
+				'fs_no_faktur': Ext.getCmp('txtNoFaktur').getValue(),
+				'fs_tempat_bpkb': Ext.getCmp('cboTempatBPKB').getValue(),
+				'fs_nama_loker': Ext.getCmp('txtNoLoker').getValue(),
+				'fs_nama_loker': Ext.getCmp('txtNoLoker').getValue(),
+			},
+			success: function(response) {
+				var xtext = Ext.decode(response.responseText);
+				Ext.MessageBox.show({
+					buttons: Ext.MessageBox.OK,
+					closable: false,
+					icon: Ext.MessageBox.INFO,
+					msg: xtext.hasil,
+					title: 'BPKB'
+				});
+
+				fnReset();
+
+				// REFRESH AFTER SAVE
+				gridtbo.Laad();
+				grupTBO.load();
+				
+			},
+			failure: function(response) {
+				var xtext = Ext.decode(response.responseText);
+				Ext.MessageBox.show({
+					buttons: Ext.MessageBox.OK,
+					closable: false,
+					icon: Ext.MessageBox.INFO,
+					msg: 'Saving Failed, Connection Failed!!',
+					title: 'BPKB'
+				});
+				fnMaskHide();
+			}
+		});
+	}
 
 	var frmKirimBPKBKePusat = Ext.create('Ext.form.Panel', {
 		border: false,
@@ -625,12 +756,7 @@ Ext.onReady(function() {
 							flex: 1,
 							layout: 'anchor',
 							xtype: 'container',
-							items: [{
-								anchor: '100%',
-								style: 'padding: 7px;',
-								title: '',
-								xtype: 'fieldset',
-								items: [
+							items: [
 									txtNoPJJ,
 									txtNamaKonsumen,
 									txtJenisKendaraan,
@@ -650,8 +776,7 @@ Ext.onReady(function() {
 							}]
 						}]
 					}]
-				}]
-			},{
+				},{
 
 				id: 'tab2',
 				bodyStyle: 'background-color: '.concat(gBasePanel),

@@ -1,0 +1,520 @@
+ERROR - 2017-11-30 03:00:22 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-30 03:00:35 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-30 03:00:35 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-30 03:09:36 --> Severity: Notice --> Undefined property: stdClass::$fs_no_pjj D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 169
+ERROR - 2017-11-30 03:09:36 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_konsumen D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:09:36 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_dealer D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 172
+ERROR - 2017-11-30 03:09:36 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 173
+ERROR - 2017-11-30 03:09:36 --> Severity: Notice --> Undefined property: stdClass::$fs_no_pjj D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 169
+ERROR - 2017-11-30 03:09:36 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_konsumen D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:09:36 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_dealer D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 172
+ERROR - 2017-11-30 03:09:36 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 173
+ERROR - 2017-11-30 03:09:36 --> Severity: Notice --> Undefined property: stdClass::$fs_no_pjj D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 169
+ERROR - 2017-11-30 03:09:36 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_konsumen D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:09:36 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_dealer D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 172
+ERROR - 2017-11-30 03:09:36 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 173
+ERROR - 2017-11-30 03:09:36 --> Severity: Notice --> Undefined property: stdClass::$fs_no_pjj D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 169
+ERROR - 2017-11-30 03:09:36 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_konsumen D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:09:36 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_dealer D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 172
+ERROR - 2017-11-30 03:09:36 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 173
+ERROR - 2017-11-30 03:09:36 --> Severity: Notice --> Undefined property: stdClass::$fs_no_pjj D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 169
+ERROR - 2017-11-30 03:09:36 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_konsumen D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:09:36 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_dealer D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 172
+ERROR - 2017-11-30 03:09:36 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 173
+ERROR - 2017-11-30 03:09:36 --> Severity: Notice --> Undefined property: stdClass::$fs_no_pjj D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 169
+ERROR - 2017-11-30 03:09:36 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_konsumen D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:09:36 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_dealer D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 172
+ERROR - 2017-11-30 03:09:36 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 173
+ERROR - 2017-11-30 03:09:36 --> Severity: Notice --> Undefined property: stdClass::$fs_no_pjj D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 169
+ERROR - 2017-11-30 03:09:36 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_konsumen D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:09:36 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_dealer D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 172
+ERROR - 2017-11-30 03:09:36 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 173
+ERROR - 2017-11-30 03:09:36 --> Severity: Notice --> Undefined property: stdClass::$fs_no_pjj D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 169
+ERROR - 2017-11-30 03:09:36 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_konsumen D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:09:36 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_dealer D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 172
+ERROR - 2017-11-30 03:09:36 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 173
+ERROR - 2017-11-30 03:09:36 --> Severity: Notice --> Undefined property: stdClass::$fs_no_pjj D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 169
+ERROR - 2017-11-30 03:09:36 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_konsumen D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:09:36 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_dealer D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 172
+ERROR - 2017-11-30 03:09:36 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 173
+ERROR - 2017-11-30 03:09:36 --> Severity: Notice --> Undefined property: stdClass::$fs_no_pjj D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 169
+ERROR - 2017-11-30 03:09:36 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_konsumen D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:09:36 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_dealer D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 172
+ERROR - 2017-11-30 03:09:36 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 173
+ERROR - 2017-11-30 03:09:36 --> Severity: Notice --> Undefined property: stdClass::$fs_no_pjj D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 169
+ERROR - 2017-11-30 03:09:36 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_konsumen D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:09:36 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_dealer D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 172
+ERROR - 2017-11-30 03:09:36 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 173
+ERROR - 2017-11-30 03:09:36 --> Severity: Notice --> Undefined property: stdClass::$fs_no_pjj D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 169
+ERROR - 2017-11-30 03:09:36 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_konsumen D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:09:36 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_dealer D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 172
+ERROR - 2017-11-30 03:09:36 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 173
+ERROR - 2017-11-30 03:09:36 --> Severity: Notice --> Undefined property: stdClass::$fs_no_pjj D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 169
+ERROR - 2017-11-30 03:09:36 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_konsumen D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:09:36 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_dealer D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 172
+ERROR - 2017-11-30 03:09:36 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 173
+ERROR - 2017-11-30 03:10:23 --> Severity: Notice --> Undefined property: stdClass::$fs_no_pjj D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 169
+ERROR - 2017-11-30 03:10:23 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_konsumen D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:10:23 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_dealer D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 172
+ERROR - 2017-11-30 03:10:23 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 173
+ERROR - 2017-11-30 03:10:23 --> Severity: Notice --> Undefined property: stdClass::$fs_no_pjj D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 169
+ERROR - 2017-11-30 03:10:23 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_konsumen D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:10:23 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_dealer D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 172
+ERROR - 2017-11-30 03:10:23 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 173
+ERROR - 2017-11-30 03:10:23 --> Severity: Notice --> Undefined property: stdClass::$fs_no_pjj D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 169
+ERROR - 2017-11-30 03:10:23 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_konsumen D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:10:23 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_dealer D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 172
+ERROR - 2017-11-30 03:10:23 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 173
+ERROR - 2017-11-30 03:10:23 --> Severity: Notice --> Undefined property: stdClass::$fs_no_pjj D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 169
+ERROR - 2017-11-30 03:10:23 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_konsumen D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:10:23 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_dealer D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 172
+ERROR - 2017-11-30 03:10:23 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 173
+ERROR - 2017-11-30 03:10:23 --> Severity: Notice --> Undefined property: stdClass::$fs_no_pjj D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 169
+ERROR - 2017-11-30 03:10:23 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_konsumen D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:10:23 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_dealer D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 172
+ERROR - 2017-11-30 03:10:23 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 173
+ERROR - 2017-11-30 03:10:23 --> Severity: Notice --> Undefined property: stdClass::$fs_no_pjj D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 169
+ERROR - 2017-11-30 03:10:23 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_konsumen D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:10:23 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_dealer D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 172
+ERROR - 2017-11-30 03:10:23 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 173
+ERROR - 2017-11-30 03:10:23 --> Severity: Notice --> Undefined property: stdClass::$fs_no_pjj D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 169
+ERROR - 2017-11-30 03:10:23 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_konsumen D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:10:23 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_dealer D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 172
+ERROR - 2017-11-30 03:10:23 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 173
+ERROR - 2017-11-30 03:10:23 --> Severity: Notice --> Undefined property: stdClass::$fs_no_pjj D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 169
+ERROR - 2017-11-30 03:10:23 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_konsumen D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:10:23 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_dealer D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 172
+ERROR - 2017-11-30 03:10:23 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 173
+ERROR - 2017-11-30 03:10:23 --> Severity: Notice --> Undefined property: stdClass::$fs_no_pjj D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 169
+ERROR - 2017-11-30 03:10:23 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_konsumen D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:10:23 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_dealer D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 172
+ERROR - 2017-11-30 03:10:23 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 173
+ERROR - 2017-11-30 03:10:23 --> Severity: Notice --> Undefined property: stdClass::$fs_no_pjj D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 169
+ERROR - 2017-11-30 03:10:23 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_konsumen D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:10:23 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_dealer D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 172
+ERROR - 2017-11-30 03:10:23 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 173
+ERROR - 2017-11-30 03:10:23 --> Severity: Notice --> Undefined property: stdClass::$fs_no_pjj D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 169
+ERROR - 2017-11-30 03:10:23 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_konsumen D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:10:23 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_dealer D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 172
+ERROR - 2017-11-30 03:10:23 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 173
+ERROR - 2017-11-30 03:10:23 --> Severity: Notice --> Undefined property: stdClass::$fs_no_pjj D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 169
+ERROR - 2017-11-30 03:10:23 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_konsumen D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:10:23 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_dealer D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 172
+ERROR - 2017-11-30 03:10:23 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 173
+ERROR - 2017-11-30 03:10:23 --> Severity: Notice --> Undefined property: stdClass::$fs_no_pjj D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 169
+ERROR - 2017-11-30 03:10:23 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_konsumen D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:10:23 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_dealer D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 172
+ERROR - 2017-11-30 03:10:23 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 173
+ERROR - 2017-11-30 03:11:40 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_konsumen D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 168
+ERROR - 2017-11-30 03:11:40 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_dealer D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 169
+ERROR - 2017-11-30 03:11:40 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:11:40 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_konsumen D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 168
+ERROR - 2017-11-30 03:11:40 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_dealer D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 169
+ERROR - 2017-11-30 03:11:40 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:11:40 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_konsumen D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 168
+ERROR - 2017-11-30 03:11:40 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_dealer D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 169
+ERROR - 2017-11-30 03:11:40 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:11:40 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_konsumen D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 168
+ERROR - 2017-11-30 03:11:40 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_dealer D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 169
+ERROR - 2017-11-30 03:11:40 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:11:40 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_konsumen D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 168
+ERROR - 2017-11-30 03:11:40 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_dealer D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 169
+ERROR - 2017-11-30 03:11:40 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:11:40 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_konsumen D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 168
+ERROR - 2017-11-30 03:11:40 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_dealer D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 169
+ERROR - 2017-11-30 03:11:40 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:11:40 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_konsumen D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 168
+ERROR - 2017-11-30 03:11:40 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_dealer D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 169
+ERROR - 2017-11-30 03:11:40 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:11:40 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_konsumen D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 168
+ERROR - 2017-11-30 03:11:40 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_dealer D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 169
+ERROR - 2017-11-30 03:11:40 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:11:40 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_konsumen D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 168
+ERROR - 2017-11-30 03:11:40 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_dealer D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 169
+ERROR - 2017-11-30 03:11:40 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:11:40 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_konsumen D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 168
+ERROR - 2017-11-30 03:11:40 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_dealer D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 169
+ERROR - 2017-11-30 03:11:40 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:11:40 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_konsumen D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 168
+ERROR - 2017-11-30 03:11:40 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_dealer D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 169
+ERROR - 2017-11-30 03:11:40 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:11:40 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_konsumen D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 168
+ERROR - 2017-11-30 03:11:40 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_dealer D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 169
+ERROR - 2017-11-30 03:11:40 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:11:40 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_konsumen D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 168
+ERROR - 2017-11-30 03:11:40 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_dealer D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 169
+ERROR - 2017-11-30 03:11:40 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:11:43 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_konsumen D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 168
+ERROR - 2017-11-30 03:11:43 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_dealer D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 169
+ERROR - 2017-11-30 03:11:43 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:11:43 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_konsumen D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 168
+ERROR - 2017-11-30 03:11:43 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_dealer D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 169
+ERROR - 2017-11-30 03:11:43 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:11:43 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_konsumen D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 168
+ERROR - 2017-11-30 03:11:43 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_dealer D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 169
+ERROR - 2017-11-30 03:11:43 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:11:43 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_konsumen D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 168
+ERROR - 2017-11-30 03:11:43 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_dealer D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 169
+ERROR - 2017-11-30 03:11:43 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:11:43 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_konsumen D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 168
+ERROR - 2017-11-30 03:11:43 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_dealer D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 169
+ERROR - 2017-11-30 03:11:43 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:11:43 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_konsumen D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 168
+ERROR - 2017-11-30 03:11:43 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_dealer D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 169
+ERROR - 2017-11-30 03:11:43 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:11:43 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_konsumen D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 168
+ERROR - 2017-11-30 03:11:43 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_dealer D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 169
+ERROR - 2017-11-30 03:11:43 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:11:43 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_konsumen D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 168
+ERROR - 2017-11-30 03:11:43 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_dealer D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 169
+ERROR - 2017-11-30 03:11:43 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:11:43 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_konsumen D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 168
+ERROR - 2017-11-30 03:11:43 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_dealer D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 169
+ERROR - 2017-11-30 03:11:43 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:11:43 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_konsumen D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 168
+ERROR - 2017-11-30 03:11:43 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_dealer D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 169
+ERROR - 2017-11-30 03:11:43 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:11:43 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_konsumen D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 168
+ERROR - 2017-11-30 03:11:43 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_dealer D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 169
+ERROR - 2017-11-30 03:11:43 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:11:43 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_konsumen D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 168
+ERROR - 2017-11-30 03:11:43 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_dealer D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 169
+ERROR - 2017-11-30 03:11:43 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:11:43 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_konsumen D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 168
+ERROR - 2017-11-30 03:11:43 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_dealer D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 169
+ERROR - 2017-11-30 03:11:43 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:12:10 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_dealer D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 169
+ERROR - 2017-11-30 03:12:10 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:12:10 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_dealer D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 169
+ERROR - 2017-11-30 03:12:10 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:12:10 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_dealer D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 169
+ERROR - 2017-11-30 03:12:10 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:12:10 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_dealer D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 169
+ERROR - 2017-11-30 03:12:10 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:12:10 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_dealer D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 169
+ERROR - 2017-11-30 03:12:10 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:12:10 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_dealer D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 169
+ERROR - 2017-11-30 03:12:10 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:12:10 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_dealer D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 169
+ERROR - 2017-11-30 03:12:10 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:12:10 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_dealer D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 169
+ERROR - 2017-11-30 03:12:10 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:12:10 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_dealer D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 169
+ERROR - 2017-11-30 03:12:10 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:12:10 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_dealer D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 169
+ERROR - 2017-11-30 03:12:10 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:12:10 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_dealer D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 169
+ERROR - 2017-11-30 03:12:10 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:12:10 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_dealer D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 169
+ERROR - 2017-11-30 03:12:10 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:12:10 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_dealer D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 169
+ERROR - 2017-11-30 03:12:10 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:12:14 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_dealer D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 169
+ERROR - 2017-11-30 03:12:14 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:12:14 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_dealer D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 169
+ERROR - 2017-11-30 03:12:14 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:12:14 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_dealer D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 169
+ERROR - 2017-11-30 03:12:14 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:12:14 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_dealer D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 169
+ERROR - 2017-11-30 03:12:14 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:12:14 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_dealer D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 169
+ERROR - 2017-11-30 03:12:14 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:12:14 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_dealer D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 169
+ERROR - 2017-11-30 03:12:14 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:12:14 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_dealer D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 169
+ERROR - 2017-11-30 03:12:14 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:12:14 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_dealer D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 169
+ERROR - 2017-11-30 03:12:14 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:12:14 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_dealer D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 169
+ERROR - 2017-11-30 03:12:14 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:12:14 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_dealer D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 169
+ERROR - 2017-11-30 03:12:14 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:12:14 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_dealer D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 169
+ERROR - 2017-11-30 03:12:14 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:12:14 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_dealer D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 169
+ERROR - 2017-11-30 03:12:14 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:12:14 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_dealer D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 169
+ERROR - 2017-11-30 03:12:14 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:12:36 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:12:36 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:12:36 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:12:36 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:12:36 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:12:36 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:12:36 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:12:36 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:12:36 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:12:36 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:12:36 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:12:36 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:12:36 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:12:38 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:12:38 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:12:38 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:12:38 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:12:38 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:12:38 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:12:38 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:12:38 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:12:38 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:12:38 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:12:38 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:12:38 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:12:38 --> Severity: Notice --> Undefined property: stdClass::$fs_model_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 170
+ERROR - 2017-11-30 03:17:25 --> Severity: Notice --> Undefined variable: kode D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 90
+ERROR - 2017-11-30 03:17:25 --> Severity: Notice --> Undefined variable: kode D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 98
+ERROR - 2017-11-30 03:17:25 --> Severity: Notice --> Undefined variable: kode D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 129
+ERROR - 2017-11-30 03:18:17 --> Severity: Notice --> Undefined variable: kode D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 138
+ERROR - 2017-11-30 03:18:17 --> Severity: Notice --> Undefined variable: kode D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 144
+ERROR - 2017-11-30 03:18:22 --> Severity: Notice --> Undefined variable: kode D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 138
+ERROR - 2017-11-30 03:18:22 --> Severity: Notice --> Undefined variable: kode D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 144
+ERROR - 2017-11-30 03:32:11 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-30 03:32:11 --> Query error: Unknown column 'fn_no_apk' in 'field list' - Invalid query: 
+			SELECT fs_transaksi, fn_no_pjj, fs_nama_konsumen, fs_status,
+				fs_kode_lokasi, fs_kode_cabang, fs_kode_kendaraan, fs_model_kendaraan,
+				fn_tahun_kendaraan, fs_warna_kendaraan, fs_silinder_kendaraan,
+				fs_no_polisi, fs_no_rangka, fs_no_mesin, fs_no_bpkb, fs_nama_bpkb, fs_no_faktur, fd_tanggal_bpkb, fn_no_apk, fs_nama_loker, fs_tempat_bpkb
+			FROM tx_detailbpkb
+		
+ERROR - 2017-11-30 03:32:12 --> Query error: Unknown column 'fn_no_apk' in 'field list' - Invalid query: 
+			SELECT fs_transaksi, fn_no_pjj, fs_nama_konsumen, fs_status,
+				fs_kode_lokasi, fs_kode_cabang, fs_kode_kendaraan, fs_model_kendaraan,
+				fn_tahun_kendaraan, fs_warna_kendaraan, fs_silinder_kendaraan,
+				fs_no_polisi, fs_no_rangka, fs_no_mesin, fs_no_bpkb, fs_nama_bpkb, fs_no_faktur, fd_tanggal_bpkb, fn_no_apk, fs_nama_loker, fs_tempat_bpkb
+			FROM tx_detailbpkb
+		
+ERROR - 2017-11-30 03:40:45 --> Severity: Notice --> Undefined variable: cabang D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 220
+ERROR - 2017-11-30 03:40:45 --> Query error: Unknown column 'a.fn_no_pjj' in 'where clause' - Invalid query: 
+			SELECT a.fs_kode_dokumen, b.fs_nama_dokumen, a.fs_dokumen_upload
+			FROM tx_apk_data_pendukung a
+			LEFT JOIN tm_data_pendukung b ON b.fs_kode_dokumen = a.fs_kode_dokumen
+			WHERE a.fn_no_pjj = ''
+		
+ERROR - 2017-11-30 03:40:51 --> Severity: Notice --> Undefined variable: cabang D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 220
+ERROR - 2017-11-30 03:40:51 --> Query error: Unknown column 'a.fn_no_pjj' in 'where clause' - Invalid query: 
+			SELECT a.fs_kode_dokumen, b.fs_nama_dokumen, a.fs_dokumen_upload
+			FROM tx_apk_data_pendukung a
+			LEFT JOIN tm_data_pendukung b ON b.fs_kode_dokumen = a.fs_kode_dokumen
+			WHERE a.fn_no_pjj = ''
+		
+ERROR - 2017-11-30 03:41:01 --> Severity: Notice --> Undefined variable: cabang D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 220
+ERROR - 2017-11-30 03:41:01 --> Query error: Unknown column 'a.fn_no_pjj' in 'where clause' - Invalid query: 
+			SELECT a.fs_kode_dokumen, b.fs_nama_dokumen, a.fs_dokumen_upload
+			FROM tx_apk_data_pendukung a
+			LEFT JOIN tm_data_pendukung b ON b.fs_kode_dokumen = a.fs_kode_dokumen
+			WHERE a.fn_no_pjj = ''
+		
+ERROR - 2017-11-30 03:41:02 --> Severity: Notice --> Undefined variable: cabang D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 220
+ERROR - 2017-11-30 03:41:02 --> Query error: Unknown column 'a.fn_no_pjj' in 'where clause' - Invalid query: 
+			SELECT a.fs_kode_dokumen, b.fs_nama_dokumen, a.fs_dokumen_upload
+			FROM tx_apk_data_pendukung a
+			LEFT JOIN tm_data_pendukung b ON b.fs_kode_dokumen = a.fs_kode_dokumen
+			WHERE a.fn_no_pjj = ''
+		
+ERROR - 2017-11-30 03:41:03 --> Severity: Notice --> Undefined variable: cabang D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 220
+ERROR - 2017-11-30 03:41:03 --> Query error: Unknown column 'a.fn_no_pjj' in 'where clause' - Invalid query: 
+			SELECT a.fs_kode_dokumen, b.fs_nama_dokumen, a.fs_dokumen_upload
+			FROM tx_apk_data_pendukung a
+			LEFT JOIN tm_data_pendukung b ON b.fs_kode_dokumen = a.fs_kode_dokumen
+			WHERE a.fn_no_pjj = ''
+		
+ERROR - 2017-11-30 03:48:46 --> Severity: Notice --> Undefined variable: nNopjj D:\xampp\htdocs\bpkb\application\models\MSearch.php 347
+ERROR - 2017-11-30 03:48:51 --> Query error: Unknown column 'fn_no_apk' in 'field list' - Invalid query: 
+			SELECT fn_no_apk, fs_kode_dokumen
+			FROM tx_apk_data_pendukung
+			WHERE fn_no_apk = '' 
+			AND fs_kode_dokumen = '10919152038'
+			AND fs_kode_cabang = 'APK2'	
+		
+ERROR - 2017-11-30 03:49:25 --> Severity: Notice --> Undefined variable: nNopjj D:\xampp\htdocs\bpkb\application\models\MSearch.php 347
+ERROR - 2017-11-30 03:50:03 --> Query error: Unknown column 'fn_no_apk' in 'field list' - Invalid query: 
+			SELECT fn_no_apk, fs_kode_dokumen
+			FROM tx_apk_data_pendukung
+			WHERE fn_no_apk = '' 
+			AND fs_kode_dokumen = '10919152038'
+			AND fs_kode_cabang = 'APK1'	
+		
+ERROR - 2017-11-30 03:50:47 --> Query error: Unknown column 'fn_no_apk' in 'field list' - Invalid query: 
+			SELECT fn_no_apk, fs_kode_dokumen
+			FROM tx_apk_data_pendukung
+			WHERE fn_no_apk = '' 
+			AND fs_kode_dokumen = '10919152038'
+			AND fs_kode_cabang = 'APK1'	
+		
+ERROR - 2017-11-30 03:55:30 --> Query error: Unknown column 'fn_no_apk' in 'where clause' - Invalid query: 
+			SELECT fn_no_pjj, fs_kode_dokumen
+			FROM tx_apk_data_pendukung
+			WHERE fn_no_apk = '' 
+			AND fs_kode_dokumen = '10919152038'
+			AND fs_kode_cabang = 'APK1'	
+		
+ERROR - 2017-11-30 04:13:27 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-30 04:34:56 --> Query error: Unknown column 'fs_nama_konsumen' in 'field list' - Invalid query: 
+			SELECT fs_transaksi, fn_no_pjj, fs_nama_konsumen, fs_status,
+				fs_kode_lokasi, fs_kode_cabang, fs_kode_kendaraan, fs_model_kendaraan,
+				fn_tahun_kendaraan, fs_warna_kendaraan, fs_silinder_kendaraan,
+				fs_no_polisi, fs_no_rangka, fs_no_mesin, fs_no_bpkb, fs_nama_bpkb, fs_no_faktur, fd_tanggal_bpkb, fs_nama_loker, fs_tempat_bpkb
+			FROM tx_detailbpkb
+			WHERE fn_no_pjj = '10919152038'
+		
+ERROR - 2017-11-30 04:34:57 --> Query error: Unknown column 'fs_nama_konsumen' in 'field list' - Invalid query: 
+			SELECT fs_transaksi, fn_no_pjj, fs_nama_konsumen, fs_status,
+				fs_kode_lokasi, fs_kode_cabang, fs_kode_kendaraan, fs_model_kendaraan,
+				fn_tahun_kendaraan, fs_warna_kendaraan, fs_silinder_kendaraan,
+				fs_no_polisi, fs_no_rangka, fs_no_mesin, fs_no_bpkb, fs_nama_bpkb, fs_no_faktur, fd_tanggal_bpkb, fs_nama_loker, fs_tempat_bpkb
+			FROM tx_detailbpkb
+			WHERE fn_no_pjj = '10919152038'
+		
+ERROR - 2017-11-30 04:35:08 --> Query error: Unknown column 'fs_nama_konsumen' in 'field list' - Invalid query: 
+			SELECT fs_transaksi, fn_no_pjj, fs_nama_konsumen, fs_status,
+				fs_kode_lokasi, fs_kode_cabang, fs_kode_kendaraan, fs_model_kendaraan,
+				fn_tahun_kendaraan, fs_warna_kendaraan, fs_silinder_kendaraan,
+				fs_no_polisi, fs_no_rangka, fs_no_mesin, fs_no_bpkb, fs_nama_bpkb, fs_no_faktur, fd_tanggal_bpkb, fs_nama_loker, fs_tempat_bpkb
+			FROM tx_detailbpkb
+			WHERE fn_no_pjj = '10919152038'
+		
+ERROR - 2017-11-30 04:38:01 --> Query error: Unknown column 'fs_nama_konsumen' in 'field list' - Invalid query: 
+			SELECT fs_transaksi, fn_no_pjj, fs_nama_konsumen, fs_status,
+				fs_kode_lokasi, fs_kode_cabang, fs_kode_kendaraan, fs_model_kendaraan,
+				fn_tahun_kendaraan, fs_warna_kendaraan, fs_silinder_kendaraan,
+				fs_no_polisi, fs_no_rangka, fs_no_mesin, fs_no_bpkb, fs_nama_bpkb, fs_no_faktur, fd_tanggal_bpkb, fn_no_apk, fs_nama_loker, fs_tempat_bpkb
+			FROM tx_detailbpkb
+		
+ERROR - 2017-11-30 04:38:02 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-30 04:38:02 --> Query error: Unknown column 'fs_nama_konsumen' in 'field list' - Invalid query: 
+			SELECT fs_transaksi, fn_no_pjj, fs_nama_konsumen, fs_status,
+				fs_kode_lokasi, fs_kode_cabang, fs_kode_kendaraan, fs_model_kendaraan,
+				fn_tahun_kendaraan, fs_warna_kendaraan, fs_silinder_kendaraan,
+				fs_no_polisi, fs_no_rangka, fs_no_mesin, fs_no_bpkb, fs_nama_bpkb, fs_no_faktur, fd_tanggal_bpkb, fn_no_apk, fs_nama_loker, fs_tempat_bpkb
+			FROM tx_detailbpkb
+		
+ERROR - 2017-11-30 04:43:16 --> 404 Page Not Found: Masterkreditur/select
+ERROR - 2017-11-30 04:49:42 --> 404 Page Not Found: Masterkreditur/select
+ERROR - 2017-11-30 05:06:31 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-30 05:09:21 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-30 05:14:46 --> Severity: Notice --> Undefined property: stdClass::$fd_tanggal_terbit D:\xampp\htdocs\bpkb\application\controllers\Recheckbpkb.php 44
+ERROR - 2017-11-30 05:14:46 --> Severity: Notice --> Undefined property: stdClass::$fd_terbit_stnk D:\xampp\htdocs\bpkb\application\controllers\Recheckbpkb.php 45
+ERROR - 2017-11-30 05:37:34 --> Query error: Unknown column 'fs_nama_konsumen' in 'field list' - Invalid query: 
+			SELECT fs_transaksi, fn_no_pjj, fs_nama_konsumen, fs_status,
+				fs_kode_lokasi, fs_kode_cabang, fs_kode_kendaraan, fs_model_kendaraan,
+				fn_tahun_kendaraan, fs_warna_kendaraan, fs_silinder_kendaraan,
+				fs_no_polisi, fs_no_rangka, fs_no_mesin, fs_no_bpkb, fs_nama_bpkb, fs_no_faktur, fd_tanggal_bpkb, fn_no_apk, fs_nama_loker, fs_tempat_bpkb
+			FROM tx_detailbpkb
+		
+ERROR - 2017-11-30 05:37:34 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-30 05:37:36 --> Query error: Unknown column 'fs_nama_konsumen' in 'field list' - Invalid query: 
+			SELECT fs_transaksi, fn_no_pjj, fs_nama_konsumen, fs_status,
+				fs_kode_lokasi, fs_kode_cabang, fs_kode_kendaraan, fs_model_kendaraan,
+				fn_tahun_kendaraan, fs_warna_kendaraan, fs_silinder_kendaraan,
+				fs_no_polisi, fs_no_rangka, fs_no_mesin, fs_no_bpkb, fs_nama_bpkb, fs_no_faktur, fd_tanggal_bpkb, fn_no_apk, fs_nama_loker, fs_tempat_bpkb
+			FROM tx_detailbpkb
+		
+ERROR - 2017-11-30 05:38:03 --> Query error: Unknown column 'fs_nama_konsumen' in 'field list' - Invalid query: 
+			SELECT fs_transaksi, fn_no_pjj, fs_nama_konsumen, fs_status,
+				fs_kode_lokasi, fs_kode_cabang, fs_kode_kendaraan, fs_model_kendaraan,
+				fn_tahun_kendaraan, fs_warna_kendaraan, fs_silinder_kendaraan,
+				fs_no_polisi, fs_no_rangka, fs_no_mesin, fs_no_bpkb, fs_nama_bpkb, fs_no_faktur, fd_tanggal_bpkb, fn_no_apk, fs_nama_loker, fs_tempat_bpkb
+			FROM tx_detailbpkb
+		
+ERROR - 2017-11-30 05:39:22 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-30 05:39:22 --> Query error: Unknown column 'fs_nama_konsumen' in 'field list' - Invalid query: 
+			SELECT fs_transaksi, fn_no_pjj, fs_nama_konsumen, fs_status,
+				fs_kode_lokasi, fs_kode_cabang, fs_kode_kendaraan, fs_model_kendaraan,
+				fn_tahun_kendaraan, fs_warna_kendaraan, fs_silinder_kendaraan,
+				fs_no_polisi, fs_no_rangka, fs_no_mesin, fs_no_bpkb, fs_nama_bpkb, fs_no_faktur, fd_tanggal_bpkb, fn_no_apk, fs_nama_loker, fs_tempat_bpkb
+			FROM tx_detailbpkb
+		
+ERROR - 2017-11-30 05:39:24 --> Query error: Unknown column 'fs_nama_konsumen' in 'field list' - Invalid query: 
+			SELECT fs_transaksi, fn_no_pjj, fs_nama_konsumen, fs_status,
+				fs_kode_lokasi, fs_kode_cabang, fs_kode_kendaraan, fs_model_kendaraan,
+				fn_tahun_kendaraan, fs_warna_kendaraan, fs_silinder_kendaraan,
+				fs_no_polisi, fs_no_rangka, fs_no_mesin, fs_no_bpkb, fs_nama_bpkb, fs_no_faktur, fd_tanggal_bpkb, fn_no_apk, fs_nama_loker, fs_tempat_bpkb
+			FROM tx_detailbpkb
+		
+ERROR - 2017-11-30 05:41:13 --> Query error: Unknown column 'fn_no_apk' in 'field list' - Invalid query: 
+			SELECT fs_transaksi, fn_no_pjj, fs_nama_pemilik, fs_status,
+				fs_kode_lokasi, fs_kode_cabang, fs_kode_kendaraan, fs_jenis_kendaraan,
+				fn_tahun_kendaraan, fs_warna_kendaraan, fs_silinder_kendaraan,
+				fs_no_polisi, fs_no_rangka, fs_no_mesin, fs_no_bpkb, fs_nama_bpkb, fs_no_faktur, fd_tanggal_bpkb, fn_no_apk, fs_nama_loker, fs_tempat_bpkb
+			FROM tx_detailbpkb
+		
+ERROR - 2017-11-30 05:41:13 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-30 05:41:16 --> Query error: Unknown column 'fn_no_apk' in 'field list' - Invalid query: 
+			SELECT fs_transaksi, fn_no_pjj, fs_nama_pemilik, fs_status,
+				fs_kode_lokasi, fs_kode_cabang, fs_kode_kendaraan, fs_jenis_kendaraan,
+				fn_tahun_kendaraan, fs_warna_kendaraan, fs_silinder_kendaraan,
+				fs_no_polisi, fs_no_rangka, fs_no_mesin, fs_no_bpkb, fs_nama_bpkb, fs_no_faktur, fd_tanggal_bpkb, fn_no_apk, fs_nama_loker, fs_tempat_bpkb
+			FROM tx_detailbpkb
+		
+ERROR - 2017-11-30 05:41:18 --> Query error: Unknown column 'fn_no_apk' in 'field list' - Invalid query: 
+			SELECT fs_transaksi, fn_no_pjj, fs_nama_pemilik, fs_status,
+				fs_kode_lokasi, fs_kode_cabang, fs_kode_kendaraan, fs_jenis_kendaraan,
+				fn_tahun_kendaraan, fs_warna_kendaraan, fs_silinder_kendaraan,
+				fs_no_polisi, fs_no_rangka, fs_no_mesin, fs_no_bpkb, fs_nama_bpkb, fs_no_faktur, fd_tanggal_bpkb, fn_no_apk, fs_nama_loker, fs_tempat_bpkb
+			FROM tx_detailbpkb
+		
+ERROR - 2017-11-30 05:41:54 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-30 07:15:17 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-30 07:15:27 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-30 07:15:27 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-30 07:20:38 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-30 07:25:05 --> Severity: Notice --> Undefined property: stdClass::$fd_tanggal_terbit D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 47
+ERROR - 2017-11-30 07:25:05 --> Severity: Notice --> Undefined property: stdClass::$fd_terbit_stnk D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 48
+ERROR - 2017-11-30 07:25:05 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-30 07:25:06 --> Severity: Notice --> Undefined property: stdClass::$fd_tanggal_terbit D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 47
+ERROR - 2017-11-30 07:25:06 --> Severity: Notice --> Undefined property: stdClass::$fd_terbit_stnk D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 48
+ERROR - 2017-11-30 07:25:45 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-30 07:41:58 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-30 07:41:58 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-30 07:49:14 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-30 07:49:14 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-30 07:53:54 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-30 07:54:30 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-30 07:54:33 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-30 07:54:33 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-30 07:54:52 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-30 07:59:26 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-30 07:59:26 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-30 08:00:41 --> 404 Page Not Found: Closingbpkb/index
+ERROR - 2017-11-30 08:00:47 --> 404 Page Not Found: Stokopname/index
+ERROR - 2017-11-30 08:56:45 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-30 08:57:22 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-30 08:57:22 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-30 09:07:02 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-30 10:01:19 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-30 10:01:19 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-30 10:07:05 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-30 10:12:46 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-30 10:17:30 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-30 10:17:30 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-30 10:27:13 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-30 10:27:35 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-30 10:32:08 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-30 10:32:08 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-30 10:32:20 --> 404 Page Not Found: Terimadarikreditur/gridhistory
+ERROR - 2017-11-30 10:32:24 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-30 10:32:24 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-30 10:32:54 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-30 10:51:55 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-30 10:51:55 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-30 10:51:57 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-30 11:04:13 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-30 11:05:02 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-30 11:06:26 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-30 11:06:26 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-30 11:08:44 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-30 11:14:10 --> Severity: Notice --> Undefined property: stdClass::$fd_tanggal_terbit D:\xampp\htdocs\bpkb\application\controllers\Mutasipusat.php 84
+ERROR - 2017-11-30 11:14:10 --> Severity: Notice --> Undefined property: stdClass::$fd_terbit_stnk D:\xampp\htdocs\bpkb\application\controllers\Mutasipusat.php 85
+ERROR - 2017-11-30 11:14:10 --> Severity: Notice --> Undefined property: stdClass::$fd_tanggal_terbit D:\xampp\htdocs\bpkb\application\controllers\Mutasipusat.php 84
+ERROR - 2017-11-30 11:14:10 --> Severity: Notice --> Undefined property: stdClass::$fd_terbit_stnk D:\xampp\htdocs\bpkb\application\controllers\Mutasipusat.php 85
+ERROR - 2017-11-30 11:14:10 --> Severity: Notice --> Undefined property: stdClass::$fd_tanggal_terbit D:\xampp\htdocs\bpkb\application\controllers\Mutasipusat.php 84
+ERROR - 2017-11-30 11:14:10 --> Severity: Notice --> Undefined property: stdClass::$fd_terbit_stnk D:\xampp\htdocs\bpkb\application\controllers\Mutasipusat.php 85
+ERROR - 2017-11-30 11:15:07 --> Severity: Notice --> Undefined property: stdClass::$fd_tanggal_terbit D:\xampp\htdocs\bpkb\application\controllers\Mutasipusat.php 84
+ERROR - 2017-11-30 11:15:07 --> Severity: Notice --> Undefined property: stdClass::$fd_terbit_stnk D:\xampp\htdocs\bpkb\application\controllers\Mutasipusat.php 85
+ERROR - 2017-11-30 11:15:07 --> Severity: Notice --> Undefined property: stdClass::$fd_tanggal_terbit D:\xampp\htdocs\bpkb\application\controllers\Mutasipusat.php 84
+ERROR - 2017-11-30 11:15:07 --> Severity: Notice --> Undefined property: stdClass::$fd_terbit_stnk D:\xampp\htdocs\bpkb\application\controllers\Mutasipusat.php 85
+ERROR - 2017-11-30 11:15:07 --> Severity: Notice --> Undefined property: stdClass::$fd_tanggal_terbit D:\xampp\htdocs\bpkb\application\controllers\Mutasipusat.php 84
+ERROR - 2017-11-30 11:15:07 --> Severity: Notice --> Undefined property: stdClass::$fd_terbit_stnk D:\xampp\htdocs\bpkb\application\controllers\Mutasipusat.php 85
+ERROR - 2017-11-30 11:23:22 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-30 11:23:22 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-30 11:45:20 --> 404 Page Not Found: Recheckbpkb/griddaftar

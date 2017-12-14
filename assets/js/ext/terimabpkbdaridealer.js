@@ -30,7 +30,105 @@ Ext.onReady(function() {
 			//{name: 'fd_tanggal_janji', type: 'string'},
 			{name: 'fs_nama_dealer', type: 'string'},
 			//{name: 'fd_hari_tbo', type: 'string'},
+			{name: 'fs_model_kendaraan', type: 'string'},
 		]
+	});
+
+	Ext.define('DataGridDataPendukung', {
+		extend: 'Ext.data.Model',
+		fields: [
+			{name: 'fs_kode_cabang', type: 'string'},
+			{name: 'fn_no_pjj', type: 'string'},
+			{name: 'fs_kode_dokumen', type: 'string'},
+			{name: 'fs_nama_dokumen', type: 'string'},
+			{name: 'fs_dokumen_upload', type: 'string'}
+		]
+	});
+
+	Ext.define('DataGridpenyimpanan', {
+		extend: 'Ext.data.Model',
+		fields: [
+			{name: 'fs_kode_brangkas', type: 'string'},
+			{name: 'fs_nama_loker', type: 'string'},
+			{name: 'fs_nama_brangkas', type: 'string'},
+		]
+	});
+
+
+	var grupDataPendukung = Ext.create('Ext.data.Store', {
+		autoLoad: false,
+		model: 'DataGridDataPendukung',
+		pageSize: 25,
+		proxy: {
+			actionMethods: {
+				read: 'POST'
+			},
+			reader: {
+				rootProperty: 'hasil',
+				totalProperty: 'total',
+				type: 'json'
+			},
+			type: 'ajax',
+			url: 'terimadaridealer/pendukungapk'
+		},
+		listeners: {
+			beforeload: function(store) {
+				Ext.apply(store.getProxy().extraParams, {
+					'fs_kode_cabang': Ext.getCmp('txtKodeCabang').getValue(),
+					'fn_no_pjj': Ext.getCmp('txtNoAPKPendukung').getValue(),
+				});
+			}
+		}
+	});
+
+	var grupPenyimpananBPKB = Ext.create('Ext.data.Store', {
+		autoLoad: true,
+		model: 'DataGridpenyimpanan',
+		pageSize: 25,
+		proxy: {
+			actionMethods: {
+				read: 'POST'
+			},
+			reader: {
+				rootProperty: 'hasil',
+				totalProperty: 'total',
+				type: 'json'
+			},
+			type: 'ajax',
+			url: 'PemindahanBPKB/gridpenyimpananbpkb'
+		},
+		listeners: {
+			beforeload: function(store) {
+				Ext.apply(store.getProxy().extraParams, {
+					'fs_cari': Ext.getCmp('txtCari1').getValue()
+				});
+			}
+		}		
+	});
+
+	var grupDokumen = Ext.create('Ext.data.Store', {
+		autoLoad: false,
+		fields: [
+			'fs_kode','fs_nama'
+		],
+		proxy: {
+			actionMethods: {
+				read: 'POST'
+			},
+			reader: {
+				type: 'json'
+			},
+			type: 'ajax',
+			url: 'terimadaridealer/selectdokumen'
+		},
+		listeners: {
+			beforeload: function(store) {
+				Ext.apply(store.getProxy().extraParams, {
+					'fs_jenis_pembiayaan': 'P',
+					'fs_jenis_dokumen': 'APK'
+				});
+			}
+		}
 	});
 
 	var grupTBO = Ext.create('Ext.data.Store', {
@@ -177,72 +275,37 @@ Ext.onReady(function() {
 		}
 	});
 
-	var grupApkPendukung = Ext.create('Ext.data.Store', {
-		autoLoad: false,
-		fields: [
-			'fn_no_apk','fs_kode_cabang',
-			'fs_kode_dokumen','fs_dokumen_upload',
-			'fd_tanggal_buat', 'fs_iduser_buat'
-		],
-		pageSize: 25,
-		proxy: {
-			actionMethods: {
-				read: 'POST'
-			},
-			reader: {
-				rootProperty: 'hasil',
-				totalProperty: 'total',
-				type: 'json'
-			},
-			type: 'ajax',
-			url: 'terimadaridealer/apkpendukung'
-		},
-		listeners: {
-			beforeload: function(store) {
-				Ext.apply(store.getProxy().extraParams, {
-					'fs_kode_cabang': Ext.getCmp('txtKdCabang').getValue(),
-					'fn_no_apk': Ext.getCmp('txtNoApk').getValue(),
-					'fn_no_batch': Ext.getCmp('txtNoBatch').getValue(),
-					'fs_jenis_pembiayaan': Ext.getCmp('txtJnsPembiayaan').getValue()
-				});
-			}
-		}
-	});
-
-	var winData = Ext.create('Ext.grid.Panel',{
+	var winGrid2 = Ext.create('Ext.grid.Panel', {
 		anchor: '100%',
 		autoDestroy: true,
 		height: 450,
-		width: 685,
+		width: 550,
 		sortableColumns: false,
-		store: grupApkPendukung,
+		store: grupDataPendukung,
 		columns: [
 			{xtype: 'rownumberer', width: 45},
-			{text: "Kode Dokumen", dataIndex: 'fs_kode_dokumen', menuDisabled: true, width: 100},
-			{text: "Nama Dokumen", dataIndex: 'fs_nama_dokumen', menuDisabled: true, width: 240},
-			{text: "Tipe Dokumen", dataIndex: 'fs_wajib', menuDisabled: true, width: 100},
-			{text: "File", dataIndex: 'fs_dokumen_upload', menuDisabled: true, hidden: true},
-			{text: "Tanggal", dataIndex: 'fd_tanggal_buat', menuDisabled: true, width: 80},
-			{text: "User", dataIndex: 'fs_iduser_buat', menuDisabled: true, width: 80},
+			{text: "Kode Dokumen", dataIndex: 'fs_kode_dokumen', menuDisabled: true, flex: 1},
+			{text: "Nama Dokumen", dataIndex: 'fs_nama_dokumen', menuDisabled: true, flex: 2.5},
+			{text: "File Upload", dataIndex: 'fs_dokumen_upload', menuDisabled: true, hidden: true},
 			{
 				xtype:'actioncolumn',
 			    width:20,
 			    items: [{
-			        iconCls: 'icon-delete',
+			    	iconCls: 'icon-delete',
 			        tooltip: 'Delete',
 			        handler: function(grid, rowIndex, colIndex, e) {
-			            var str = grid.getStore().getAt(rowIndex).get('fs_dokumen_upload');
-			            if (str) {
-			            	Ext.MessageBox.show({
-			            		title:'Delete file',
-			            		msg: 'Would you like to delete?',
-			            		buttons: Ext.Msg.YESNO,
-			            		icon: Ext.Msg.QUESTION,
-			            		fn: function(btn){                    
-							        if (btn == "yes"){
-						            	Ext.Ajax.request({
-											url : 'terimadaridealer/remove/',
-											params : {
+			        	var str = grid.getStore().getAt(rowIndex).get('fs_dokumen_upload');
+			        	if (str) {
+			        		Ext.MessageBox.show({
+			        			title:'Delete file',
+			        			msg: 'Apakah Anda Yakin Akan Menghapus?',
+			        			buttons: Ext.Msg.YESNO,
+			        			icon: Ext.Msg.QUESTION,
+			        			fn: function(btn) {
+			        				if (btn == "yes") {
+			        					Ext.Ajax.request({
+			        						url : 'Terimadaridealer/remove/',
+			        						params : {
 												'fs_dokumen_upload' : str
 											},
 											success: function(response) {
@@ -252,9 +315,11 @@ Ext.onReady(function() {
 													closable: false,
 													icon: Ext.MessageBox.INFO,
 													message: xtext.hasil,
-													title: 'SIAP'
+													title: 'MFAS'
 												});
-												grupApkPendukung.load();  
+
+												// LOAD DATA
+												grupDataPendukung.load();
 											},
 											failure: function(response) {
 												var xtext = Ext.decode(response.responseText);
@@ -263,106 +328,79 @@ Ext.onReady(function() {
 													closable: false,
 													icon: Ext.MessageBox.INFO,
 													message: xtext.hasil,
-													title: 'BPKB'
+													title: 'MFAS'
 												});
 											}
-										});
-							        }
-							        if (btn == "no"){
-							        	grupApkPendukung.load(); 
-							        }
-   								}                
-			            	});
-			            }
+			        					});
+			        				}
+			        			}
+			        		});
+			        	}
 			        },
 			        scope: this
 			    }]
 			}
 		],
 		tbar: [{
-			anchor: '95%',
+			anchor: '100%',
 			layout: 'hbox',
+			width: 540,
+			id: 'winPendukung',
+			name: 'winPendukung',
 			xtype: 'form',
 			enctype : 'multipart/form-data', 
 			method: 'POST',
+			bodyStyle: 'background-color: '.concat(gBasePanel),
 			fileUpload: true,
+			border: false,
 			items: [{
-				flex: 1,
+				flex: 2,
 				layout: 'anchor',
 				xtype: 'container',
-				style: 'padding: 5px;',
 				items: [{
-					width: 120,
 					afterLabelTextTpl: required,
 					allowBlank: false,
-					emptyText: 'Kode Dokumen',
-					id: 'cboKodeDoc',
-					name: 'cboKodeDoc',
-					xtype: 'textfield',
-					listeners: {
-						change: function(field, newValue) {
-						}
-					},
-					triggers: {
-						reset: {
-							cls: 'x-form-clear-trigger',
-							handler: function(field) {
-								field.setValue('');
-							}
-						},
-						cari: {
-							cls: 'x-form-search-trigger',
-							handler: function() {
-								winCari2.show();
-								winCari2.center();
-							}
-						}
-					}
-				},{
-					id: 'txtKdCabang',
-					name: 'txtKdCabang',
-					xtype: 'textfield',
-					hidden: true
-				},{
-					id: 'txtNoApk',
-					name: 'txtNoApk',
-					xtype: 'textfield',
-					hidden: true
-				},{
-					id: 'txtNoBatch',
-					name: 'txtNoBatch',
-					xtype: 'textfield',
-					hidden: true
-				},{
-					id: 'txtJnsPembiayaan',
-					name: 'txtJnsPembiayaan',
-					xtype: 'textfield',
-					hidden: true
+					anchor: '98%',
+					emptyText: 'Dokumen',
+					displayField: 'fs_nama',
+					editable: false,
+					id: 'cboDokumen',
+					name: 'cboDokumen',
+					store: grupDokumen,
+					valueField: 'fs_kode',
+					xtype: 'combobox'
 				}]
 			},{
 				flex: 2,
 				layout: 'anchor',
 				xtype: 'container',
-				style: 'padding: 5px;',
 				items: [{
-					width: 390,
 					afterLabelTextTpl: required,
 					allowBlank: false,
+					anchor: '98%',
 					emptyText: 'Pilih File',
-					id: 'fileDoc',
-					name: 'fileDoc',
+					id: 'fileDokumen',
+					name: 'fileDokumen',
 					xtype: 'fileuploadfield',
 					buttonCfg: {
 		                text: 'Browse',
 		                iconCls: 'icon-upload'
 		            }
+				},{
+					id: 'txtKodeCabang',
+					name: 'txtKodeCabang',
+					xtype: 'textfield',
+					hidden: true
+				},{
+					id: 'txtNoAPKPendukung',
+					name: 'txtNoAPKPendukung',
+					xtype: 'textfield',
+					hidden: true
 				}]
 			},{
-				flex: 3,
+				flex: 0.5,
 				layout: 'anchor',
-				anchor: '100%',
 				xtype: 'container',
-				style: 'padding: 5px;',
 				items: [{
 					xtype: 'buttongroup',
 					defaults: {
@@ -371,27 +409,30 @@ Ext.onReady(function() {
 					items: [{
 						iconCls: 'icon-add',
 						itemId: 'addData',
-						text: 'Add',
+						text: 'Upload',
+						anchor: '98%',
 						handler: function () {
-			                var form = this.up('form').getForm();
-			                if (form.isValid()) {
-			                    form.submit({
-			                        url: 'terimadaridealer/uploadfile',
-			                        waitMsg: 'Uploading your file...',
-			                        success: function (form, action) {
-			                        	var result = action.result; 
+							var form = this.up('#winPendukung').getForm();
+							if (form.isValid()) {
+								form.submit({
+									url: 'terimadaridealer/uploadfile',
+									waitMsg: 'Uploading your file...',
+									success: function (form, action) {
+										var result = action.result; 
 			                        	var data = result.data;
 			                        	var name = data.name;
 			                        	var message = Ext.String.format('<b>Message:</b> {0}<br>' +'<b>FileName:</b> {1}', result.msg, name);
-                            			Ext.Msg.alert('Success', message);
-                            			grupApkPendukung.load();
-                        			},
-                        			failure: function (form, action) {
-                            			Ext.Msg.alert('Failure', action.result.msg);
-                        			}
-			                    });
-			                }
-            			}
+			                        	Ext.Msg.alert('Success', message);
+
+			                        	// LOAD DATA
+			                        	grupDataPendukung.load();
+									},
+									failure: function (form, action) {
+										Ext.Msg.alert('Failure', action.result.msg);
+									}
+								});
+							}
+						}
 					}]
 				}]
 			}]
@@ -400,7 +441,7 @@ Ext.onReady(function() {
 			displayInfo: true,
 			pageSize: 25,
 			plugins: Ext.create('Ext.ux.ProgressBarPager', {}),
-			store: grupApkPendukung,
+			store: grupDataPendukung,
 			items:[
 				'-', {
 				text: 'Exit',
@@ -459,131 +500,6 @@ Ext.onReady(function() {
 		resizable: false,
 		title: 'Tambah Data Pendukung',
 		items: [
-			winData
-		],
-		listeners: {
-			beforehide: function() {
-				vMask.hide();
-			},
-			beforeshow: function() {
-				grupApkPendukung.load();
-				vMask.show();
-			}
-		}
-	});
-
-	var grupDataPendukung = Ext.create('Ext.data.Store', {
-		autoLoad: false,
-		fields: [
-			'fs_kode_dokumen','fs_jenis_pembiayaan',
-			'fs_no','fs_nama_dokumen',
-			'fs_jenis_dokumen', 'fs_jenis_pembiayaan', 'fs_wajib'
-		],
-		pageSize: 25,
-		proxy: {
-			actionMethods: {
-				read: 'POST'
-			},
-			reader: {
-				rootProperty: 'hasil',
-				totalProperty: 'total',
-				type: 'json'
-			},
-			type: 'ajax',
-			url: 'terimadaridealer/datapendukung'
-		},
-		listeners: {
-			beforeload: function(store) {
-				Ext.apply(store.getProxy().extraParams, {
-					'fs_cari': Ext.getCmp('txtCari4').getValue()
-				});
-			}
-		}
-	});
-
-	var winGrid2 = Ext.create('Ext.grid.Panel',{
-		anchor: '100%',
-		autoDestroy: true,
-		height: 450,
-		width: 550,
-		sortableColumns: false,
-		store: grupDataPendukung,
-		columns: [
-			{xtype: 'rownumberer', width: 45},
-			{text: "Kode Dokumen", dataIndex: 'fs_kode_dokumen', menuDisabled: true, width: 100},
-			{text: "Nama Dokumen", dataIndex: 'fs_nama_dokumen', menuDisabled: true, width: 280},
-			{text: "Tipe Dokumen", dataIndex: 'fs_wajib', menuDisabled: true, width: 100},
-			{text: "Jenis Pembiayaan", dataIndex: 'fs_wajib', menuDisabled: true, hidden: true}
-		],
-		tbar: [{
-			flex: 1,
-			layout: 'anchor',
-			xtype: 'container',
-			items: [{
-				anchor: '98%',
-				emptyText: 'Nama Dokumen',
-				id: 'txtCari4',
-				name: 'txtCari4',
-				xtype: 'textfield'
-			}]
-		},{
-			flex: 0.2,
-			layout: 'anchor',
-			xtype: 'container',
-			items: [{
-				anchor: '100%',
-				text: 'Search',
-				xtype: 'button',
-				handler: function() {
-					grupDataPendukung.load();
-				}
-			}]
-		},{
-			flex: 0.5,
-			layout: 'anchor',
-			xtype: 'container',
-			items: []
-		}],
-		bbar: Ext.create('Ext.PagingToolbar', {
-			displayInfo: true,
-			pageSize: 25,
-			plugins: Ext.create('Ext.ux.ProgressBarPager', {}),
-			store: grupDataPendukung,
-			items:[
-				'-', {
-				text: 'Exit',
-				handler: function() {
-					winCari2.hide();
-				}
-			}]
-		}),
-		listeners: {
-			itemdblclick: function(grid, record)
-			{
-				Ext.getCmp('cboKodeDoc').setValue(record.get('fs_kode_dokumen'));
-
-				grupDataPendukung.load();
-				winCari2.hide();
-			}
-		},
-		viewConfig: {
-			getRowClass: function() {
-				return 'rowwrap';
-			},
-			markDirty: false
-		}
-	});
-
-	var winCari2 = Ext.create('Ext.window.Window', {
-		border: false,
-		closable: false,
-		draggable: true,
-		frame: false,
-		layout: 'fit',
-		plain: true,
-		resizable: false,
-		title: 'Searching...',
-		items: [
 			winGrid2
 		],
 		listeners: {
@@ -609,40 +525,6 @@ Ext.onReady(function() {
 		xtype: 'button',
 		handler: fnPopup
 	};
-
-	Ext.define('DataGridpenyimpanan', {
-		extend: 'Ext.data.Model',
-		fields: [
-			{name: 'fs_kode_brangkas', type: 'string'},
-			{name: 'fs_nama_loker', type: 'string'},
-			{name: 'fs_nama_brangkas', type: 'string'},
-		]
-	});
-
-	var grupPenyimpananBPKB = Ext.create('Ext.data.Store', {
-		autoLoad: true,
-		model: 'DataGridpenyimpanan',
-		pageSize: 25,
-		proxy: {
-			actionMethods: {
-				read: 'POST'
-			},
-			reader: {
-				rootProperty: 'hasil',
-				totalProperty: 'total',
-				type: 'json'
-			},
-			type: 'ajax',
-			url: 'PemindahanBPKB/gridpenyimpananbpkb'
-		},
-		listeners: {
-			beforeload: function(store) {
-				Ext.apply(store.getProxy().extraParams, {
-					'fs_cari': Ext.getCmp('txtCari1').getValue()
-				});
-			}
-		}		
-	});
 
 	var winGrid1 = Ext.create('Ext.grid.Panel', {
 		anchor: '100%',
@@ -736,6 +618,19 @@ Ext.onReady(function() {
 		}
 	});
 
+	var txtKodeCabang = {
+		id: 'txtKodeCabang',
+		name: 'txtKodeCabang',
+		xtype: 'textfield',
+		hidden: true
+	};
+
+	var txtNoAPKTab1 = {
+		id: 'txtNoAPKTab1',
+		name: 'txtNoAPKTab1',
+		xtype: 'textfield',
+		hidden: true
+	};
 	// COMPONENT FORM BPKB
 
 	var btnDataScan = {
@@ -817,8 +712,6 @@ Ext.onReady(function() {
 	};
 
 	var txtAgunan = {
-		afterLabelTextTpl: required,
-		allowBlank: false,
 		anchor: '100%',
 		fieldLabel: 'No. Agunan',
 		emptyText: '',
@@ -863,8 +756,6 @@ Ext.onReady(function() {
 	};
 
 	var txtNoPOl = {
-		afterLabelTextTpl: required,
-		allowBlank: false,
 		anchor: '100%',
 		fieldLabel: '',
 		emptyText: '',
@@ -883,8 +774,6 @@ Ext.onReady(function() {
 	};
 
 	var txtNoPOl1 = {
-		afterLabelTextTpl: required,
-		allowBlank: false,
 		anchor: '100%',
 		fieldLabel: '',
 		emptyText: '',
@@ -903,8 +792,7 @@ Ext.onReady(function() {
 	};
 
 	var txtNoBPKB = {
-		afterLabelTextTpl: required,
-		allowBlank: false,
+
 		anchor: '100%',
 		fieldLabel: 'No. BPKB',
 		emptyText: '',
@@ -962,8 +850,6 @@ Ext.onReady(function() {
 	}
 
 	var txtNoFaktur = {
-		afterLabelTextTpl: required,
-		allowBlank: false,
 		anchor: '100%',
 		fieldLabel: 'No. Faktur',
 		emptyText: '',
@@ -982,8 +868,6 @@ Ext.onReady(function() {
 	};
 
 	var cboTempatBPKB = {
-		afterLabelTextTpl: required,
-		allowBlank: false,
 		anchor: '100%',
 		fieldLabel: 'Tempat BPKB',
 		emptyText: '',
@@ -1030,14 +914,14 @@ Ext.onReady(function() {
 			width: 25
 		},{
 			text: 'No. PJJ',
-			dataIndex: 'fs_no_pjj',
+			dataIndex: 'fn_no_pjj',
 			menuDisabled: true,
 			flex: 1
 		},{
 			text: 'Nama Konsumen',
-			dataIndex: 'fs_nama_konsumen',
+			dataIndex: 'fs_nama_pemilik',
 			menuDisabled: true,
-			flex: 1
+			flex: 2
 		},{
 			text: 'Nama Dealer',
 			dataIndex: 'fs_nama_dealer',
@@ -1091,14 +975,17 @@ Ext.onReady(function() {
 		}),
 		listeners: {
 			itemdblclick: function(grid, record) {
-				Ext.getCmp('txtNoPJJ').setValue(record.get('fs_no_pjj'));
-				Ext.getCmp('txtNama').setValue(record.get('fs_nama_konsumen'));
-				Ext.getCmp('txtJenisKendaraan').setValue(record.get('fs_model_kendaraan'));
+				Ext.getCmp('txtNoPJJ').setValue(record.get('fn_no_pjj'));
+				Ext.getCmp('txtNama').setValue(record.get('fs_nama_pemilik'));
+				Ext.getCmp('txtJenisKendaraan').setValue(record.get('fs_jenis_kendaraan'));
 				Ext.getCmp('txtTahunKendaraan').setValue(record.get('fn_tahun_kendaraan'));
 				Ext.getCmp('txtWarnaKendaraan').setValue(record.get('fs_warna_kendaraan'));
 				Ext.getCmp('txtNomerMesin').setValue(record.get('fs_no_mesin'));
 				Ext.getCmp('txtNomerRangka').setValue(record.get('fs_no_rangka'));
-		
+				
+				// SET VALUE IN WIN POPUP
+				Ext.getCmp('txtNoAPKPendukung').setValue(record.get('fn_no_pjj'));
+
 				// CHANGE TAB
 				var tabPanel = Ext.ComponentQuery.query('tabpanel')[0];
 				tabPanel.setActiveTab('tab2');
@@ -1113,16 +1000,145 @@ Ext.onReady(function() {
 		}
 	});
 
-	function fnCeksave() {
+	function fnCekSave() {
+		if (this.up('form').getForm().isValid()) {
+			Ext.Ajax.on('beforerequest', fnMaskShow);
+			Ext.Ajax.on('requestcomplete', fnMaskHide);
+			Ext.Ajax.on('requestexception', fnMaskHide);
 
+			Ext.Ajax.request({
+				method: 'POST',
+				url: 'terimadaridealer/ceksave',
+				params: {
+					'fn_no_pjj': Ext.getCmp('txtNoPJJ').getValue()
+				},
+				success: function(response) {
+					var xtext = Ext.decode(response.responseText);
+					if (xtext.sukses === false) {
+						Ext.MessageBox.show({
+							buttons: Ext.MessageBox.OK,
+							closable: false,
+							icon: Ext.MessageBox.INFO,
+							msg: xtext.hasil,
+							title: 'BPKB'
+						});
+					} else {
+						Ext.MessageBox.show({
+							buttons: Ext.MessageBox.YESNO,
+							closable: false,
+							icon: Ext.MessageBox.QUESTION,
+							msg: xtext.hasil,
+							title: 'BPKB',
+							fn: function(btn) {
+								if (btn == 'yes') {
+									fnSave();
+								}
+							}
+						});
+					}
+				},
+				failure: function(response) {
+					var xtext = Ext.decode(response.responseText);
+					Ext.MessageBox.show({
+						buttons: Ext.MessageBox.OK,
+						closable: false,
+						icon: Ext.MessageBox.INFO,
+						msg: 'Simpan Gagal, Koneksi Gagal',
+						title: 'BPKB'
+					});
+					fnMaskHide();
+				}
+			});
+		}
 	}
 
 	function fnSave() {
-	
+	/*
+		var xtanggal = '';
+		var xfasilitas = '';
+		var xplafon = '';
+
+		var store = gridFasilitas.getStore();
+		store.each(function(record, idx) {
+			xtanggal = xtanggal +'|'+ record.get('fd_tanggal_berlaku');
+			xfasilitas = xfasilitas +'|'+ record.get('fs_nama_fasilitas');
+			xplafon = xplafon +'|'+ record.get('fn_plafon');
+		});
+	*/
+		Ext.Ajax.on('beforerequest', fnMaskShow);
+		Ext.Ajax.on('requestcomplete', fnMaskHide);
+		Ext.Ajax.on('requestexception', fnMaskHide);
+
+		Ext.Ajax.request({
+			method: 'POST',
+			url: 'Terimadaridealer/save',
+			params: {
+				'fn_no_pjj': Ext.getCmp('txtNoPJJ').getValue(),
+				'fs_nama_pemilik': Ext.getCmp('txtNama').getValue(),
+				'fs_jenis_kendaraan': Ext.getCmp('txtJenisKendaraan').getValue(),
+				'fn_tahun_kendaraan': Ext.getCmp('txtTahunKendaraan').getValue(),
+				'fs_warna_kendaraan': Ext.getCmp('txtWarnaKendaraan').getValue(),
+				'fs_no_mesin': Ext.getCmp('txtNomerMesin').getValue(),
+				'fs_no_rangka': Ext.getCmp('txtNomerRangka').getValue(),
+				'fs_no_bpkb': Ext.getCmp('txtNoBPKB').getValue(),
+				'fd_tanggal_terbit': Ext.getCmp('cboTglTerbit').getValue(),
+				'fd_terima_bpkb': Ext.getCmp('cboTglTerima').getValue(),
+				'fd_terbit_stnk': Ext.getCmp('cboTglTerbitSTNK').getValue(),
+				'fs_no_faktur': Ext.getCmp('txtNoFaktur').getValue(),
+				'fs_tempat_bpkb': Ext.getCmp('cboTempatBPKB').getValue(),
+				'fs_nama_loker': Ext.getCmp('txtNoLoker').getValue(),
+				'fs_nama_loker': Ext.getCmp('txtNoLoker').getValue(),
+			},
+			success: function(response) {
+				var xtext = Ext.decode(response.responseText);
+				Ext.MessageBox.show({
+					buttons: Ext.MessageBox.OK,
+					closable: false,
+					icon: Ext.MessageBox.INFO,
+					msg: xtext.hasil,
+					title: 'BPKB'
+				});
+
+				fnReset();
+
+				// REFRESH AFTER SAVE
+				grupTBO.load();
+				
+			},
+			failure: function(response) {
+				var xtext = Ext.decode(response.responseText);
+				Ext.MessageBox.show({
+					buttons: Ext.MessageBox.OK,
+					closable: false,
+					icon: Ext.MessageBox.INFO,
+					msg: 'Saving Failed, Connection Failed!!',
+					title: 'BPKB'
+				});
+				fnMaskHide();
+			}
+		});
 	}
 
 	function fnReset() {
-		grupTBO.load();
+		// COMPONENT FORM Master Kreditur
+		Ext.getCmp('txtNoPJJ').setValue('');					
+		Ext.getCmp('txtNama').setValue('');
+		Ext.getCmp('txtJenisKendaraan').setValue('');
+		Ext.getCmp('txtTahunKendaraan').setValue('');
+		Ext.getCmp('txtWarnaKendaraan').setValue('');
+		Ext.getCmp('txtNomerMesin').setValue('');
+		Ext.getCmp('txtNomerRangka').setValue('');
+		Ext.getCmp('txtAgunan').setValue('');
+		Ext.getCmp('txtNoBPKB').setValue('');
+		Ext.getCmp('cboTglTerbit').setValue('');
+		Ext.getCmp('cboTglTerima').setValue('');
+		Ext.getCmp('cboTglTerbitSTNK').setValue('');
+		Ext.getCmp('txtNoFaktur').setValue('');
+		Ext.getCmp('cboTempatBPKB').setValue('');
+		Ext.getCmp('txtNoLoker').setValue('');
+		Ext.getCmp('cboNoPol').setValue('');
+		Ext.getCmp('txtNoPOl').setValue('');
+		Ext.getCmp('txtNoPOl1').setValue('');
 	}
 
 	var frmTerimaDariDealer = Ext.create('Ext.form.Panel', {
@@ -1269,12 +1285,12 @@ Ext.onReady(function() {
 					name: 'btnSave',
 					text: 'Save',
 					scale: 'medium',
-					handler:''
+					handler: fnCekSave
 				},{
 					iconCls: 'icon-reset',
 					text: 'Reset',
 					scale: 'medium',
-					handler:''
+					handler:fnReset
 				}]			
 			}]		
 		}]	

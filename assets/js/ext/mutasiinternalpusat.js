@@ -150,6 +150,10 @@ Ext.onReady(function() {
 				Ext.getCmp('txtNoPolisi').setValue(record.get('fs_no_polisi'));
 				Ext.getCmp('txtNoBPKB').setValue(record.get('fs_no_bpkb'));
 				Ext.getCmp('txtNoFaktur').setValue(record.get('fs_no_faktur'));
+				Ext.getCmp('txtNoTempatBPKB').setValue(record.get('fs_tempat_bpkb'));
+				Ext.getCmp('txtNoLoker').setValue(record.get('fs_nama_loker'));
+				Ext.getCmp('cboTglTerbit').setValue(record.get('fd_tanggal_terbit'));
+				Ext.getCmp('cboTglTerbitSTNK').setValue(record.get('fd_terbit_stnk'));
 				winCari.hide();
 			}
 		},
@@ -281,6 +285,8 @@ Ext.onReady(function() {
 				Ext.getCmp('txtNoPolisi1').setValue(record.get('fs_no_polisi'));
 				Ext.getCmp('txtNoBPKB1').setValue(record.get('fs_no_bpkb'));
 				Ext.getCmp('txtNoFaktur1').setValue(record.get('fs_no_faktur'));
+				Ext.getCmp('cboTglTerbit').setValue(record.get('fd_tanggal_terbit'));
+				Ext.getCmp('cboTglTerbitSTNK').setValue(record.get('fd_terbit_stnk'));
 				winCari1.hide();
 			}
 		},
@@ -510,6 +516,8 @@ Ext.onReady(function() {
 				Ext.getCmp('txtNoPolisi').setValue(record.get('fs_no_polisi'));
 				Ext.getCmp('txtNoBPKB').setValue(record.get('fs_no_bpkb'));
 				Ext.getCmp('txtNoFaktur').setValue(record.get('fs_no_faktur'));
+				Ext.getCmp('cboTglTerbit').setValue(record.get('fd_tanggal_terbit'));
+				Ext.getCmp('cboTglTerbitSTNK').setValue(record.get('fd_terbit_stnk'));
 		
 				// CHANGE TAB
 				var tabPanel = Ext.ComponentQuery.query('tabpanel')[0];
@@ -608,6 +616,8 @@ Ext.onReady(function() {
 				Ext.getCmp('txtNoPolisi').setValue(record.get('fs_no_polisi'));
 				Ext.getCmp('txtNoBPKB').setValue(record.get('fs_no_bpkb'));
 				Ext.getCmp('txtNoFaktur').setValue(record.get('fs_no_faktur'));
+				Ext.getCmp('cboTglTerbit').setValue(record.get('fd_tanggal_terbit'));
+				Ext.getCmp('cboTglTerbitSTNK').setValue(record.get('fd_terbit_stnk'));
 		
 				// CHANGE TAB
 				var tabPanel = Ext.ComponentQuery.query('tabpanel')[0];

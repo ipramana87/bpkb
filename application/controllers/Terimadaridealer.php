@@ -14,6 +14,138 @@ class Terimadaridealer extends CI_Controller {
 		$this->load->view('vterimabpkbdaridealer');
 	}
 
+	public function ceksave() {
+		$kode = $this->input->post('fn_no_pjj');
+		
+		if (!empty($kode)) {
+			$this->load->model('MSearch');
+			$sSQL = $this->MSearch->checkbpkb($kode);
+			if ($sSQL->num_rows() > 0) {
+				$hasil = array(
+					'sukses' => true,
+					'hasil' => 'BPKB sudah ada, apakah Anda ingin meng-update?'
+				);
+				echo json_encode($hasil);
+			} else {
+				$hasil = array(
+					'sukses' => true,
+					'hasil' => 'BPKB belum ada, apakah Anda ingin tambah baru?'
+				);
+				echo json_encode($hasil);
+			}
+		} else {
+			$hasil = array(
+				'sukses' => false,
+				'hasil' => 'Simpan, Gagal! Pemeriksa tidak diketahui'
+			);
+			echo json_encode($hasil);
+		}
+	}
+
+	public function save() {
+		$user = $this->encryption->decrypt($this->session->userdata('username'));
+
+		$nopjj = $this->input->post('fn_no_pjj');
+		$nama = $this->input->post('fs_nama_pemilik');
+		$modelken = $this->input->post('fs_jenis_kendaraan');
+		$tahun = $this->input->post('fn_tahun_kendaraan');
+		$warna = $this->input->post('fs_warna_kendaraan');
+		$nomesin = $this->input->post('fs_no_mesin');
+		$norangka = $this->input->post('fs_no_rangka');
+		$noagunan = $this->input->post('fs_no_agunan');
+		$nobpkb = $this->input->post('fs_no_bpkb');
+		$tglterbit = $this->input->post('fd_tanggal_terbit');
+		$tglterima = $this->input->post('fd_terima_bpkb');
+		$tglterbitsntk = $this->input->post('fd_terbit_stnk');
+		$nofaktur = $this->input->post('fs_no_faktur');
+		$tempatbpkb = $this->input->post('fs_tempat_bpkb');
+		$loker = $this->input->post('fs_nama_loker');
+	/*
+		// detail fasilitas
+		$tanggal = explode('|', $this->input->post('fd_tanggal_berlaku'));
+		$fasilitas = explode('|', $this->input->post('fs_nama_fasilitas'));
+		$plafon = explode('|', $this->input->post('fn_plafon'));
+
+		// hapus detail fasilitas
+		$where = "fs_kode_kreditur = '".trim($kode)."'";
+		$this->db->where($where);
+		$this->db->delete('tm_detailkreditur');
+
+		// simpan detail fasilitas
+		$jml = count($kode) - 1;
+		if ($jml > 0) {
+			for($i=1; $i<=$jml; $i++) {
+				$data = array(
+					'fn_no_apk' => trim($kode),
+					'fn_no_pjj' => trim($nopjj[$i]),
+					'fs_nama_konsumen' => trim($nama[$i]),
+					'fs_user_buat' => trim($user),
+					'fd_tanggal_buat' => date('Y-m-d H:i:s')
+				);
+				$this->db->insert('tx_detailbpkb', $data);
+			}
+		}
+	*/
+		$this->load->model('MSearch');
+		$ssql = $this->MSearch->checkbpkb($nopjj);
+		$update = false;
+
+		if ($ssql->num_rows() > 0) {
+			$update = true;
+		}
+
+		$dt = array(
+			'fn_no_pjj' => trim($nopjj),
+			'fs_nama_pemilik' => trim($nama),
+			'fs_jenis_kendaraan' => trim($modelken),
+			'fn_tahun_kendaraan' => trim($tahun),
+			'fs_warna_kendaraan' => trim($warna),
+			'fs_no_mesin' => trim($nomesin),
+			'fs_no_rangka' => trim($norangka),
+			'fs_no_agunan' => trim($noagunan),
+			'fs_no_bpkb' => trim($nobpkb),
+			'fd_tanggal_terbit' => trim($tglterbit),
+			'fd_terima_bpkb' => trim($tglterima),
+			'fd_terbit_stnk' => trim($tglterbitsntk),
+			'fs_no_faktur' => trim($nofaktur),
+			'fs_tempat_bpkb' => trim($tempatbpkb),
+			'fs_nama_loker' => trim($loker),
+
+
+		);
+
+		if ($update == false) {
+			$dt1 = array(
+				'fs_user_buat' => trim($user),
+				'fd_tanggal_buat' => date('Y-m-d H:i:s')
+			);
+
+			$data = array_merge($dt, $dt1);
+			$this->db->insert('tx_detailbpkb', $data);
+
+			$hasil = array(
+				'sukses' => true,
+				'hasil' => 'Tambah BPKB'.trim($nopjj).', Sukses!!'
+			);
+			echo json_encode($hasil);
+		} else {
+			$dt2 = array(
+				'fs_user_edit' => trim($user),
+				'fd_tanggal_edit' => date('Y-m-d H:i:s')
+			);
+
+			$data = array_merge($dt, $dt2);
+			$where = "fn_no_pjj = '".trim($nopjj)."'";
+			$this->db->where($where);
+			$this->db->update('tx_detailbpkb', $data);
+
+			$hasil = array(
+				'sukses' => true,
+				'hasil' => 'Update BPKB '.trim($nopjj).', Sukses!!'
+			);
+			echo json_encode($hasil);
+		}
+	}
 
 	public function gridtbo() {
 		$sCari = trim($this->input->post('fs_cari'));
@@ -22,23 +154,20 @@ class Terimadaridealer extends CI_Controller {
 
 		$this->db->trans_start();
 		$this->load->model('MTerimaDariDealer');
-		$sSQL = $this->MTerimaDariDealer->listTBOAll($sCari);
+		$sSQL = $this->MTerimaDariDealer->listBPKBAll($sCari);
 		$xTotal = $sSQL->num_rows();
-		$sSQL = $this->MTerimaDariDealer->listTBO($sCari, $nStart, $nLimit);
+		$sSQL = $this->MTerimaDariDealer->listBPKB($sCari, $nStart, $nLimit);
 		$this->db->trans_complete();
 
 		$xArr = array();
 		if ($sSQL->num_rows() > 0) {
 			foreach ($sSQL->result() as $xRow) {
 				$xArr[] = array(
-					//'fs_kode_cabang' => trim($xRow->fs_kode_cabang),
-					'fn_no_apk' => trim($xRow->fn_no_apk),
-					'fs_no_pjj' => trim($xRow->fs_no_pjj),
-					'fs_nama_konsumen' => trim($xRow->fs_nama_konsumen),
-					//'fd_tgl_apk' => trim($xRow->fd_tgl_apk),
-					'fs_nama_dealer' => trim($xRow->fs_nama_dealer),
-					'fs_model_kendaraan' => trim($xRow->fs_model_kendaraan),
-					'fn_tahun_kendaraan' => trim($xRow->fs_model_kendaraan),
+					'fn_no_pjj' => trim($xRow->fn_no_pjj),
+					'fs_nama_pemilik' => trim($xRow->fs_nama_pemilik),
+					//'fs_nama_dealer' => trim($xRow->fs_nama_dealer),
+					'fs_jenis_kendaraan' => trim($xRow->fs_jenis_kendaraan),
+					'fn_tahun_kendaraan' => trim($xRow->fn_tahun_kendaraan),
 					'fs_warna_kendaraan' => trim($xRow->fs_warna_kendaraan),
 					'fs_no_rangka' => trim($xRow->fs_no_rangka),
 					'fs_no_mesin' => trim($xRow->fs_no_mesin)
@@ -46,11 +175,9 @@ class Terimadaridealer extends CI_Controller {
 			}
 		}
 		echo '({"total":"'.$xTotal.'","hasil":'.json_encode($xArr).'})';
-
 	}
 
-	public function ambilPlat()
-	{
+	public function ambilPlat(){
 
 		$nStart = trim($this->input->post('start'));
 		$nLimit = trim($this->input->post('limit'));
@@ -78,244 +205,163 @@ class Terimadaridealer extends CI_Controller {
 				);
 			}
 		}
-		echo '({"total":"'.$xTotal.'","hasil":'.json_encode($xArr).'})';
+		echo '({"total":"'.$xTotal.'","hasil":'.json_encode($xArr).'})';	
 	}
 
-	public function apkpendukung()
-	{
+	public function pendukungapk() {
 		$nStart = trim($this->input->post('start'));
 		$nLimit = trim($this->input->post('limit'));
-		$cari = trim($this->input->post('fs_cari'));
 
-		$kdcabang = trim($this->input->post('fs_kode_cabang'));
-		$noapk = trim($this->input->post('fn_no_apk'));
-		$nobatch = trim($this->input->post('fn_no_batch'));
-		$this->load->model('MTerimaDariDealer');
-		if ($noapk <> '')
-		{
-			$this->db->trans_start();
-			$sSQL = $this->MTerimaDariDealer->apkPendukungAll($kdcabang, $noapk, $cari);
-			$xTotal = $sSQL->num_rows();
-			$sSQL = $this->MTerimaDariDealer->apkPendukung($kdcabang,$noapk,$cari,$nStart,$nLimit);
-			$this->db->trans_complete();
-			$xArr = array();
-			if ($sSQL->num_rows() > 0)
-			{
-				foreach ($sSQL->result() as $xRow)
-				{
-					$xArr[] = array(
-						'fs_kode_dokumen' => trim($xRow->fs_kode_dokumen),
-						'fs_nama_dokumen' => trim($xRow->fs_nama_dokumen),
-						'fs_dokumen_upload' =>trim($xRow->fs_dokumen_upload),
-						'fs_kode_dokumen' => trim($xRow->fs_kode_dokumen),
-						'fs_wajib' => trim($xRow->fs_wajib),
-						'fs_iduser_buat' => trim($xRow->fs_iduser_buat),
-						'fd_tanggal_buat' => trim($xRow->fd_tanggal_buat)
-					);
-				}
-			}
-		}
-		else if ($nobatch <> '')
-		{
-			$xnoapk = $this->MTerimaDariDealer->listdetail($nobatch);
-			foreach ($xnoapk->result() as $row) {
-				$this->db->trans_start();
-				$sSQL = $this->MTerimaDariDealer->apkPendukungAll($kdcabang, $row->fn_no_apk, $cari);
-				$xTotal = $sSQL->num_rows();
-				$sSQL = $this->MTerimaDariDealer->apkPendukung($kdcabang, $row->fn_no_apk,$cari,$nStart,$nLimit);
-				$this->db->trans_complete();
-				$xArr = array();
-				if ($sSQL->num_rows() > 0)
-				{
-					foreach ($sSQL->result() as $xRow)
-					{
-						$xArr[] = array(
-						'fs_kode_dokumen' => trim($xRow->fs_kode_dokumen),
-						'fs_nama_dokumen' => trim($xRow->fs_nama_dokumen),
-						'fs_dokumen_upload' =>trim($xRow->fs_dokumen_upload),
-						'fs_kode_dokumen' => trim($xRow->fs_kode_dokumen),
-						'fs_wajib' => trim($xRow->fs_wajib),
-						'fs_iduser_buat' => trim($xRow->fs_iduser_buat),
-						'fd_tanggal_buat' => trim($xRow->fd_tanggal_buat)
-						);
-					}
-				}
-			}
+		$cabang = $this->input->post('fs_kode_cabang');
+		$nopjj = $this->input->post('fn_no_pjj');
 
-		}
-		else {
-			$xTotal = 0;
-			$xArr = array();
-		}
-		echo '({"total":"'.$xTotal.'","hasil":'.json_encode($xArr).'})';
-	}
-
-	function datapendukung()
-	{
-		$nStart = trim($this->input->post('start'));
-		$nLimit = trim($this->input->post('limit'));
-		
-		$cari = trim($this->input->post('fs_cari'));
 		$this->db->trans_start();
-		$this->load->model('MTerimaDariDealer');
-		$sSQL = $this->MTerimaDariDealer->dataPendukungAll($cari);
+		$this->load->model('MSearch');
+		$sSQL = $this->MSearch->listDataPendukungAll($cabang, $nopjj);
 		$xTotal = $sSQL->num_rows();
-		$sSQL = $this->MTerimaDariDealer->dataPendukung($cari,$nStart,$nLimit);
+		$sSQL = $this->MSearch->listDataPendukung($cabang, $nopjj, $nStart, $nLimit);
 		$this->db->trans_complete();
+		
 		$xArr = array();
-		if ($sSQL->num_rows() > 0)
-		{	
-			foreach ($sSQL->result() as $xRow)
-			{
+		if ($sSQL->num_rows() > 0) {
+			foreach ($sSQL->result() as $xRow) {
 				$xArr[] = array(
 					'fs_kode_dokumen' => trim($xRow->fs_kode_dokumen),
-					'fs_jenis_pembiayaan' => trim($xRow->fs_jenis_pembiayaan),
 					'fs_nama_dokumen' => trim($xRow->fs_nama_dokumen),
-					'fs_wajib' => trim($xRow->wajib)
+					'fs_dokumen_upload' => trim($xRow->fs_dokumen_upload)
 				);
 			}
 		}
 		echo '({"total":"'.$xTotal.'","hasil":'.json_encode($xArr).'})';
 	}
 
-	public function remove() {
+	public function selectdokumen() {
+		$jenis = $this->input->post('fs_jenis_pembiayaan');
+		$dokumen = $this->input->post('fs_jenis_dokumen');
+
+		$this->db->trans_start();
+		$this->load->model('MSearch');
+		$sSQL = $this->MSearch->getDokumen($jenis, $dokumen);
+		$this->db->trans_complete();
+		$xArr = array();
+		if ($sSQL->num_rows() > 0) {
+			foreach ($sSQL->result() as $xRow) {
+				$xArr[] = array(
+					'fs_kode' => trim($xRow->fs_kode_dokumen),
+					'fs_nama' => trim($xRow->fs_nama_dokumen)
+				);
+			}
+		}
+		echo json_encode($xArr);
 	}
 
 	public function uploadfile() {
-		if(!empty($_FILES['fileDoc']['name']))
-		{
+		$user = $this->encryption->decrypt($this->session->userdata('username'));
+
+		$cabang = $this->input->post('txtKdCabangPendukung');
+		$nopjj = $this->input->post('txtNoAPKPendukung');
+		$nobatch = $this->input->post('txtNoBatch');
+		$kode = $this->input->post('cboDokumen');
+
+		if(!empty($_FILES['fileDokumen']['name'])) {
 			$config['upload_path'] = './uploads/';
 			$config['max_size'] = 1000;
-			$config['allowed_types'] = 'gif|jpg|jpeg|png';
-			$config['file_name'] = $_FILES['fileDoc']['name'];
+			$config['allowed_types'] = '*';
+			$config['file_name'] = $_FILES['fileDokumen']['name'];
 			$config['encrypt_name'] = TRUE;
-
+			$config['file_ext_tolower'] = TRUE;
+			$config['overwrite'] = TRUE;
 			$this->load->library('upload', $config);
 			$this->upload->initialize($config);
-			
-			if ($this->upload->do_upload('fileDoc'))
-			{
 
-				$uploadData = $this->upload->data();
-				$file = $uploadData['file_name'];
+			if ($this->upload->do_upload('fileDokumen')) {
+				$file = $this->upload->data();
+				$filename = $file['file_name'];
 
-				$kdcabang = trim($this->input->post('txtKdCabang'));
-				$noapk = trim($this->input->post('txtNoApk'));
-				$nobatch = trim($this->input->post('txtNoBatch'));
-				$kodedoc = trim($this->input->post('cboKodeDoc'));
-				$jnspmb = trim($this->input->post('txtJnsPembiayaan'));
-
-				if ($noapk <> '')
-				{
-					$this->load->model('MTerimaDariDealer');
-					$sSQL = $this->MTerimaDariDealer->checkDataPendukung($noapk, $kodedoc, $kdcabang);
-					if ($sSQL->num_rows() > 0)
-					{
+				$this->load->model('MTerimaDariDealer');
+				if(!empty($nopjj)) {
+					$sSQL = $this->MTerimaDariDealer->checkDataPendukung($cabang, $nopjj, $kode);
+					if ($sSQL->num_rows() > 0) {
 						$response = array(
-								  		'success' => false, 
-								  		'msg' => 'Dokumen yang sama sudah di Upload !!'
-								  	);
-						echo json_encode($response);
-						unlink('uploads/'. $file);
-					}
-					else
-					{
-						$insert = array(
-							'fs_kode_cabang' => $kdcabang,
-							'fs_jenis_pembiayaan' => $jnspmb,
-							'fn_no_apk' => $noapk,
-							'fs_kode_dokumen' => $kodedoc,
-							'fs_dokumen_upload' => $file,
-							'fs_iduser_buat' => trim($this->session->userdata('gUser')),
-							'fd_tanggal_buat' => trim(date('Y-m-d'))
+							'success' => false,
+							'msg' => 'Dokumen yang sama sudah di upload...'
 						);
-						$exec = $this->db->insert('tx_apk_data_pendukung', $insert);
-						
-						if ($exec) {
-							$response = array(
-											'success' => true, 
-								    		'data' => array(
-								    				'name' => $file),
-								    		'msg' => 'File Uploaded successfully'
-										);
-							echo json_encode($response);
-						}
-						else {
-							$response = array(
-								  			'success' => false, 
-								  			'msg' => 'Gagal'
-								  		);
-							echo json_encode($response);
-						}
+						echo json_encode($response);
+						unlink('uploads/'. $filename);
+					} else {
+						$data = array(
+							'fs_kode_cabang' => trim($cabang),
+							'fn_no_pjj' => trim($nopjj),
+							'fs_kode_dokumen' => trim($kode),
+							'fs_dokumen_upload' => trim($filename),
+							'fs_user_buat' => trim($user),
+							'fd_tanggal_buat' => date('Y-m-d H:i:s')
+						);
+						$this->db->insert('tx_apk_data_pendukung', $data);
+
+						$response = array(
+							'success' => true, 
+							'data' => array('name' => $filename),
+							'msg' => 'File Uploaded successfully...'
+						);
+						echo json_encode($response);
 					}
-				}
-				else if ($nobatch <> '')
-				{
-					$this->db->trans_start();
-					$this->load->model('MTerimaDariDealer');
-					$xnoapk = $this->MTerimaDariDealer->listdetail($nobatch);
-					foreach ($xnoapk->result() as $row) {
-
-						$sSQL = $this->MTerimaDariDealer->checkDataPendukung($row->fn_no_apk, $kodedoc, $kdcabang);
-						if ($sSQL->num_rows() > 0)
-						{
+				} 
+				else if (!empty($cabang) && !empty($nobatch)) {
+					$AllAPK = $this->MTerimaDariDealer->listDetail($nobatch);
+					foreach ($AllAPK->result() as $row) {
+						/*
+						$sSQL = $this->MTerimaDariDealer->$cabang, $row->fn_no_apk, $kode);
+						if ($sSQL->num_rows() > 0) {
 							$response = array(
-									  		'success' => false, 
-									  		'msg' => 'Dokumen yang sama sudah di Upload !!'
-									  	);
-							echo json_encode($response);
-							unlink('uploads/'. $file);
-
-							return false;
-						}
-						else
-						{
-							$insert2 = array(
-								'fs_kode_cabang' => $kdcabang,
-								'fs_jenis_pembiayaan' => $jnspmb,
-								'fn_no_apk' => $row->fn_no_apk,
-								'fs_kode_dokumen' => $kodedoc,
-								'fs_dokumen_upload' => $file,
-								'fs_iduser_buat' => trim($this->session->userdata('gUser')),
-								'fd_tanggal_buat' => trim(date('Y-m-d'))
+								'success' => false,
+								'msg' => 'Dokumen yang sama sudah di upload...'
 							);
-							$exec2 = $this->db->insert('tx_apk_data_pendukung', $insert2);
+							echo json_encode($response);
+							unlink('uploads/'. $filename);
+						} else {
+							$data = array(
+								'fs_kode_cabang' => trim($cabang),
+								'fn_no_apk' => trim($row->fn_no_apk),
+								'fs_jenis_pembiayaan' => trim($jenis),
+								'fs_kode_dokumen' => trim($kode),
+								'fs_dokumen_upload' => trim($filename),
+								'fs_user_buat' => trim($user),
+								'fd_tanggal_buat' => date('Y-m-d H:i:s')
+							);
+
+							$this->db->insert('tx_apk_data_pendukung', $data);
 						}
-						
+						*/
 					}
-					if ($exec2) {
-						$response = array(
-									'success' => true, 
-								    'data' => array(
-								    			'name' => $file),
-								    'msg' => 'File Uploaded successfully'
-									);
-						echo json_encode($response);
-					}
-					else {
-						$response = array(
-								  	'success' => false, 
-								  	'msg' => 'Gagal'
-								  	);
-						echo json_encode($response);
-					}
+
+					$response = array(
+						'success' => true, 
+						'data' => array('name' => $filename),
+						'msg' => 'File Uploaded successfully...'
+					);
+					echo json_encode($response);
 				}
 				else {
 					$response = array(
-							  		'success' => false, 
-							  		'msg' => 'Konsumen belum dipilih'
-							  	);
+						'success' => false,
+						'msg' => 'APK belum dipilih, Silakan pilih di Daftar APK'
+						);
 					echo json_encode($response);
 				}
-			}
-			else
-			{
+			} else {
 				$response = array(
-							  'success' => false, 
-							  'msg' => $this->upload->display_errors()
-							);
+					'success' => false,
+					'msg' => $this->upload->display_errors()
+				);
 				echo json_encode($response);
 			}
+		} else {
+			$response = array(
+				'success' => false,
+				'msg' => $this->upload->display_errors()
+			);
+			echo json_encode($response);
 		}
 	}
 
@@ -342,5 +388,18 @@ class Terimadaridealer extends CI_Controller {
 			}
 		}
 		echo '({"total":"'.$xTotal.'","hasil":'.json_encode($xArr).'})';
+	}
+
+	public function remove() {
+		$kode = $this->input->post('fs_dokumen_upload');
+		$where = "fs_dokumen_upload = '".trim($kode)."'";
+		$this->db->where($where);
+		$this->db->delete('tx_apk_data_pendukung');
+
+		$hasil = array(
+				'sukses' => true,
+				'hasil' => 'Hapus Data Pendukung '.trim($kode).', Sukses!!'
+		);
+		echo json_encode($hasil);
 	}
 }

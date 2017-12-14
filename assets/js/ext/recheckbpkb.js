@@ -158,6 +158,8 @@ Ext.onReady(function() {
 				Ext.getCmp('txtNomerRangka').setValue(record.get('fs_no_rangka'));
 				Ext.getCmp('txtNoPolisi').setValue(record.get('fs_no_polisi'));
 				Ext.getCmp('txtNoBPKB').setValue(record.get('fs_no_bpkb'));
+				Ext.getCmp('cboTglTerbit').setValue(record.get('fd_tanggal_terbit'));
+				Ext.getCmp('cboTglTerbitSTNK').setValue(record.get('fd_terbit_stnk'));
 		
 				// CHANGE TAB
 				var tabPanel = Ext.ComponentQuery.query('tabpanel')[0];

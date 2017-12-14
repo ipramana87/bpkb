@@ -1,0 +1,209 @@
+ERROR - 2017-11-28 02:59:02 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-28 03:00:54 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-28 03:02:51 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-28 03:03:44 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-28 03:04:03 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-28 03:04:03 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-28 03:04:30 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-28 03:05:22 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-28 03:05:48 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-28 03:06:14 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-28 03:08:03 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-28 03:08:41 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-28 03:32:09 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-28 03:32:09 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-28 03:37:34 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-28 03:43:04 --> 404 Page Not Found: Inputsurvey/removefile
+ERROR - 2017-11-28 03:43:07 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-28 03:43:25 --> 404 Page Not Found: Inputsurvey/removefile
+ERROR - 2017-11-28 03:43:27 --> 404 Page Not Found: Inputsurvey/removefile
+ERROR - 2017-11-28 03:53:53 --> 404 Page Not Found: Inputsurvey/removefile
+ERROR - 2017-11-28 03:55:01 --> 404 Page Not Found: Masterkreditur/select
+ERROR - 2017-11-28 04:02:54 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-28 04:03:01 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-28 04:03:01 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-28 04:03:04 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-28 04:07:20 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-28 04:07:53 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-28 04:18:58 --> 404 Page Not Found: Masterkreditur/select
+ERROR - 2017-11-28 04:28:29 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-28 04:34:29 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-28 04:35:24 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-28 04:36:09 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-28 04:37:00 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-28 04:38:26 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-28 04:39:12 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-28 04:42:11 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-28 04:42:29 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-28 04:45:17 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-28 04:46:28 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-28 04:47:24 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-28 04:52:28 --> 404 Page Not Found: Kirimkepusat/gridtambah
+ERROR - 2017-11-28 04:52:29 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-28 04:53:54 --> 404 Page Not Found: Kirimkepusat/gridtambah
+ERROR - 2017-11-28 04:53:55 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-28 04:54:00 --> 404 Page Not Found: Kirimkepusat/gridtambah
+ERROR - 2017-11-28 04:56:35 --> Severity: Notice --> Undefined property: stdClass::$fs_kode_kreditur D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 221
+ERROR - 2017-11-28 04:56:35 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-28 04:56:35 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_kreditur D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 222
+ERROR - 2017-11-28 04:56:35 --> Severity: Notice --> Undefined property: stdClass::$fs_aktif D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 223
+ERROR - 2017-11-28 04:56:35 --> Severity: Notice --> Undefined property: stdClass::$fs_kode_kreditur D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 221
+ERROR - 2017-11-28 04:56:35 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_kreditur D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 222
+ERROR - 2017-11-28 04:56:35 --> Severity: Notice --> Undefined property: stdClass::$fs_aktif D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 223
+ERROR - 2017-11-28 04:56:35 --> Severity: Notice --> Undefined property: stdClass::$fs_kode_kreditur D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 221
+ERROR - 2017-11-28 04:56:35 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_kreditur D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 222
+ERROR - 2017-11-28 04:56:35 --> Severity: Notice --> Undefined property: stdClass::$fs_aktif D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 223
+ERROR - 2017-11-28 04:56:35 --> Severity: Notice --> Undefined property: stdClass::$fs_kode_kreditur D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 221
+ERROR - 2017-11-28 04:56:35 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_kreditur D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 222
+ERROR - 2017-11-28 04:56:35 --> Severity: Notice --> Undefined property: stdClass::$fs_aktif D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 223
+ERROR - 2017-11-28 04:56:35 --> Severity: Notice --> Undefined property: stdClass::$fs_kode_kreditur D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 221
+ERROR - 2017-11-28 04:56:35 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_kreditur D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 222
+ERROR - 2017-11-28 04:56:35 --> Severity: Notice --> Undefined property: stdClass::$fs_aktif D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 223
+ERROR - 2017-11-28 05:01:03 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-28 05:01:03 --> Severity: Notice --> Undefined property: stdClass::$fs_kode_kreditur D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 221
+ERROR - 2017-11-28 05:01:03 --> Severity: Notice --> Undefined property: stdClass::$nomesin D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 228
+ERROR - 2017-11-28 05:01:03 --> Severity: Notice --> Undefined property: stdClass::$fs_no_agunan D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 230
+ERROR - 2017-11-28 05:01:03 --> Severity: Notice --> Undefined property: stdClass::$fd_tanggal_terbit D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 232
+ERROR - 2017-11-28 05:01:03 --> Severity: Notice --> Undefined property: stdClass::$fd_terima_bpkb D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 233
+ERROR - 2017-11-28 05:01:03 --> Severity: Notice --> Undefined property: stdClass::$fd_terbit_stnk D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 234
+ERROR - 2017-11-28 05:01:03 --> Severity: Notice --> Undefined property: stdClass::$fs_kode_kreditur D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 221
+ERROR - 2017-11-28 05:01:03 --> Severity: Notice --> Undefined property: stdClass::$nomesin D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 228
+ERROR - 2017-11-28 05:01:03 --> Severity: Notice --> Undefined property: stdClass::$fs_no_agunan D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 230
+ERROR - 2017-11-28 05:01:03 --> Severity: Notice --> Undefined property: stdClass::$fd_tanggal_terbit D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 232
+ERROR - 2017-11-28 05:01:03 --> Severity: Notice --> Undefined property: stdClass::$fd_terima_bpkb D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 233
+ERROR - 2017-11-28 05:01:03 --> Severity: Notice --> Undefined property: stdClass::$fd_terbit_stnk D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 234
+ERROR - 2017-11-28 05:01:03 --> Severity: Notice --> Undefined property: stdClass::$fs_kode_kreditur D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 221
+ERROR - 2017-11-28 05:01:03 --> Severity: Notice --> Undefined property: stdClass::$nomesin D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 228
+ERROR - 2017-11-28 05:01:03 --> Severity: Notice --> Undefined property: stdClass::$fs_no_agunan D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 230
+ERROR - 2017-11-28 05:01:03 --> Severity: Notice --> Undefined property: stdClass::$fd_tanggal_terbit D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 232
+ERROR - 2017-11-28 05:01:03 --> Severity: Notice --> Undefined property: stdClass::$fd_terima_bpkb D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 233
+ERROR - 2017-11-28 05:01:03 --> Severity: Notice --> Undefined property: stdClass::$fd_terbit_stnk D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 234
+ERROR - 2017-11-28 05:01:03 --> Severity: Notice --> Undefined property: stdClass::$fs_kode_kreditur D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 221
+ERROR - 2017-11-28 05:01:03 --> Severity: Notice --> Undefined property: stdClass::$nomesin D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 228
+ERROR - 2017-11-28 05:01:03 --> Severity: Notice --> Undefined property: stdClass::$fs_no_agunan D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 230
+ERROR - 2017-11-28 05:01:03 --> Severity: Notice --> Undefined property: stdClass::$fd_tanggal_terbit D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 232
+ERROR - 2017-11-28 05:01:03 --> Severity: Notice --> Undefined property: stdClass::$fd_terima_bpkb D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 233
+ERROR - 2017-11-28 05:01:03 --> Severity: Notice --> Undefined property: stdClass::$fd_terbit_stnk D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 234
+ERROR - 2017-11-28 05:01:03 --> Severity: Notice --> Undefined property: stdClass::$fs_kode_kreditur D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 221
+ERROR - 2017-11-28 05:01:03 --> Severity: Notice --> Undefined property: stdClass::$nomesin D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 228
+ERROR - 2017-11-28 05:01:03 --> Severity: Notice --> Undefined property: stdClass::$fs_no_agunan D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 230
+ERROR - 2017-11-28 05:01:03 --> Severity: Notice --> Undefined property: stdClass::$fd_tanggal_terbit D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 232
+ERROR - 2017-11-28 05:01:03 --> Severity: Notice --> Undefined property: stdClass::$fd_terima_bpkb D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 233
+ERROR - 2017-11-28 05:01:03 --> Severity: Notice --> Undefined property: stdClass::$fd_terbit_stnk D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 234
+ERROR - 2017-11-28 05:01:09 --> Severity: Notice --> Undefined property: stdClass::$fs_kode_kreditur D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 221
+ERROR - 2017-11-28 05:01:09 --> Severity: Notice --> Undefined property: stdClass::$nomesin D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 228
+ERROR - 2017-11-28 05:01:09 --> Severity: Notice --> Undefined property: stdClass::$fs_no_agunan D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 230
+ERROR - 2017-11-28 05:01:09 --> Severity: Notice --> Undefined property: stdClass::$fd_tanggal_terbit D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 232
+ERROR - 2017-11-28 05:01:09 --> Severity: Notice --> Undefined property: stdClass::$fd_terima_bpkb D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 233
+ERROR - 2017-11-28 05:01:09 --> Severity: Notice --> Undefined property: stdClass::$fd_terbit_stnk D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 234
+ERROR - 2017-11-28 05:01:09 --> Severity: Notice --> Undefined property: stdClass::$fs_kode_kreditur D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 221
+ERROR - 2017-11-28 05:01:09 --> Severity: Notice --> Undefined property: stdClass::$nomesin D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 228
+ERROR - 2017-11-28 05:01:09 --> Severity: Notice --> Undefined property: stdClass::$fs_no_agunan D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 230
+ERROR - 2017-11-28 05:01:09 --> Severity: Notice --> Undefined property: stdClass::$fd_tanggal_terbit D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 232
+ERROR - 2017-11-28 05:01:09 --> Severity: Notice --> Undefined property: stdClass::$fd_terima_bpkb D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 233
+ERROR - 2017-11-28 05:01:09 --> Severity: Notice --> Undefined property: stdClass::$fd_terbit_stnk D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 234
+ERROR - 2017-11-28 05:01:09 --> Severity: Notice --> Undefined property: stdClass::$fs_kode_kreditur D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 221
+ERROR - 2017-11-28 05:01:09 --> Severity: Notice --> Undefined property: stdClass::$nomesin D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 228
+ERROR - 2017-11-28 05:01:09 --> Severity: Notice --> Undefined property: stdClass::$fs_no_agunan D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 230
+ERROR - 2017-11-28 05:01:09 --> Severity: Notice --> Undefined property: stdClass::$fd_tanggal_terbit D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 232
+ERROR - 2017-11-28 05:01:09 --> Severity: Notice --> Undefined property: stdClass::$fd_terima_bpkb D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 233
+ERROR - 2017-11-28 05:01:09 --> Severity: Notice --> Undefined property: stdClass::$fd_terbit_stnk D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 234
+ERROR - 2017-11-28 05:01:09 --> Severity: Notice --> Undefined property: stdClass::$fs_kode_kreditur D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 221
+ERROR - 2017-11-28 05:01:09 --> Severity: Notice --> Undefined property: stdClass::$nomesin D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 228
+ERROR - 2017-11-28 05:01:09 --> Severity: Notice --> Undefined property: stdClass::$fs_no_agunan D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 230
+ERROR - 2017-11-28 05:01:09 --> Severity: Notice --> Undefined property: stdClass::$fd_tanggal_terbit D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 232
+ERROR - 2017-11-28 05:01:09 --> Severity: Notice --> Undefined property: stdClass::$fd_terima_bpkb D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 233
+ERROR - 2017-11-28 05:01:09 --> Severity: Notice --> Undefined property: stdClass::$fd_terbit_stnk D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 234
+ERROR - 2017-11-28 05:01:09 --> Severity: Notice --> Undefined property: stdClass::$fs_kode_kreditur D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 221
+ERROR - 2017-11-28 05:01:09 --> Severity: Notice --> Undefined property: stdClass::$nomesin D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 228
+ERROR - 2017-11-28 05:01:09 --> Severity: Notice --> Undefined property: stdClass::$fs_no_agunan D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 230
+ERROR - 2017-11-28 05:01:09 --> Severity: Notice --> Undefined property: stdClass::$fd_tanggal_terbit D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 232
+ERROR - 2017-11-28 05:01:09 --> Severity: Notice --> Undefined property: stdClass::$fd_terima_bpkb D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 233
+ERROR - 2017-11-28 05:01:09 --> Severity: Notice --> Undefined property: stdClass::$fd_terbit_stnk D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 234
+ERROR - 2017-11-28 05:01:31 --> Severity: Notice --> Undefined property: stdClass::$nomesin D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 227
+ERROR - 2017-11-28 05:01:31 --> Severity: Notice --> Undefined property: stdClass::$fs_no_agunan D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 229
+ERROR - 2017-11-28 05:01:31 --> Severity: Notice --> Undefined property: stdClass::$fd_tanggal_terbit D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 231
+ERROR - 2017-11-28 05:01:31 --> Severity: Notice --> Undefined property: stdClass::$fd_terima_bpkb D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 232
+ERROR - 2017-11-28 05:01:31 --> Severity: Notice --> Undefined property: stdClass::$fd_terbit_stnk D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 233
+ERROR - 2017-11-28 05:01:31 --> Severity: Notice --> Undefined property: stdClass::$nomesin D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 227
+ERROR - 2017-11-28 05:01:31 --> Severity: Notice --> Undefined property: stdClass::$fs_no_agunan D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 229
+ERROR - 2017-11-28 05:01:31 --> Severity: Notice --> Undefined property: stdClass::$fd_tanggal_terbit D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 231
+ERROR - 2017-11-28 05:01:31 --> Severity: Notice --> Undefined property: stdClass::$fd_terima_bpkb D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 232
+ERROR - 2017-11-28 05:01:31 --> Severity: Notice --> Undefined property: stdClass::$fd_terbit_stnk D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 233
+ERROR - 2017-11-28 05:01:31 --> Severity: Notice --> Undefined property: stdClass::$nomesin D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 227
+ERROR - 2017-11-28 05:01:31 --> Severity: Notice --> Undefined property: stdClass::$fs_no_agunan D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 229
+ERROR - 2017-11-28 05:01:31 --> Severity: Notice --> Undefined property: stdClass::$fd_tanggal_terbit D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 231
+ERROR - 2017-11-28 05:01:31 --> Severity: Notice --> Undefined property: stdClass::$fd_terima_bpkb D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 232
+ERROR - 2017-11-28 05:01:31 --> Severity: Notice --> Undefined property: stdClass::$fd_terbit_stnk D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 233
+ERROR - 2017-11-28 05:01:31 --> Severity: Notice --> Undefined property: stdClass::$nomesin D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 227
+ERROR - 2017-11-28 05:01:31 --> Severity: Notice --> Undefined property: stdClass::$fs_no_agunan D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 229
+ERROR - 2017-11-28 05:01:31 --> Severity: Notice --> Undefined property: stdClass::$fd_tanggal_terbit D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 231
+ERROR - 2017-11-28 05:01:31 --> Severity: Notice --> Undefined property: stdClass::$fd_terima_bpkb D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 232
+ERROR - 2017-11-28 05:01:31 --> Severity: Notice --> Undefined property: stdClass::$fd_terbit_stnk D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 233
+ERROR - 2017-11-28 05:01:31 --> Severity: Notice --> Undefined property: stdClass::$nomesin D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 227
+ERROR - 2017-11-28 05:01:31 --> Severity: Notice --> Undefined property: stdClass::$fs_no_agunan D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 229
+ERROR - 2017-11-28 05:01:31 --> Severity: Notice --> Undefined property: stdClass::$fd_tanggal_terbit D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 231
+ERROR - 2017-11-28 05:01:31 --> Severity: Notice --> Undefined property: stdClass::$fd_terima_bpkb D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 232
+ERROR - 2017-11-28 05:01:31 --> Severity: Notice --> Undefined property: stdClass::$fd_terbit_stnk D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 233
+ERROR - 2017-11-28 05:01:31 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-28 05:01:41 --> Severity: Notice --> Undefined property: stdClass::$nomesin D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 227
+ERROR - 2017-11-28 05:01:41 --> Severity: Notice --> Undefined property: stdClass::$fs_no_agunan D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 229
+ERROR - 2017-11-28 05:01:41 --> Severity: Notice --> Undefined property: stdClass::$fd_tanggal_terbit D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 231
+ERROR - 2017-11-28 05:01:41 --> Severity: Notice --> Undefined property: stdClass::$fd_terima_bpkb D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 232
+ERROR - 2017-11-28 05:01:41 --> Severity: Notice --> Undefined property: stdClass::$fd_terbit_stnk D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 233
+ERROR - 2017-11-28 05:01:41 --> Severity: Notice --> Undefined property: stdClass::$nomesin D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 227
+ERROR - 2017-11-28 05:01:41 --> Severity: Notice --> Undefined property: stdClass::$fs_no_agunan D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 229
+ERROR - 2017-11-28 05:01:41 --> Severity: Notice --> Undefined property: stdClass::$fd_tanggal_terbit D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 231
+ERROR - 2017-11-28 05:01:41 --> Severity: Notice --> Undefined property: stdClass::$fd_terima_bpkb D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 232
+ERROR - 2017-11-28 05:01:41 --> Severity: Notice --> Undefined property: stdClass::$fd_terbit_stnk D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 233
+ERROR - 2017-11-28 05:01:41 --> Severity: Notice --> Undefined property: stdClass::$nomesin D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 227
+ERROR - 2017-11-28 05:01:41 --> Severity: Notice --> Undefined property: stdClass::$fs_no_agunan D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 229
+ERROR - 2017-11-28 05:01:41 --> Severity: Notice --> Undefined property: stdClass::$fd_tanggal_terbit D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 231
+ERROR - 2017-11-28 05:01:41 --> Severity: Notice --> Undefined property: stdClass::$fd_terima_bpkb D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 232
+ERROR - 2017-11-28 05:01:41 --> Severity: Notice --> Undefined property: stdClass::$fd_terbit_stnk D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 233
+ERROR - 2017-11-28 05:01:41 --> Severity: Notice --> Undefined property: stdClass::$nomesin D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 227
+ERROR - 2017-11-28 05:01:41 --> Severity: Notice --> Undefined property: stdClass::$fs_no_agunan D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 229
+ERROR - 2017-11-28 05:01:41 --> Severity: Notice --> Undefined property: stdClass::$fd_tanggal_terbit D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 231
+ERROR - 2017-11-28 05:01:41 --> Severity: Notice --> Undefined property: stdClass::$fd_terima_bpkb D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 232
+ERROR - 2017-11-28 05:01:41 --> Severity: Notice --> Undefined property: stdClass::$fd_terbit_stnk D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 233
+ERROR - 2017-11-28 05:01:41 --> Severity: Notice --> Undefined property: stdClass::$nomesin D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 227
+ERROR - 2017-11-28 05:01:41 --> Severity: Notice --> Undefined property: stdClass::$fs_no_agunan D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 229
+ERROR - 2017-11-28 05:01:41 --> Severity: Notice --> Undefined property: stdClass::$fd_tanggal_terbit D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 231
+ERROR - 2017-11-28 05:01:41 --> Severity: Notice --> Undefined property: stdClass::$fd_terima_bpkb D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 232
+ERROR - 2017-11-28 05:01:41 --> Severity: Notice --> Undefined property: stdClass::$fd_terbit_stnk D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 233
+ERROR - 2017-11-28 05:08:03 --> 404 Page Not Found: Masterkreditur/select
+ERROR - 2017-11-28 05:13:05 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-28 05:14:02 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-28 05:14:02 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-28 05:14:27 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-28 05:14:27 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-28 05:14:36 --> 404 Page Not Found: Terimadarikreditur/gridhistory
+ERROR - 2017-11-28 05:16:03 --> 404 Page Not Found: Terimadarikreditur/gridhistory
+ERROR - 2017-11-28 05:16:11 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-28 07:28:02 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-28 07:28:05 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-28 07:28:08 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-28 07:28:08 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-28 07:28:11 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-28 08:12:39 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-28 08:12:39 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-28 08:12:41 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-28 08:13:39 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-28 08:14:20 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-28 08:14:49 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-28 08:16:14 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-28 08:17:24 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-28 08:17:24 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-28 08:17:33 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-28 08:32:17 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-28 08:33:19 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-28 08:34:08 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-28 11:16:49 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-28 11:16:49 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-28 11:27:22 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-28 11:48:13 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-28 12:29:48 --> 404 Page Not Found: Terimadarikreditur/gridhistory
+ERROR - 2017-11-28 12:30:04 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-28 12:30:04 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-28 12:30:06 --> 404 Page Not Found: Penyerahankekonsumen/gridpenyerahan
+ERROR - 2017-11-28 12:30:22 --> 404 Page Not Found: Assets/css

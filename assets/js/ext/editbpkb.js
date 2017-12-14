@@ -410,7 +410,7 @@ Ext.onReady(function() {
 		xtype: 'button',
 		id: 'btnSave',
 		name: 'btnSave',
-		text: 'Save',
+		text: 'Update',
 		iconCls: 'icon-save',
 		handler: ''
 	};

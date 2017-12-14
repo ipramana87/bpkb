@@ -50,7 +50,7 @@ class MTerimaDariDealer extends CI_Model
 		return $sSQL;
 	}
 
-	function apkPendukungAll($nKdCab, $nApk, $sCari)
+	function apkPendukungAll($nKdCab, $npjj, $sCari)
 	{
 		$xSQL = ("
 			SELECT a.fs_kode_dokumen, a.fs_dokumen_upload, a.fs_iduser_buat, 
@@ -58,7 +58,7 @@ class MTerimaDariDealer extends CI_Model
 			CASE b.fs_wajib WHEN '1' THEN 'WAJIB DIISI' WHEN '0' THEN 'PILIHAN' END wajib
 			FROM tx_apk_data_pendukung a 
 			JOIN  tm_data_pendukung b  ON a.fs_kode_dokumen = b.fs_kode_dokumen
-			WHERE a.fs_kode_cabang = '".trim($nKdCab)."' AND a.fn_no_apk IN ('".trim($nApk)."')
+			WHERE a.fs_kode_cabang = '".trim($nKdCab)."' AND a.fn_no_pjj IN ('".trim($npjj)."')
 		");
 
 		if ($this->session->userdata('gKodeCabang') != '00')
@@ -82,7 +82,7 @@ class MTerimaDariDealer extends CI_Model
 		return $sSQL;
 	}
 
-	function apkPendukung($nKdCab, $nApk, $sCari, $nStart, $nLimit)
+	function apkPendukung($nKdCab, $npjj, $sCari, $nStart, $nLimit)
 	{
 		$xSQL = ("
 			SELECT a.fs_kode_dokumen, a.fs_dokumen_upload, 
@@ -90,7 +90,7 @@ class MTerimaDariDealer extends CI_Model
 			CASE b.fs_wajib WHEN '1' THEN 'WAJIB DIISI' WHEN '0' THEN 'PILIHAN' END wajib
 			FROM tx_apk_data_pendukung a 
 			JOIN  tm_data_pendukung b  ON a.fs_kode_dokumen = b.fs_kode_dokumen
-			WHERE a.fs_kode_cabang = '".trim($nKdCab)."' AND a.fn_no_apk IN ('".trim($nApk)."')
+			WHERE a.fs_kode_cabang = '".trim($nKdCab)."' AND a.fn_no_pjj IN ('".trim($npjj)."')
 		");
 
 		if ($this->session->userdata('gKodeCabang') != '00')
@@ -164,12 +164,12 @@ class MTerimaDariDealer extends CI_Model
 		return $sSQL;
 	}
 
-	function checkDataPendukung($nApk, $nKdDoc, $nKdCab)
+	function checkDataPendukung($npjj, $nKdDoc, $nKdCab)
 	{
 		$xSQL = ("
-			SELECT fn_no_apk, fs_kode_dokumen
+			SELECT fn_no_pjj, fs_kode_dokumen
 			FROM tx_apk_data_pendukung
-			WHERE fn_no_apk = '".trim($nApk)."' 
+			WHERE fn_no_pjj = '".trim($npjj)."' 
 			AND fs_kode_dokumen = '".trim($nKdDoc)."'
 			AND fs_kode_cabang = '".trim($nKdCab)."'	
 		");
@@ -182,7 +182,7 @@ class MTerimaDariDealer extends CI_Model
 	{
 		$xSQL = ("
 			SELECT * 
-			FROM tx_apk
+			FROM tx_bpkb
 			WHERE fn_no_batch = '".trim($nBatch)."'
 			AND fs_fleet = 'Y' AND fn_no_batch IS NOT NULL
 		");
@@ -194,6 +194,51 @@ class MTerimaDariDealer extends CI_Model
 			");
 		}
 
+		$sSQL = $this->db->query($xSQL);
+		return $sSQL;
+	}
+
+		public function listBPKBAll($sCari)
+	{	
+		$xSQL = ("
+			SELECT fs_transaksi, fn_no_pjj, fs_nama_pemilik, fs_status,
+				fs_kode_lokasi, fs_kode_cabang, fs_kode_kendaraan, fs_jenis_kendaraan,
+				fn_tahun_kendaraan, fs_warna_kendaraan, fs_silinder_kendaraan,
+				fs_no_polisi, fs_no_rangka, fs_no_mesin, fs_no_bpkb, fs_nama_bpkb, fs_no_faktur, fd_tanggal_bpkb
+			FROM tx_bpkb
+			
+		");
+
+		if (!empty($sCari)) {
+			$xSQL = $xSQL.("
+				AND fs_no_bpkb LIKE '%".trim($sCari)."%'
+			");
+		}
+
+		$sSQL = $this->db->query($xSQL);
+		return $sSQL;
+	}
+
+	public function listBPKB($sCari,$nStart,$nLimit)
+	{	
+		$xSQL = ("
+			SELECT fs_transaksi, fn_no_pjj, fs_nama_pemilik, fs_status,
+				fs_kode_lokasi, fs_kode_cabang, fs_kode_kendaraan, fs_jenis_kendaraan,
+				fn_tahun_kendaraan, fs_warna_kendaraan, fs_silinder_kendaraan,
+				fs_no_polisi, fs_no_rangka, fs_no_mesin, fs_no_bpkb, fs_nama_bpkb, fs_no_faktur, fd_tanggal_bpkb
+			FROM tx_bpkb
+		
+		");
+
+		if (!empty($sCari)) {
+			$xSQL = $xSQL.("
+				AND fs_no_bpkb LIKE '%".trim($sCari)."%'
+			");
+		}
+
+		$xSQL = $xSQL.("
+			ORDER BY fs_no_bpkb ASC LIMIT ".$nStart.",".$nLimit."
+		");
 		$sSQL = $this->db->query($xSQL);
 		return $sSQL;
 	}

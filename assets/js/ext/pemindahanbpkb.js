@@ -584,7 +584,7 @@ Ext.onReady(function() {
 		xtype: 'button',
 		id: 'btnsave',
 		name: 'btnsave',
-		text: 'Save',
+		text: 'Pindah',
 		iconCls: 'icon-save',
 		handler: ''
 	}
