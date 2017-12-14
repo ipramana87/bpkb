@@ -40,7 +40,9 @@ class Recheckbpkb extends CI_Controller {
 					'fs_warna_kendaraan' => trim($xRow->fs_warna_kendaraan),
 					'fs_no_mesin' => trim($xRow->fs_no_mesin),
 					'fs_no_rangka' => trim($xRow->fs_no_rangka),
-					'fs_no_polisi' => trim($xRow->fs_no_polisi)	
+					'fs_no_polisi' => trim($xRow->fs_no_polisi),
+					'fd_tanggal_terbit' => trim($xRow->fd_tanggal_terbit),
+					'fd_terbit_stnk' => trim($xRow->fd_terbit_stnk)	
 				);
 			}
 		}

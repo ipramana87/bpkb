@@ -45,7 +45,11 @@ class Mutasipusat extends CI_Controller {
 					'fs_no_mesin' => trim($xRow->fs_no_mesin),
 					'fs_no_rangka' => trim($xRow->fs_no_rangka),
 					'fs_no_polisi' => trim($xRow->fs_no_polisi),
-					'fs_no_faktur' => trim($xRow->fs_no_faktur)	
+					'fs_no_faktur' => trim($xRow->fs_no_faktur),
+					'fs_tempat_bpkb' => trim($xRow->fs_tempat_bpkb),
+					'fs_nama_loker' => trim($xRow->fs_nama_loker),
+					'fd_tanggal_terbit' => trim($xRow->fd_tanggal_terbit),
+					'fd_terbit_stnk' => trim($xRow->fd_terbit_stnk)	
 					
 				);
 			}
@@ -80,7 +84,11 @@ class Mutasipusat extends CI_Controller {
 					'fs_no_mesin' => trim($xRow->fs_no_mesin),
 					'fs_no_rangka' => trim($xRow->fs_no_rangka),
 					'fs_no_polisi' => trim($xRow->fs_no_polisi),
-					'fs_no_faktur' => trim($xRow->fs_no_faktur)	
+					'fs_no_faktur' => trim($xRow->fs_no_faktur),
+					'fs_tempat_bpkb' => trim($xRow->fs_tempat_bpkb),
+					'fs_nama_loker' => trim($xRow->fs_nama_loker),
+					'fd_tanggal_terbit' => trim($xRow->fd_tanggal_terbit),
+					'fd_terbit_stnk' => trim($xRow->fd_terbit_stnk)		
 					
 				);
 			}

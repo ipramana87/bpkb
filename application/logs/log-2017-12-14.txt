@@ -1,0 +1,3 @@
+ERROR - 2017-12-14 08:02:20 --> 404 Page Not Found: Assets/css
+ERROR - 2017-12-14 08:08:43 --> 404 Page Not Found: Assets/css
+ERROR - 2017-12-14 08:08:58 --> 404 Page Not Found: Terimadarikreditur/gridhistory

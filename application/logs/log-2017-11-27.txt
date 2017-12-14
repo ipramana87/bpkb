@@ -1,0 +1,145 @@
+ERROR - 2017-11-27 03:41:32 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-27 04:23:58 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-27 05:05:55 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-27 05:19:44 --> 404 Page Not Found: Masterkreditur/select
+ERROR - 2017-11-27 05:37:03 --> 404 Page Not Found: Terimadarikreditur/gridhistory
+ERROR - 2017-11-27 08:03:35 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-27 08:03:38 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-27 08:15:10 --> 404 Page Not Found: Masterkreditur/select
+ERROR - 2017-11-27 08:15:15 --> 404 Page Not Found: Masterpeyimpananbpkb/select
+ERROR - 2017-11-27 09:10:10 --> Severity: Notice --> Undefined variable: tanggal D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 69
+ERROR - 2017-11-27 09:10:10 --> Severity: error --> Exception: Call to undefined method MSearch::checkKreditur() D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 84
+ERROR - 2017-11-27 09:11:17 --> Severity: error --> Exception: Call to undefined method MSearch::checkKreditur() D:\xampp\htdocs\bpkb\application\controllers\Terimadaridealer.php 84
+ERROR - 2017-11-27 10:14:04 --> Query error: Unknown column 'fs_model_kendaraan' in 'field list' - Invalid query: INSERT INTO `tx_detailbpkb` (`fn_no_apk`, `fn_no_pjj`, `fs_nama_konsumen`, `fs_model_kendaraan`, `fn_tahun_kendaraan`, `fs_warna_kendaraan`, `fs_no_mesin`, `fs_no_rangka`, `fs_no_agunan`, `fs_no_bpkb`, `fd_tanggal_terbit`, `fd_terima_bpkb`, `fd_terbit_stnk`, `fs_no_faktur`, `fs_tempat_bpkb`, `fs_nama_loker`, `fs_user_buat`, `fd_tanggal_buat`) VALUES ('170493', '22', 'INDRA PRAMANA', 'BMW 318I', 'BMW 318I', 'hitam', '', '', '', '', '', '', '', '', '', '', 'LEO', '2017-11-27 10:14:04')
+ERROR - 2017-11-27 10:14:17 --> Query error: Unknown column 'fs_model_kendaraan' in 'field list' - Invalid query: INSERT INTO `tx_detailbpkb` (`fn_no_apk`, `fn_no_pjj`, `fs_nama_konsumen`, `fs_model_kendaraan`, `fn_tahun_kendaraan`, `fs_warna_kendaraan`, `fs_no_mesin`, `fs_no_rangka`, `fs_no_agunan`, `fs_no_bpkb`, `fd_tanggal_terbit`, `fd_terima_bpkb`, `fd_terbit_stnk`, `fs_no_faktur`, `fs_tempat_bpkb`, `fs_nama_loker`, `fs_user_buat`, `fd_tanggal_buat`) VALUES ('170493', '22', 'INDRA PRAMANA', 'BMW 318I', 'BMW 318I', 'hitam', '', '', '', '', '', '', '', '', '', '', 'LEO', '2017-11-27 10:14:17')
+ERROR - 2017-11-27 10:32:02 --> Query error: Unknown column 'fs_no_pjj' in 'field list' - Invalid query: 
+			SELECT fs_kode_cabang, fn_no_apk, fs_no_pjj, fs_nama_konsumen, fd_tgl_apk, fs_nama_dealer, fs_model_kendaraan, fn_tahun_kendaraan, fs_warna_kendaraan, fs_no_rangka, fs_no_mesin
+			FROM tx_apk 
+			
+		
+ERROR - 2017-11-27 10:32:12 --> Query error: Unknown column 'fs_no_pjj' in 'field list' - Invalid query: 
+			SELECT fs_kode_cabang, fn_no_apk, fs_no_pjj, fs_nama_konsumen, fd_tgl_apk, fs_nama_dealer, fs_model_kendaraan, fn_tahun_kendaraan, fs_warna_kendaraan, fs_no_rangka, fs_no_mesin
+			FROM tx_apk 
+			
+		
+ERROR - 2017-11-27 10:34:12 --> Query error: Unknown column 'fs_nama_dealer' in 'field list' - Invalid query: 
+			SELECT fs_kode_cabang, fn_no_apk, fs_no_pjj, fs_nama_konsumen, fd_tgl_apk, fs_nama_dealer, fs_model_kendaraan, fn_tahun_kendaraan, fs_warna_kendaraan, fs_no_rangka, fs_no_mesin
+			FROM tx_apk 
+			
+		
+ERROR - 2017-11-27 10:35:25 --> Query error: Unknown column 'fs_model_kendaraan' in 'field list' - Invalid query: 
+			SELECT fs_kode_cabang, fn_no_apk, fs_no_pjj, fs_nama_konsumen, fd_tgl_apk, fs_nama_dealer, fs_model_kendaraan, fn_tahun_kendaraan, fs_warna_kendaraan, fs_no_rangka, fs_no_mesin
+			FROM tx_apk 
+			
+		
+ERROR - 2017-11-27 10:36:17 --> Query error: Unknown column 'fd_tanggal_buat' in 'order clause' - Invalid query: 
+			SELECT fs_kode_cabang, fn_no_apk, fs_no_pjj, fs_nama_konsumen, fd_tgl_apk, fs_nama_dealer, fs_model_kendaraan, fn_tahun_kendaraan, fs_warna_kendaraan, fs_no_rangka, fs_no_mesin
+			FROM tx_apk 
+			
+			
+		
+			ORDER BY fd_tanggal_buat DESC LIMIT 0,25
+		
+ERROR - 2017-11-27 10:52:57 --> Query error: Unknown column 'fs_model_kendaraan' in 'field list' - Invalid query: UPDATE `tx_detailbpkb` SET `fn_no_apk` = '170011', `fn_no_pjj` = '2491C17026', `fs_nama_konsumen` = 'MICHAEL GUNAWAN', `fs_model_kendaraan` = 'Rush', `fn_tahun_kendaraan` = '2015', `fs_warna_kendaraan` = 'BLACK', `fs_no_mesin` = '', `fs_no_rangka` = '', `fs_no_agunan` = '001', `fs_no_bpkb` = 'KM52347LK', `fd_tanggal_terbit` = '2017-11-01T00:00:00', `fd_terima_bpkb` = '2017-11-02T00:00:00', `fd_terbit_stnk` = '2017-11-03T00:00:00', `fs_no_faktur` = '0023', `fs_tempat_bpkb` = '002', `fs_nama_loker` = 'BEBAS', `fs_user_edit` = 'LEO', `fd_tanggal_edit` = '2017-11-27 10:52:57'
+WHERE `fn_no_apk` = '170011'
+ERROR - 2017-11-27 10:53:00 --> Query error: Unknown column 'fs_model_kendaraan' in 'field list' - Invalid query: UPDATE `tx_detailbpkb` SET `fn_no_apk` = '170011', `fn_no_pjj` = '2491C17026', `fs_nama_konsumen` = 'MICHAEL GUNAWAN', `fs_model_kendaraan` = 'Rush', `fn_tahun_kendaraan` = '2015', `fs_warna_kendaraan` = 'BLACK', `fs_no_mesin` = '', `fs_no_rangka` = '', `fs_no_agunan` = '001', `fs_no_bpkb` = 'KM52347LK', `fd_tanggal_terbit` = '2017-11-01T00:00:00', `fd_terima_bpkb` = '2017-11-02T00:00:00', `fd_terbit_stnk` = '2017-11-03T00:00:00', `fs_no_faktur` = '0023', `fs_tempat_bpkb` = '002', `fs_nama_loker` = 'BEBAS', `fs_user_edit` = 'LEO', `fd_tanggal_edit` = '2017-11-27 10:53:00'
+WHERE `fn_no_apk` = '170011'
+ERROR - 2017-11-27 10:53:14 --> Query error: Unknown column 'fs_model_kendaraan' in 'field list' - Invalid query: UPDATE `tx_detailbpkb` SET `fn_no_apk` = '170011', `fn_no_pjj` = '2491C17026', `fs_nama_konsumen` = 'MICHAEL GUNAWAN', `fs_model_kendaraan` = 'Rush', `fn_tahun_kendaraan` = '2015', `fs_warna_kendaraan` = 'BLACK', `fs_no_mesin` = '', `fs_no_rangka` = '', `fs_no_agunan` = '001', `fs_no_bpkb` = 'KM52347LK', `fd_tanggal_terbit` = '2017-11-01T00:00:00', `fd_terima_bpkb` = '2017-11-02T00:00:00', `fd_terbit_stnk` = '2017-11-03T00:00:00', `fs_no_faktur` = '0023', `fs_tempat_bpkb` = '002', `fs_nama_loker` = 'BEBAS', `fs_user_edit` = 'LEO', `fd_tanggal_edit` = '2017-11-27 10:53:14'
+WHERE `fn_no_apk` = '170011'
+ERROR - 2017-11-27 10:58:57 --> Query error: Unknown column 'fs_jenis_kendaraan' in 'field list' - Invalid query: 
+			SELECT fs_transaksi, fn_no_pjj, fs_nama_konsumen, fs_status,
+				fs_kode_lokasi, fs_kode_cabang, fs_kode_kendaraan, fs_jenis_kendaraan,
+				fn_tahun_kendaraan, fs_warna_kendaraan, fs_silinder_kendaraan,
+				fs_no_polisi, fs_no_rangka, fs_no_mesin, fs_no_bpkb, fs_nama_bpkb, fs_no_faktur, fd_tanggal_bpkb, fn_no_apk, fs_nama_loker, fs_tempat_bpkb
+			FROM tx_detailbpkb
+			WHERE fn_no_apk = '170011'
+		
+ERROR - 2017-11-27 10:58:58 --> Query error: Unknown column 'fs_jenis_kendaraan' in 'field list' - Invalid query: 
+			SELECT fs_transaksi, fn_no_pjj, fs_nama_konsumen, fs_status,
+				fs_kode_lokasi, fs_kode_cabang, fs_kode_kendaraan, fs_jenis_kendaraan,
+				fn_tahun_kendaraan, fs_warna_kendaraan, fs_silinder_kendaraan,
+				fs_no_polisi, fs_no_rangka, fs_no_mesin, fs_no_bpkb, fs_nama_bpkb, fs_no_faktur, fd_tanggal_bpkb, fn_no_apk, fs_nama_loker, fs_tempat_bpkb
+			FROM tx_detailbpkb
+			WHERE fn_no_apk = '170011'
+		
+ERROR - 2017-11-27 10:58:59 --> Query error: Unknown column 'fs_jenis_kendaraan' in 'field list' - Invalid query: 
+			SELECT fs_transaksi, fn_no_pjj, fs_nama_konsumen, fs_status,
+				fs_kode_lokasi, fs_kode_cabang, fs_kode_kendaraan, fs_jenis_kendaraan,
+				fn_tahun_kendaraan, fs_warna_kendaraan, fs_silinder_kendaraan,
+				fs_no_polisi, fs_no_rangka, fs_no_mesin, fs_no_bpkb, fs_nama_bpkb, fs_no_faktur, fd_tanggal_bpkb, fn_no_apk, fs_nama_loker, fs_tempat_bpkb
+			FROM tx_detailbpkb
+			WHERE fn_no_apk = '170011'
+		
+ERROR - 2017-11-27 10:59:34 --> Query error: Unknown column 'fs_jenis_kendaraan' in 'field list' - Invalid query: 
+			SELECT fs_transaksi, fn_no_pjj, fs_nama_konsumen, fs_status,
+				fs_kode_lokasi, fs_kode_cabang, fs_kode_kendaraan, fs_jenis_kendaraan,
+				fn_tahun_kendaraan, fs_warna_kendaraan, fs_silinder_kendaraan,
+				fs_no_polisi, fs_no_rangka, fs_no_mesin, fs_no_bpkb, fs_nama_bpkb, fs_no_faktur, fd_tanggal_bpkb, fn_no_apk, fs_nama_loker, fs_tempat_bpkb
+			FROM tx_detailbpkb
+			WHERE fn_no_apk = '170011'
+		
+ERROR - 2017-11-27 11:03:43 --> 404 Page Not Found: Masterkreditur/select
+ERROR - 2017-11-27 11:04:40 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-27 11:06:10 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-27 11:06:10 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_pemilik D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 35
+ERROR - 2017-11-27 11:06:10 --> Severity: Notice --> Undefined property: stdClass::$fs_jenis_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 38
+ERROR - 2017-11-27 11:06:10 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_pemilik D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 35
+ERROR - 2017-11-27 11:06:10 --> Severity: Notice --> Undefined property: stdClass::$fs_jenis_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 38
+ERROR - 2017-11-27 11:06:10 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_pemilik D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 35
+ERROR - 2017-11-27 11:06:10 --> Severity: Notice --> Undefined property: stdClass::$fs_jenis_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 38
+ERROR - 2017-11-27 11:06:11 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_pemilik D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 35
+ERROR - 2017-11-27 11:06:11 --> Severity: Notice --> Undefined property: stdClass::$fs_jenis_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 38
+ERROR - 2017-11-27 11:06:11 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_pemilik D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 35
+ERROR - 2017-11-27 11:06:11 --> Severity: Notice --> Undefined property: stdClass::$fs_jenis_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 38
+ERROR - 2017-11-27 11:06:11 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_pemilik D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 35
+ERROR - 2017-11-27 11:06:11 --> Severity: Notice --> Undefined property: stdClass::$fs_jenis_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 38
+ERROR - 2017-11-27 11:06:18 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_pemilik D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 35
+ERROR - 2017-11-27 11:06:18 --> Severity: Notice --> Undefined property: stdClass::$fs_jenis_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 38
+ERROR - 2017-11-27 11:06:18 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_pemilik D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 35
+ERROR - 2017-11-27 11:06:18 --> Severity: Notice --> Undefined property: stdClass::$fs_jenis_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 38
+ERROR - 2017-11-27 11:06:18 --> Severity: Notice --> Undefined property: stdClass::$fs_nama_pemilik D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 35
+ERROR - 2017-11-27 11:06:18 --> Severity: Notice --> Undefined property: stdClass::$fs_jenis_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 38
+ERROR - 2017-11-27 11:07:17 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-27 11:07:17 --> Severity: Notice --> Undefined property: stdClass::$fs_jenis_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 38
+ERROR - 2017-11-27 11:07:17 --> Severity: Notice --> Undefined property: stdClass::$fs_jenis_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 38
+ERROR - 2017-11-27 11:07:17 --> Severity: Notice --> Undefined property: stdClass::$fs_jenis_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 38
+ERROR - 2017-11-27 11:07:18 --> Severity: Notice --> Undefined property: stdClass::$fs_jenis_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 38
+ERROR - 2017-11-27 11:07:18 --> Severity: Notice --> Undefined property: stdClass::$fs_jenis_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 38
+ERROR - 2017-11-27 11:07:18 --> Severity: Notice --> Undefined property: stdClass::$fs_jenis_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 38
+ERROR - 2017-11-27 11:07:23 --> Severity: Notice --> Undefined property: stdClass::$fs_jenis_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 38
+ERROR - 2017-11-27 11:07:23 --> Severity: Notice --> Undefined property: stdClass::$fs_jenis_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 38
+ERROR - 2017-11-27 11:07:23 --> Severity: Notice --> Undefined property: stdClass::$fs_jenis_kendaraan D:\xampp\htdocs\bpkb\application\controllers\Kirimkepusat.php 38
+ERROR - 2017-11-27 11:08:14 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-27 11:09:05 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-27 11:11:49 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-27 11:12:48 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-27 11:15:43 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-27 11:15:43 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-27 11:16:08 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-27 11:16:44 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-27 11:17:25 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-27 11:18:07 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-27 11:28:43 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-27 11:28:43 --> 404 Page Not Found: Terimabpkbdaricabang/grid
+ERROR - 2017-11-27 11:28:45 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-27 11:33:01 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-27 11:34:07 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-27 12:01:37 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-27 12:03:04 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-27 12:04:10 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-27 12:14:41 --> 404 Page Not Found: Masterkreditur/select
+ERROR - 2017-11-27 12:23:07 --> 404 Page Not Found: Assets/css
+ERROR - 2017-11-27 12:23:10 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-27 12:23:45 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-27 12:24:51 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-27 12:27:09 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-27 12:29:16 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-27 12:31:51 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-27 12:32:43 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-27 12:33:09 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-27 12:33:53 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-27 12:34:27 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-27 12:34:50 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-27 12:35:38 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-27 12:49:02 --> 404 Page Not Found: Recheckbpkb/griddaftar
+ERROR - 2017-11-27 12:50:45 --> 404 Page Not Found: Recheckbpkb/griddaftar
